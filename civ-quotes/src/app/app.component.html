@@ -1,5 +1,12 @@
-<div ng-controller="NavBar" ng-cloak>
-  <md-content class="md-padding">
-    
-  </md-content>
-</div>
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <h1>Civ Quotes</h1>
+    <span class="nav-menu"></span>
+    <mat-form-field appearance="fill">
+      <mat-label>Choose an option</mat-label>
+      <a mat-button [routerLink]="'/accounts'"> Accounts </a>
+      <a mat-button [routerLink]="'/create-account'"> Create Account </a>
+      <a mat-button [routerLink]="'/contacts'"> Contacts </a>
+    </mat-form-field>
+  </mat-toolbar-row>
+</mat-toolbar>
