@@ -7,3 +7,21 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     flex: 1 1 auto;
     float: right;
 }
+
+.main-toolbar {
+    margin: 0;
+    width: 98% !important;
+    margin-left: 1%;
+    margin-top: 1%;
+    background-color: goldenrod;
+}
+
+.toolbar-button {
+    background-color: gray;
+    color: silver;
+    margin-left: 10px;
+}
+
+.button-spacer {
+    margin-left: 1%;
+}
