@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AlphaCentauriComponent } from './alpha-centauri.component';
+import { ACQuotesComponent } from './acquotes.component';
 
-describe('AlphaCentauriComponent', () => {
-  let component: AlphaCentauriComponent;
-  let fixture: ComponentFixture<AlphaCentauriComponent>;
+describe('ACQuotesComponent', () => {
+  let component: ACQuotesComponent;
+  let fixture: ComponentFixture<ACQuotesComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AlphaCentauriComponent ]
+      declarations: [ ACQuotesComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AlphaCentauriComponent);
+    fixture = TestBed.createComponent(ACQuotesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

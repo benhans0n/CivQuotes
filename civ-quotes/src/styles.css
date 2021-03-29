@@ -13,12 +13,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     width: 98% !important;
     margin-left: 1%;
     margin-top: 1%;
+    margin-bottom: 1%;
     background-color: goldenrod;
 }
 
 .toolbar-button {
     background-color: gray;
-    color: silver;
+    color: white;
     margin-left: 10px;
 }
 
