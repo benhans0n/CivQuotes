@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CivVQuotesComponent } from './civ-vquotes.component';
+import { CivBeComponent } from './civ-be.component';
 
-describe('CivVQuotesComponent', () => {
-  let component: CivVQuotesComponent;
-  let fixture: ComponentFixture<CivVQuotesComponent>;
+describe('CivBeComponent', () => {
+  let component: CivBeComponent;
+  let fixture: ComponentFixture<CivBeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CivVQuotesComponent ]
+      declarations: [ CivBeComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CivVQuotesComponent);
+    fixture = TestBed.createComponent(CivBeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

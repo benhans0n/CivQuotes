@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: silver;}
 
 .nav-menu {
     flex: 1 1 auto;
@@ -25,4 +25,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .button-spacer {
     margin-left: 1%;
+}
+
+.quote-card {
+    width: 60% !important;
+    margin-left: 20%;
+    margin-right: 20%;
 }

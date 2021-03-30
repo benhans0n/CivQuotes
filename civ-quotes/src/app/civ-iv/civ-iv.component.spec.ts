@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ACQuotesComponent } from './acquotes.component';
+import { CivIvComponent } from './civ-iv.component';
 
-describe('ACQuotesComponent', () => {
-  let component: ACQuotesComponent;
-  let fixture: ComponentFixture<ACQuotesComponent>;
+describe('CivIvComponent', () => {
+  let component: CivIvComponent;
+  let fixture: ComponentFixture<CivIvComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ACQuotesComponent ]
+      declarations: [ CivIvComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ACQuotesComponent);
+    fixture = TestBed.createComponent(CivIvComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
