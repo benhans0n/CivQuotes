@@ -1,0 +1,556 @@
+{
+    "quotes": [
+        {
+            "tech": "Agriculture",
+            "era": "a",
+            "quote": "Oh farmers, pray that your summers be wet and your winters clear.",
+            "speaker": "Virgil"
+        },
+        {
+            "tech": "Animal Husbandry",
+            "era": "a",
+            "quote": "Blessed be the fruit of thy cattle, the increase of thy kine, and the flocks of thy sheep.",
+            "speaker": "The Bible, Deut. 28:4"
+        },
+        {
+            "tech": "Archery",
+            "era": "a",
+            "quote": "Do not throw the arrow which will return against you.",
+            "speaker": "Kurdish Proverb"
+        },
+        {
+            "tech": "Bronze Working",
+            "era": "a",
+            "quote": "It is entirely seemly for a young man killed in battle to lie mangled by the bronze spear. In his death all things appear fair.",
+            "speaker": "Homer"
+        },
+        {
+            "tech": "Fishing",
+            "era": "a",
+            "quote": "Give a man a fish and you feed him for a day. Teach a man how to fish and you feed him for a lifetime.",
+            "speaker": "Lao Tzu"
+        },
+        {
+            "tech": "Horseback Riding",
+            "era": "a",
+            "quote": "If you speak the truth, have a foot in the stirrup.",
+            "speaker": "Turkish Proverb"
+        },
+        {
+            "tech": "Hunting",
+            "era": "a",
+            "quote": "If you chase two rabbits, you will lose them both.",
+            "speaker": "Native American saying"
+        },
+        {
+            "tech": "Masonry",
+            "era": "a",
+            "quote": "It is from their foes, not their friends, that cities learn the lesson of building high walls.",
+            "speaker": "Aristophanes"
+        },
+        {
+            "tech": "Meditation",
+            "era": "a",
+            "quote": "Meditation brings wisdom; lack of meditation leaves ignorance. Know well what leads you forward and what holds you back.",
+            "speaker": "The Buddha"
+        },
+        {
+            "tech": "Mining",
+            "era": "a",
+            "quote": "The man who moves a mountain begins by carrying away small stones.",
+            "speaker": "Confucius"
+        },
+        {
+            "tech": "Monotheism",
+            "era": "a",
+            "quote": "I am the Lord thy God. Thou shalt have no other gods before Me.",
+            "speaker": "The Bible, Exodus"
+        },
+        {
+            "tech": "Mysticism",
+            "era": "a",
+            "quote": "Nature herself has imprinted on the minds of all the idea of God.",
+            "speaker": "Cicero"
+        },
+        {
+            "tech": "Polytheism",
+            "era": "a",
+            "quote": "Not at all similar are the race of the immortal gods and the race of men who walk upon the earth.",
+            "speaker": "Homer"
+        },
+        {
+            "tech": "Pottery",
+            "era": "a",
+            "quote": "Hath not the potter power over the clay, to make one vessel unto honor, and another unto dishonor?",
+            "speaker": "The Bible, Romans"
+        },
+        {
+            "tech": "Priesthood",
+            "era": "a",
+            "quote": "The Lord bless you and keep you; the Lord make His face to shine upon you and be gracious to you; the Lord lift up His countenance upon you and give you peace.",
+            "speaker": "The Bible, Numbers"
+        },
+        {
+            "tech": "Sailing",
+            "era": "a",
+            "quote": "You can't direct the wind, but you can adjust your sails.",
+            "speaker": "Unknown"
+        },
+        {
+            "tech": "The Wheel",
+            "era": "a",
+            "quote": "Put your shoulder to the wheel.",
+            "speaker": "Aesop"
+        },
+        {
+            "tech": "Writing",
+            "era": "a",
+            "quote": "True glory consists in doing what deserves to be written, in writing what deserves to be read.",
+            "speaker": "Pliny the Elder"
+        },
+        {
+            "tech": "Aesthetics",
+            "era": "c",
+            "quote": "Art for art's sake is an empty phrase. Art for the sake of truth, art for the sake of the good and the beautiful, that is the faith I am searching for.",
+            "speaker": "George Sand"
+        },
+        {
+            "tech": "Alphabet",
+            "era": "c",
+            "quote": "Words have the power to both destroy and heal. When words are both true and kind, they can change our world.",
+            "speaker": "The Buddha"
+        },
+        {
+            "tech": "Calendar",
+            "era": "c",
+            "quote": "For everything there is a season and a time for every purpose under heaven.",
+            "speaker": "Ecclesiastes"
+        },
+        {
+            "tech": "Code of Laws",
+            "era": "c",
+            "quote": "To bring about the rule of righteousness in the land, so that the strong should not harm the weak.",
+            "speaker": "Hammurabi's Code; Prologue"
+        },
+        {
+            "tech": "Compass",
+            "era": "c",
+            "quote": "The wisest men follow their own direction.",
+            "speaker": "Euripides"
+        },
+        {
+            "tech": "Construction",
+            "era": "c",
+            "quote": "And on the pedestal these words appear: 'My name is Ozymandias, king of kings: Look on my works, ye Mighty, and despair!' Nothing beside remains.",
+            "speaker": "Percy Bysshe Shelley"
+        },
+        {
+            "tech": "Currency",
+            "era": "c",
+            "quote": "Everything is worth what its purchaser will pay for it.",
+            "speaker": "Publius Syrius"
+        },
+        {
+            "tech": "Drama",
+            "era": "c",
+            "quote": "All the world's a stage, and all the men and women merely players. They have their exits and their entrances; and one man in his time plays many parts.",
+            "speaker": "William Shakespeare"
+        },
+        {
+            "tech": "Iron Working",
+            "era": "c",
+            "quote": "You should hammer your iron when it is glowing hot.",
+            "speaker": "Publius Syrus"
+        },
+        {
+            "tech": "Literature",
+            "era": "c",
+            "quote": "Some books are to be tasted, others to be swallowed, and some to be chewed and digested.",
+            "speaker": "Sir Francis Bacon"
+        },
+        {
+            "tech": "Mathematics",
+            "era": "c",
+            "quote": "If in other sciences we should arrive at certainty without doubt and truth without error, it behooves us to place the foundations of knowledge in mathematics.",
+            "speaker": "Roger Bacon"
+        },
+        {
+            "tech": "Metal Casting",
+            "era": "c",
+            "quote": "And them that take the sword shall perish by the sword.",
+            "speaker": "The Bible, Matthew"
+        },
+        {
+            "tech": "Monarchy",
+            "era": "c",
+            "quote": "A multitude of rulers is not a good thing. Let there be one ruler, one king.",
+            "speaker": "Herodotus"
+        },
+        {
+            "tech": "Banking",
+            "era": "m",
+            "quote": "Banking establishments are more dangerous than standing armies.",
+            "speaker": "Thomas Jefferson"
+        },
+        {
+            "tech": "Civil Service",
+            "era": "m",
+            "quote": "The bureaucracy is expanding to meet the needs of the expanding bureaucracy.",
+            "speaker": "Unknown"
+        },
+        {
+            "tech": "Divine Right",
+            "era": "m",
+            "quote": "I am the state.",
+            "speaker": "Louis XIV"
+        },
+        {
+            "tech": "Engineering",
+            "era": "m",
+            "quote": "A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away.",
+            "speaker": "Antoine de Saint-Exupry"
+        },
+        {
+            "tech": "Feudalism",
+            "era": "m",
+            "quote": "I will to my lord be true and faithful, and love all which he loves and shun all which he shuns.",
+            "speaker": "Anglo Saxon Oath of Fealty"
+        },
+        {
+            "tech": "Guilds",
+            "era": "m",
+            "quote": "People of the same trade seldom meet together, even for merriment and diversion, but the conversation ends in a conspiracy against the public.",
+            "speaker": "Adam Smith"
+        },
+        {
+            "tech": "Machinery",
+            "era": "m",
+            "quote": "A god from the machine.",
+            "speaker": "Menander"
+        },
+        {
+            "tech": "Music",
+            "era": "m",
+            "quote": "If music be the food of love, play on.",
+            "speaker": "William Shakespeare"
+        },
+        {
+            "tech": "Optics",
+            "era": "m",
+            "quote": "One doesn't discover new lands without losing sight of the shore.",
+            "speaker": "Andre Gide"
+        },
+        {
+            "tech": "Paper",
+            "era": "m",
+            "quote": "I cannot live without books.",
+            "speaker": "Thomas Jefferson"
+        },
+        {
+            "tech": "Philosophy",
+            "era": "m",
+            "quote": "I have gained this by philosophy: that I do without being commanded what others do only from fear of the law.",
+            "speaker": "Aristotle"
+        },
+        {
+            "tech": "Theology",
+            "era": "m",
+            "quote": "Two cities have been formed by two loves: the earthly by the love of self; the heavenly by the love of God.",
+            "speaker": "St. Augustine"
+        },
+        {
+            "tech": "Astronomy",
+            "era": "r",
+            "quote": "Astronomy compels the soul to look upwards and leads us from this world to another.",
+            "speaker": "Plato"
+        },
+        {
+            "tech": "Chemistry",
+            "era": "r",
+            "quote": "Chemistry means the difference between poverty and starvation and the abundant life.",
+            "speaker": "Robert Brent"
+        },
+        {
+            "tech": "Constitution",
+            "era": "r",
+            "quote": "No freeman shall be taken, imprisoned, or in any other way destroyed, except by the lawful judgment of his peers.",
+            "speaker": "The Magna Carta"
+        },
+        {
+            "tech": "Corporation",
+            "era": "r",
+            "quote": "Corporation, n. An ingenious device for obtaining individual profit without individual responsibility.",
+            "speaker": "Ambrose Bierce"
+        },
+        {
+            "tech": "Democracy",
+            "era": "r",
+            "quote": "It has been said that democracy is the worst form of government except all the others that have been tried.",
+            "speaker": "Winston Churchill"
+        },
+        {
+            "tech": "Economics",
+            "era": "r",
+            "quote": "Compound interest is the most powerful force in the universe.",
+            "speaker": "Albert Einstein"
+        },
+        {
+            "tech": "Education",
+            "era": "r",
+            "quote": "There is no wealth like knowledge, no poverty like ignorance.",
+            "speaker": "Ali ibn Abi-Talib"
+        },
+        {
+            "tech": "Gunpowder",
+            "era": "r",
+            "quote": "You can get more of what you want with a kind word and a gun than you can with just a kind word.",
+            "speaker": "Al Capone"
+        },
+        {
+            "tech": "Liberalism",
+            "era": "r",
+            "quote": "Any society that would give up a little liberty to gain a little security will deserve neither and lose both.",
+            "speaker": "Benjamin Franklin"
+        },
+        {
+            "tech": "Military Science",
+            "era": "r",
+            "quote": "I must study politics and war that my sons may have liberty to study mathematics and philosophy.",
+            "speaker": "John Adams"
+        },
+        {
+            "tech": "Military Tradition",
+            "era": "r",
+            "quote": "Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win.",
+            "speaker": "Sun Tzu"
+        },
+        {
+            "tech": "Nationalism",
+            "era": "r",
+            "quote": "A man does not have himself killed for a half-pence a day or for a petty distinction. You must speak to the soul in order to electrify him.",
+            "speaker": "Napoleon Bonaparte"
+        },
+        {
+            "tech": "Printing Press",
+            "era": "r",
+            "quote": "What gunpowder did for war, the printing press has done for the mind.",
+            "speaker": "Wendell Phillips"
+        },
+        {
+            "tech": "Replaceable Parts",
+            "era": "r",
+            "quote": "The whole is more than the sum of its parts.",
+            "speaker": "Aristotle"
+        },
+        {
+            "tech": "Rifling",
+            "era": "r",
+            "quote": "Political power grows out of the barrel of a gun.",
+            "speaker": "Mao Zedong"
+        },
+        {
+            "tech": "Artillery",
+            "era": "i",
+            "quote": "Artillery adds dignity to what would otherwise be a vulgar brawl.",
+            "speaker": "Frederick the Great"
+        },
+        {
+            "tech": "Assembly Line",
+            "era": "i",
+            "quote": "People can have the Model T in any color - so long as it's black.",
+            "speaker": "Henry Ford"
+        },
+        {
+            "tech": "Biology",
+            "era": "i",
+            "quote": "It is not the strongest of the species that survive, but the one most responsive to change.",
+            "speaker": "Charles Darwin"
+        },
+        {
+            "tech": "Combustion",
+            "era": "i",
+            "quote": "Everything in life is somewhere else, and you get there in a car.",
+            "speaker": "E.B. White"
+        },
+        {
+            "tech": "Communism",
+            "era": "i",
+            "quote": "When I give food to the poor, they call me a saint. When I ask why the poor have no food, they call me a communist.",
+            "speaker": "Dom Helder Camara"
+        },
+        {
+            "tech": "Electricity",
+            "era": "i",
+            "quote": "We will make electricity so cheap that only the rich will burn candles.",
+            "speaker": "Thomas Edison"
+        },
+        {
+            "tech": "Fascism",
+            "era": "i",
+            "quote": "The great masses of the people... will more easily fall victims to a big lie than to a small one.",
+            "speaker": "Adolf Hitler"
+        },
+        {
+            "tech": "Fission",
+            "era": "i",
+            "quote": "If the radiance of a thousand suns were to burst at once into the sky, that would be like the splendor of the Mighty One... I am become Death, the Shatterer of Worlds.",
+            "speaker": "J. Robert Oppenheimer, quoting \"The Bhagavad Gita\""
+        },
+        {
+            "tech": "Industrialism",
+            "era": "i",
+            "quote": "There is one rule for the industrialist and that is: Make the best quality of goods possible at the lowest cost possible, paying the highest wage possible.",
+            "speaker": "Henry Ford"
+        },
+        {
+            "tech": "Medicine",
+            "era": "i",
+            "quote": "As to diseases make a habit of two things - to help, or at least, to do no harm.",
+            "speaker": "Hippocrates"
+        },
+        {
+            "tech": "Physics",
+            "era": "i",
+            "quote": "To every action there is always opposed an equal reaction.",
+            "speaker": "Isaac Newton"
+        },
+        {
+            "tech": "Railroad",
+            "era": "i",
+            "quote": "I fooled you, I fooled you, I got pig iron, I got pig iron, I got all pig iron.",
+            "speaker": "Lonnie Donegan, \"Rock Island Line\""
+        },
+        {
+            "tech": "Scientific Method",
+            "era": "i",
+            "quote": "I do not feel obliged to believe that the same God who has endowed us with sense, reason, and intellect has intended us to forgo their use.",
+            "speaker": "Galileo Galilei"
+        },
+        {
+            "tech": "Steam Power",
+            "era": "i",
+            "quote": "You would make a ship sail against the winds and currents by lighting a bon-fire under her deck? I have no time for such nonsense.",
+            "speaker": "Napoleon, on Robert Fulton's Steamship"
+        },
+        {
+            "tech": "Steel",
+            "era": "i",
+            "quote": "Before that steam drill shall beat me down, I'll die with my hammer in my hand.",
+            "speaker": "from \"John Henry, the Steel-Driving Man\""
+        },
+        {
+            "tech": "Advanced Flight",
+            "era": "mo",
+            "quote": "Oh! I have slipped the surly bonds of Earth - Put out my hand and touched the Face of God.",
+            "speaker": "John Gillespie Magee, Junior"
+        },
+        {
+            "tech": "Composites",
+            "era": "mo",
+            "quote": "The whole is greater than the sum of its parts.",
+            "speaker": "Aristotle"
+        },
+        {
+            "tech": "Computers",
+            "era": "mo",
+            "quote": "Never trust a computer you can't throw out a window.",
+            "speaker": "Steve Wozniak"
+        },
+        {
+            "tech": "Ecology",
+            "era": "mo",
+            "quote": "We do not inherit the earth from our ancestors, we borrow it from our children.",
+            "speaker": "Native American Song"
+        },
+        {
+            "tech": "Fiber Optics",
+            "era": "mo",
+            "quote": "There is a single light of science and to brighten it anywhere is to brighten it everywhere.",
+            "speaker": "Isaac Asimov"
+        },
+        {
+            "tech": "Flight",
+            "era": "mo",
+            "quote": "For once you have tasted flight you will walk the earth with your eyes turned skywards, for there you have been and there you will long to return.",
+            "speaker": "Leonardo Da Vinci"
+        },
+        {
+            "tech": "Fusion",
+            "era": "mo",
+            "quote": "Any sufficiently advanced technology is indistinguishable from magic.",
+            "speaker": "Arthur C. Clarke"
+        },
+        {
+            "tech": "Future Technology",
+            "era": "mo",
+            "quote": "The future will be better tomorrow.",
+            "speaker": "Dan Quayle"
+        },
+        {
+            "tech": "Genetics",
+            "era": "mo",
+            "quote": "Soon it will be a sin for parents to have a child which carries the heavy burden of genetic disease.",
+            "speaker": "Bob Edwards"
+        },
+        {
+            "tech": "Laser",
+            "era": "mo",
+            "quote": "Nothing travels faster than the speed of light with the possible exception of bad news, which obeys its own special laws.",
+            "speaker": "Douglas Adams"
+        },
+        {
+            "tech": "Mass Media",
+            "era": "mo",
+            "quote": "The only thing worse than being talked about is not being talked about.",
+            "speaker": "Oscar Wilde"
+        },
+        {
+            "tech": "Plastics",
+            "era": "mo",
+            "quote": "I just want to say one word to you. Just one word: plastics.",
+            "speaker": "Calder Willingham, The Graduate"
+        },
+        {
+            "tech": "Radio",
+            "era": "mo",
+            "quote": "Then one fine mornin' she puts on a New York station. You know her life was saved by Rock 'n' Roll.",
+            "speaker": "The Velvet Underground, \"Rock And Roll\""
+        },
+        {
+            "tech": "Refrigeration",
+            "era": "mo",
+            "quote": "Tell me what you eat, and I will tell you what you are.",
+            "speaker": "Anthelme Brillat-Savarin"
+        },
+        {
+            "tech": "Robotics",
+            "era": "mo",
+            "quote": "The real problem is not whether machines think, but whether men do.",
+            "speaker": "B.F. Skinner"
+        },
+        {
+            "tech": "Rocketry",
+            "era": "mo",
+            "quote": "The Earth is the cradle of the mind, but one cannot eternally live in a cradle.",
+            "speaker": "Konstantin E. Tsiolkovsky"
+        },
+        {
+            "tech": "Satellites",
+            "era": "mo",
+            "quote": "Beep... beep... beep... beep...",
+            "speaker": "Sputnik I"
+        },
+        {
+            "tech": "Stealth",
+            "era": "mo",
+            "quote": "Behind a veil, unseen yet present, I was the forceful soul that moved this mighty body.",
+            "speaker": "Jean Racine"
+        },
+        {
+            "tech": "Superconductors",
+            "era": "mo",
+            "quote": "What is happiness? The feeling that power is growing, that resistance is overcome.",
+            "speaker": "Friedrich Nietzsche"
+        }
+    ]
+}

@@ -1,0 +1,402 @@
+<mat-card class="quote-card">
+    <mat-card-title>Sid Meier's Alpha Centauri Quotes</mat-card-title>
+    <mat-divider></mat-divider>
+    <br>
+    <mat-card-content>
+        Collected from the absolutely wonderful source on <a href="https://tvtropes.org/pmwiki/pmwiki.php/Quotes/SidMeiersAlphaCentauri">TV Tropes</a>. 
+        <br>
+        All credit for retrieving these quotes goes to the contributors there, as my machine is unable to run Alpha Centauri. All quotes are copied verbatim from TV Tropes.
+        Due to the fact that there are no ages, <b>all quotes are filed under the faction which the quotee belongs to</b>, with work and tech or special project being listed next to the quotee.
+    </mat-card-content>
+</mat-card>
+
+
+<mat-card class="quote-card" style="margin-top: 1%">
+    <mat-card-title>
+        University of Planet
+    </mat-card-title>
+    <mat-divider ></mat-divider>
+    <mat-card-content>
+        <mat-list>
+            <mat-list-item *ngFor="let quote of uopQuotes">
+                <i matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5 !important;">
+                    {{quote.quote}}
+                </i>
+                
+                <br matLine>
+                <p matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5;">
+                    <strong> — {{quote.speaker}}</strong>
+                    <em *ngIf="quote.work">, </em>
+                    <i>{{quote.work}}</i> {{quote.flavor_text}}
+                <p></p>  
+                <mat-divider matLine></mat-divider>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
+</mat-card>
+
+<mat-card class="quote-card" style="margin-top: 1%">
+    <mat-card-title>
+        Lord's Believers
+    </mat-card-title>
+    <mat-divider ></mat-divider>
+    <mat-card-content>
+        <mat-list>
+            <mat-list-item *ngFor="let quote of lbQuotes">
+                <i matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5 !important;">
+                    {{quote.quote}}
+                </i>
+                
+                <br matLine>
+                <p matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5;">
+                    <strong> — {{quote.speaker}}</strong>
+                    <em *ngIf="quote.work">, </em>
+                    <i>{{quote.work}}</i> {{quote.flavor_text}}
+                </p>  
+                <mat-divider matLine></mat-divider>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
+</mat-card>
+
+<mat-card class="quote-card" style="margin-top: 1%">
+    <mat-card-title>
+        Spartan Federation
+    </mat-card-title>
+    <mat-divider ></mat-divider>
+    <mat-card-content>
+        <mat-list>
+            <mat-list-item *ngFor="let quote of sfQuotes">
+                <i matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5 !important;">
+                    {{quote.quote}}
+                </i>
+                
+                <br matLine>
+                <p matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5;">
+                    <strong> — {{quote.speaker}}</strong>
+                    <em *ngIf="quote.work">, </em>
+                    <i>{{quote.work}}</i> {{quote.flavor_text}}
+                </p>
+                <mat-divider matLine></mat-divider>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
+</mat-card>
+
+<mat-card class="quote-card" style="margin-top: 1%">
+    <mat-card-title>
+        Peacekeeping Forces
+    </mat-card-title>
+    <mat-divider ></mat-divider>
+    <mat-card-content>
+        <mat-list>
+            <mat-list-item *ngFor="let quote of pfQuotes">
+                <i matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5 !important;">
+                    {{quote.quote}}
+                </i>
+                
+                <br matLine>
+                <p matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5;">
+                    <strong> — {{quote.speaker}}</strong>
+                    <em *ngIf="quote.work">, </em>
+                    <i>{{quote.work}}</i> {{quote.flavor_text}}
+                </p>
+                <mat-divider matLine></mat-divider>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
+</mat-card>
+
+<mat-card class="quote-card" style="margin-top: 1%">
+    <mat-card-title>
+        Human Hive
+    </mat-card-title>
+    <mat-divider ></mat-divider>
+    <mat-card-content>
+        <mat-list>
+            <mat-list-item *ngFor="let quote of hhQuotes">
+                <i matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5 !important;">
+                    {{quote.quote}}
+                </i>
+                
+                <br matLine>
+                <p matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5;">
+                    <strong> — {{quote.speaker}}</strong>
+                    <em *ngIf="quote.work">, </em>
+                    <i>{{quote.work}}</i> {{quote.flavor_text}}
+                </p>
+                <mat-divider matLine></mat-divider>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
+</mat-card>
+
+<mat-card class="quote-card" style="margin-top: 1%">
+    <mat-card-title>
+        Morgan Industries
+    </mat-card-title>
+    <mat-divider ></mat-divider>
+    <mat-card-content>
+        <mat-list>
+            <mat-list-item *ngFor="let quote of miQuotes">
+                <i matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5 !important;">
+                    {{quote.quote}}
+                </i>
+                
+                <br matLine>
+                <p matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5;">
+                    <strong> — {{quote.speaker}}</strong>
+                    <em *ngIf="quote.work">, </em>
+                    <i>{{quote.work}}</i> {{quote.flavor_text}}
+                </p>
+                <mat-divider matLine></mat-divider>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
+</mat-card>
+
+<mat-card class="quote-card" style="margin-top: 1%">
+    <mat-card-title>
+        Gaia's Stepdaughters
+    </mat-card-title>
+    <mat-divider ></mat-divider>
+    <mat-card-content>
+        <mat-list>
+            <mat-list-item *ngFor="let quote of gsQuotes">
+                <i matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5 !important;">
+                    {{quote.quote}}
+                </i>
+                
+                <br matLine>
+                <p matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5;">
+                    <strong> — {{quote.speaker}}</strong>
+                    <em *ngIf="quote.work">, </em>
+                    <i>{{quote.work}}</i> {{quote.flavor_text}}
+                </p>
+                <mat-divider matLine></mat-divider>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
+</mat-card>
+
+<mat-card class="quote-card" style="margin-top: 1%">
+    <mat-card-title>
+        The Cybernetic Consciousness
+    </mat-card-title>
+    <mat-divider ></mat-divider>
+    <mat-card-content>
+        <mat-list>
+            <mat-list-item *ngFor="let quote of ccQuotes">
+                <i matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5 !important;">
+                    {{quote.quote}}
+                </i>
+                
+                <br matLine>
+                <p matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5;">
+                    <strong> — {{quote.speaker}}</strong>
+                    <em *ngIf="quote.work">, </em>
+                    <i>{{quote.work}}</i> {{quote.flavor_text}}
+                </p>
+                <mat-divider matLine></mat-divider>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
+</mat-card>
+
+<mat-card class="quote-card" style="margin-top: 1%">
+    <mat-card-title>
+        Nautilus Pirates
+    </mat-card-title>
+    <mat-divider ></mat-divider>
+    <mat-card-content>
+        <mat-list>
+            <mat-list-item *ngFor="let quote of npQuotes">
+                <i matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5 !important;">
+                    {{quote.quote}}
+                </i>
+                
+                <br matLine>
+                <p matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5;">
+                    <strong> — {{quote.speaker}}</strong>
+                    <em *ngIf="quote.work">, </em>
+                    <i>{{quote.work}}</i> {{quote.flavor_text}}
+                </p>
+                <mat-divider matLine></mat-divider>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
+</mat-card>
+
+<mat-card class="quote-card" style="margin-top: 1%">
+    <mat-card-title>
+        The Free Drones
+    </mat-card-title>
+    <mat-divider ></mat-divider>
+    <mat-card-content>
+        <mat-list>
+            <mat-list-item *ngFor="let quote of fdQuotes">
+                <i matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5 !important;">
+                    {{quote.quote}}
+                </i>
+                
+                <br matLine>
+                <p matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5;">
+                    <strong> — {{quote.speaker}}</strong>
+                    <em *ngIf="quote.work">, </em>
+                    <i>{{quote.work}}</i> {{quote.flavor_text}}
+                </p>
+                <mat-divider matLine></mat-divider>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
+</mat-card>
+
+<mat-card class="quote-card" style="margin-top: 1%">
+    <mat-card-title>
+        The Data Angels
+    </mat-card-title>
+    <mat-divider ></mat-divider>
+    <mat-card-content>
+        <mat-list>
+            <mat-list-item *ngFor="let quote of daQuotes">
+                <i matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5 !important;">
+                    {{quote.quote}}
+                </i>
+                
+                <br matLine>
+                <p matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5;">
+                    <strong> — {{quote.speaker}}</strong>
+                    <em *ngIf="quote.work">, </em>
+                    <i>{{quote.work}}</i> {{quote.flavor_text}}
+                </p>
+                <mat-divider matLine></mat-divider>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
+</mat-card>
+
+<mat-card class="quote-card" style="margin-top: 1%">
+    <mat-card-title>
+        The Cult of Planet
+    </mat-card-title>
+    <mat-divider ></mat-divider>
+    <mat-card-content>
+        <mat-list>
+            <mat-list-item *ngFor="let quote of cpQuotes">
+                <i matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5 !important;">
+                    {{quote.quote}}
+                </i>
+                
+                <br matLine>
+                <p matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5;">
+                    <strong> — {{quote.speaker}}</strong>
+                    <em *ngIf="quote.work">, </em>
+                    <i>{{quote.work}}</i> {{quote.flavor_text}}
+                </p>
+                <mat-divider matLine></mat-divider>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
+</mat-card>
+
+<mat-card class="quote-card" style="margin-top: 1%">
+    <mat-card-title>
+        Manifold Caretakers
+    </mat-card-title>
+    <mat-divider ></mat-divider>
+    <mat-card-content>
+        <mat-list>
+            <mat-list-item *ngFor="let quote of mcQuotes">
+                <i matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5 !important;">
+                    {{quote.quote}}
+                </i>
+                
+                <br matLine>
+                <p matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5;">
+                    <strong> — {{quote.speaker}}</strong>
+                    <em *ngIf="quote.work">, </em>
+                    <i>{{quote.work}}</i> {{quote.flavor_text}}
+                </p>
+                <mat-divider matLine></mat-divider>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
+</mat-card>
+
+<mat-card class="quote-card" style="margin-top: 1%">
+    <mat-card-title>
+        Manifold Usurpers
+    </mat-card-title>
+    <mat-divider ></mat-divider>
+    <mat-card-content>
+        <mat-list>
+            <mat-list-item *ngFor="let quote of muQuotes">
+                <i matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5 !important;">
+                    {{quote.quote}}
+                </i>
+                
+                <br matLine>
+                <p matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5;">
+                    <strong> — {{quote.speaker}}</strong>
+                    <em *ngIf="quote.work">, </em>
+                    <i>{{quote.work}}</i> {{quote.flavor_text}}
+                </p>
+                <mat-divider matLine></mat-divider>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
+</mat-card>
+
+<mat-card class="quote-card" style="margin-top: 1%">
+    <mat-card-title>
+        Other
+    </mat-card-title>
+    <mat-divider ></mat-divider>
+    <mat-card-content>
+        <mat-list>
+            <mat-list-item *ngFor="let quote of otherQuotes">
+                <i matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5 !important;">
+                    {{quote.quote}}
+                </i>
+                
+                <br matLine>
+                <p matLine style="word-wrap: break-word !important;
+                white-space: pre-wrap !important; line-height: 1.5;">
+                    <strong> — {{quote.speaker}}</strong>
+                    <em *ngIf="quote.work">, </em>
+                    <i>{{quote.work}}</i> {{quote.flavor_text}}
+                </p>
+                <mat-divider matLine></mat-divider>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
+</mat-card>

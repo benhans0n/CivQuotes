@@ -1,4 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: silver;}
+
+.nav-menu {
+    flex: 1 1 auto;
+    float: right;
+}
+
+.main-toolbar {
+    margin: 0;
+    width: 98% !important;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: goldenrod;
+}
+
+.toolbar-button {
+    background-color: gray;
+    color: white;
+    margin-left: 10px;
+}
+
+.button-spacer {
+    margin-left: 1%;
+}
+
+.quote-card {
+    width: 60% !important;
+    margin-left: 20%;
+    margin-right: 20%;
+}
