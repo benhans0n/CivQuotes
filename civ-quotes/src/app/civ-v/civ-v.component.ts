@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TechQuote } from './civv-tech-quote';
+import { TechQuote, WonderQuote } from './civv-quotes';
 
 @Component({
   selector: 'app-civ-v',
@@ -7,27 +7,45 @@ import { TechQuote } from './civv-tech-quote';
   styleUrls: ['./civ-v.component.css']
 })
 export class CivVComponent implements OnInit {
-  aQuotes = new Array<TechQuote>();
-  cQuotes = new Array<TechQuote>();
-  mQuotes = new Array<TechQuote>();
-  rQuotes = new Array<TechQuote>();
-  iQuotes = new Array<TechQuote>();
-  moQuotes = new Array<TechQuote>();
-  atQuotes = new Array<TechQuote>();
-  ifQuotes = new Array<TechQuote>();
+  aTechQuotes = new Array<TechQuote>();
+  cTechQuotes = new Array<TechQuote>();
+  mTechQuotes = new Array<TechQuote>();
+  rTechQuotes = new Array<TechQuote>();
+  iTechQuotes = new Array<TechQuote>();
+  moTechQuotes = new Array<TechQuote>();
+  atTechQuotes = new Array<TechQuote>();
+  ifTechQuotes = new Array<TechQuote>();
+
+  aWonderQuotes = new Array<WonderQuote>();
+  cWonderQuotes = new Array<WonderQuote>();
+  mWonderQuotes = new Array<WonderQuote>();
+  rWonderQuotes = new Array<WonderQuote>();
+  iWonderQuotes = new Array<WonderQuote>();
+  moWonderQuotes = new Array<WonderQuote>();
+  atWonderQuotes = new Array<WonderQuote>();
+  ifWonderQuotes = new Array<WonderQuote>();
 
   constructor() {
-    let holdTechQuotes = new Array<TechQuote>();
-    holdTechQuotes = require('./civ-v-tech-quotes.json').quotes;
+    const allTechQuotes = require('./civ-v-tech-quotes.json').quotes as Array<TechQuote>;
 
-    this.aQuotes = holdTechQuotes.filter(quote => quote.era === "a");
-    this.cQuotes = holdTechQuotes.filter(quote => quote.era === "c");
-    this.mQuotes = holdTechQuotes.filter(quote => quote.era === "m");
-    this.rQuotes = holdTechQuotes.filter(quote => quote.era === "r");
-    this.iQuotes = holdTechQuotes.filter(quote => quote.era === "i");
-    this.moQuotes = holdTechQuotes.filter(quote => quote.era === "mo");
-    this.atQuotes = holdTechQuotes.filter(quote => quote.era === "at");
-    this.ifQuotes = holdTechQuotes.filter(quote => quote.era === "if");
+    this.aTechQuotes = allTechQuotes.filter(quote => quote.era === "a");
+    this.cTechQuotes = allTechQuotes.filter(quote => quote.era === "c");
+    this.mTechQuotes = allTechQuotes.filter(quote => quote.era === "m");
+    this.rTechQuotes = allTechQuotes.filter(quote => quote.era === "r");
+    this.iTechQuotes = allTechQuotes.filter(quote => quote.era === "i");
+    this.moTechQuotes = allTechQuotes.filter(quote => quote.era === "mo");
+    this.atTechQuotes = allTechQuotes.filter(quote => quote.era === "at");
+    this.ifTechQuotes = allTechQuotes.filter(quote => quote.era === "if");
+
+    const allWonderQuotes= require('./civ-v-wonder-quotes.json').quotes as Array<WonderQuote>;
+    this.aWonderQuotes = allWonderQuotes.filter(quote => quote.era === "a");
+    this.cWonderQuotes = allWonderQuotes.filter(quote => quote.era === "c");
+    this.mWonderQuotes = allWonderQuotes.filter(quote => quote.era === "m");
+    this.rWonderQuotes = allWonderQuotes.filter(quote => quote.era === "r");
+    this.iWonderQuotes = allWonderQuotes.filter(quote => quote.era === "i");
+    this.moWonderQuotes = allWonderQuotes.filter(quote => quote.era === "mo");
+    this.atWonderQuotes = allWonderQuotes.filter(quote => quote.era === "at");
+    this.ifWonderQuotes = allWonderQuotes.filter(quote => quote.era === "if");
    }
 
   ngOnInit(): void {
