@@ -30,7 +30,7 @@ import { CivViComponent } from './civ-vi/civ-vi.component';
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-      { path: '', redirectTo: 'alpha-centauri', component: AlphaCentauriComponent},
+      { path: '', redirectTo: 'alpha-centauri', pathMatch: 'full' },
       { path: 'alpha-centauri', component: AlphaCentauriComponent },
       { path: 'civ-iv', component: CivIvComponent },
       { path: 'civ-v', component: CivVComponent },

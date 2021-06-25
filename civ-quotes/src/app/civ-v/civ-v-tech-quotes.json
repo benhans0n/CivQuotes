@@ -1,0 +1,502 @@
+{
+    "quotes": [
+        {
+            "tech": "Agriculture",
+            "era": "a",
+            "quote": "Where tillage begins, other arts follow. The farmers therefore are the founders of human civilization.",
+            "speaker": "Daniel Webster"
+        },
+        {
+            "tech": "Animal Husbandry",
+            "era": "a",
+            "quote": "Thou shalt not muzzle the ox when he treadeth out the corn.",
+            "speaker":"The Bible, Deuteronomy, 25:4"
+        },
+        {
+            "tech": "Archery",
+            "era": "a",
+            "quote": "The haft of the arrow had been feathered with one of the eagle's own plumes. We often give our enemies the means of our own destruction.",
+            "speaker":"Aesop"
+        },
+        {
+            "tech": "Bronze Working",
+            "era": "a",
+            "quote": "Here Hector entered, with a spear eleven cubits long in his hand; the bronze point gleamed in front of him, and was fastened to the shaft of the spear by a ring of gold.",
+            "speaker":"Homer"
+        },
+        {
+            "tech": "Calendar",
+            "era": "a",
+            "quote": "So teach us to number our days, so that we may apply our hearts unto wisdom.",
+            "speaker":"The Bible, Psalms, 90:12"
+        },
+        {
+            "tech": "Masonry",
+            "era": "a",
+            "quote": "How happy are those whose walls already rise!",
+            "speaker":"Virgil"
+        },
+        {
+            "tech": "Mining",
+            "era": "a",
+            "quote": "The meek shall inherit the Earth, but not its mineral rights.",
+            "speaker":"J. Paul Getty"
+        },
+        {
+            "tech": "Pottery",
+            "era": "a",
+            "quote": "Shall the clay say to him that fashioneth it, What makest thou?",
+            "speaker":"The Bible, Isaiah, 45:9"
+        },
+        {
+            "tech": "Sailing",
+            "era": "a",
+            "quote": "He who commands the sea has command of everything.",
+            "speaker":"Themistocles"
+        },
+        {
+            "tech": "The Wheel",
+            "era": "a",
+            "quote": "Wisdom and virtue are like the two wheels of a cart.",
+            "speaker":"Japanese Proverb"
+        },
+        {
+            "tech": "Trapping",
+            "era": "a",
+            "quote": "Even brute beasts and wandering birds do not fall into the same traps or nets twice.",
+            "speaker":"Saint Jerome"
+        },
+        {
+            "tech": "Writing",
+            "era": "a",
+            "quote": "He who destroys a good book kills reason itself.",
+            "speaker":"John Milton"
+        },
+        {
+            "tech": "Construction",
+            "era": "c",
+            "quote": "Three things are to be looked to in a building: that it stand on the right spot; that it be securely founded; that it be successfully executed.",
+            "speaker": "Johann Wolfgang von Goethe"
+        },
+        {
+            "tech": "Currency",
+            "era": "c",
+            "quote": "Better is bread with a happy heart\nThan wealth with vexation.",
+            "speaker": "Amenemope"
+        },
+        {
+            "tech": "Drama and Poetry",
+            "era": "c",
+            "quote": "What is drama but life with the dull bits cut out.",
+            "speaker": "Alfred Hitchcock"
+        },
+        {
+            "tech": "Engineering",
+            "era": "c",
+            "quote": "Instrumental or mechanical science is the noblest and, above all others, the most useful.",
+            "speaker": "Leonardo da Vinci"
+        },
+        {
+            "tech": "Horseback Riding",
+            "era": "c",
+            "quote": "My kingdom for a horse!",
+            "speaker": "Shakespeare (Richard III)"
+        },
+        {
+            "tech": "Iron Working",
+            "era": "c",
+            "quote": "Do not wait to strike 'til the iron is hot; but make it hot by striking.",
+            "speaker": "William Butler Yeats"
+        },
+        {
+            "tech": "Mathematics",
+            "era": "c",
+            "quote": "Mathematics is the gate and key to the sciences.",
+            "speaker": "Roger Bacon"
+        },
+        {
+            "tech": "Optics",
+            "era": "c",
+            "quote": "He made an instrument to know\nIf the moon shine at full or no.",
+            "speaker": "Samuel Butler"
+        },
+        {
+            "tech": "Philosophy",
+            "era": "c",
+            "quote": "There is only one good, knowledge, and one evil, ignorance.",
+            "speaker": "Socrates"
+        },
+        {
+            "tech": "Chivalry",
+            "era": "m",
+            "quote": "Whoso pulleth out this sword of this stone and anvil, is rightwise king born of all England.",
+            "speaker": "Malory"
+        },
+        {
+            "tech": "Civil Service",
+            "era": "m",
+            "quote": "The only thing that saves us from the bureaucracy is its inefficiency.",
+            "speaker": "Eugene McCarthy"
+        },
+        {
+            "tech": "Compass",
+            "era": "m",
+            "quote": "I find the great thing in this world is not so much where we stand, as in what direction we are moving...",
+            "speaker": "Oliver Wendell Holmes"
+        },
+        {
+            "tech": "Education",
+            "era": "m",
+            "quote": "Education is the best provision for old age.",
+            "speaker": "Aristotle"
+        },
+        {
+            "tech": "Guilds",
+            "era": "m",
+            "quote": "The merchants and the traders have come; their profits are pre-ordained...",
+            "speaker": "Sri Guru Granth Sahib"
+        },
+        {
+            "tech": "Machinery",
+            "era": "m",
+            "quote": "The press is the best instrument for enlightening the mind of man, and improving him as a rational, moral and social being.",
+            "speaker": "Thomas Jefferson"
+        },
+        {
+            "tech": "Metal Casting",
+            "era": "m",
+            "quote": "When pieces of bronze or gold or iron break, the metal-smith welds them together again in the fire, and the bond is established.",
+            "speaker": "Sri Guru Granth Sahib"
+        },
+        {
+            "tech": "Physics",
+            "era": "m",
+            "quote": "Every particle of matter is attracted by or gravitates to every other particle of matter with a force inversely proportional to the squares of their distances.",
+            "speaker": "Isaac Newton"
+        },
+        {
+            "tech": "Steel",
+            "era": "m",
+            "quote": "John Henry said to his Captain,\n'A man ain't nothin' but a man,\nAnd before I'll let your steam drill beat me down,\nI'll die with the hammer in my hand.'",
+            "speaker": "Anonymous: The Ballad of John Henry, the Steel-Drivin' Man"
+        },
+        {
+            "tech": "Theology",
+            "era": "m",
+            "quote": "Three things are necessary for the salvation of man: to know what he ought to believe; to know what he ought to desire; and to know what he ought to do.",
+            "speaker": "St. Thomas Aquinas"
+        },
+        {
+            "tech": "Acoustics",
+            "era": "r",
+            "quote": "Their rising all at once was as the sound of thunder heard remote.",
+            "speaker": "Milton"
+        },
+        {
+            "tech": "Architecture",
+            "era": "r",
+            "quote": "Architecture begins where engineering ends.",
+            "speaker": "Walter Gropius"
+        },
+        {
+            "tech": "Astronomy",
+            "era": "r",
+            "quote": "Joyfully to the breeze royal Odysseus spread his sail, and with his rudder skillfully he steered.",
+            "speaker": "Homer"
+        },
+        {
+            "tech": "Banking",
+            "era": "r",
+            "quote": "Happiness: a good bank account, a good cook and a good digestion.",
+            "speaker": "Jean Jacques Rousseau"
+        },
+        {
+            "tech": "Chemistry",
+            "era": "r",
+            "quote": "Wherever we look, the work of the chemist has raised the level of our civilization and has increased the productive capacity of the nation.",
+            "speaker": "Calvin Coolidge"
+        },
+        {
+            "tech": "Economics",
+            "era": "r",
+            "quote": "Compound interest is the most powerful force in the universe.",
+            "speaker": "Albert Einstein"
+        },
+        {
+            "tech": "Gunpowder",
+            "era": "r",
+            "quote": "The day when two army corps can annihilate each other in one second, all civilized nations, it is to be hoped, will recoil from war and discharge their troops.",
+            "speaker": "Alfred Nobel"
+        },
+        {
+            "tech": "Metallurgy",
+            "era": "r",
+            "quote": "There never was a good knife made of bad steel.",
+            "speaker": "Benjamin Franklin"
+        },
+        {
+            "tech": "Navigation",
+            "era": "r",
+            "quote": "The winds and the waves are always on the side of the ablest navigators.",
+            "speaker": "Edward Gibbon"
+        },
+        {
+            "tech": "Printing Press",
+            "era": "r",
+            "quote": "It is a newspaper's duty to print the news and raise hell.",
+            "speaker": "The Chicago Times"
+        },
+        {
+            "tech": "Archaeology",
+            "era": "i",
+            "quote": "Those who cannot remember the past are condemned to repeat it.",
+            "speaker": "George Santayana"
+        },
+        {
+            "tech": "Biology",
+            "era": "i",
+            "quote": "If the brain were so simple we could understand it, we would be so simple we couldn't.",
+            "speaker": "Lyall Watson"
+        },
+        {
+            "tech": "Dynamite",
+            "era": "i",
+            "quote": "As soon as men decide that all means are permitted to fight an evil, then their good becomes indistinguishable from the evil that they set out to destroy.",
+            "speaker": "Christopher Dawson"
+        },
+        {
+            "tech": "Electricity",
+            "era": "i",
+            "quote": "Is it a fact - or have I dreamt it - that, by means of electricity, the world of matter has become a great nerve, vibrating thousands of miles in a breathless point of time?",
+            "speaker": "Nathaniel Hawthorne"
+        },
+        {
+            "tech": "Fertilizer",
+            "era": "i",
+            "quote": "The nation that destroys its soil destroys itself.",
+            "speaker": "Franklin Delano Roosevelt"
+        },
+        {
+            "tech": "Industrialization",
+            "era": "i",
+            "quote": "Industrialization based on machinery, already referred to as a characteristic of our age, is but one aspect of the revolution that is being wrought by technology.",
+            "speaker": "Emily Greene Balch"
+        },
+        {
+            "tech": "Military Science",
+            "era": "i",
+            "quote": "Wars may be fought with weapons, but they are won by men. It is the spirit of the men who follow and of the man who leads that gains the victory.",
+            "speaker": "George S. Patton"
+        },
+        {
+            "tech": "Rifling",
+            "era": "i",
+            "quote": "It is well that war is so terrible, or we should grow too fond of it.",
+            "speaker": "Robert E. Lee"
+        },
+        {
+            "tech": "Scientific Theory",
+            "era": "i",
+            "quote": "Every great advance in science has issued from a new audacity of imagination.",
+            "speaker": "John Dewey"
+        },
+        {
+            "tech": "Steam Power",
+            "era": "i",
+            "quote": "The nations of the West hope that by means of steam communication all the world will become as one family.",
+            "speaker": "Townsend Harris"
+        },
+        {
+            "tech": "Telegraph",
+            "era": "i",
+            "quote": "I once sent a dozen of my friends a telegram saying \"flee at once-all is discovered!\" They all left town immediately.",
+            "speaker": "Mark Twain"
+        },
+        {
+            "tech": "Ballistics",
+            "era": "mo",
+            "quote": "'Once the rockets are up, who cares where they come down? That's not my department,' says Wernher von Braun.",
+            "speaker": "Tom Lehrer"
+        },
+        {
+            "tech": "Combustion",
+            "era": "mo",
+            "quote": "Any man who can drive safely while kissing a pretty girl is simply not giving the kiss the attention it deserves.",
+            "speaker": "Albert Einstein"
+        },
+        {
+            "tech": "Electronics",
+            "era": "mo",
+            "quote": "There's a basic principle about consumer electronics: it gets more powerful all the time and it gets cheaper all the time.",
+            "speaker": "Trip Hawkins"
+        },
+        {
+            "tech": "Flight",
+            "era": "mo",
+            "quote": "Aeronautics was neither an industry nor a science. It was a miracle.",
+            "speaker": "Igor Sikorsky"
+        },
+        {
+            "tech": "Mass Media",
+            "era": "mo",
+            "quote": "The speed of communications is wondrous to behold, it is also true that speed does multiply the distribution of information that we know to be untrue.",
+            "speaker": "Edward R. Murrow"
+        },
+        {
+            "tech": "Plastics",
+            "era": "mo",
+            "quote": "Ben, I want to say one word to you, just one word: plastics.",
+            "speaker": "Buck Henry and Calder Willingham, The Graduate"
+        },
+        {
+            "tech": "Radio",
+            "era": "mo",
+            "quote": "The whole country was tied together by radio. We all experienced the same heroes and comedians and singers. They were giants.",
+            "speaker": "Woody Allen"
+        },
+        {
+            "tech": "Railroad",
+            "era": "mo",
+            "quote": "The introduction of so powerful an agent as steam to a carriage on wheels will make a great change in the situation of man.",
+            "speaker": "Thomas Jefferson"
+        },
+        {
+            "tech": "Refrigeration",
+            "era": "mo",
+            "quote": "And homeless near a thousand homes I stood, and near a thousand tables pined and wanted food.",
+            "speaker": "William Wordsworth"
+        },
+        {
+            "tech": "Replaceable Parts",
+            "era": "mo",
+            "quote": "Nothing is particularly hard if you divide it into small jobs.",
+            "speaker": "Henry Ford"
+        },
+        {
+            "tech": "Atomic Theory",
+            "era": "at",
+            "quote": "The unleashed power of the atom has changed everything save our modes of thinking, and we thus drift toward unparalleled catastrophes.",
+            "speaker": "Albert Einstein"
+        },
+        {
+            "tech": "Combined Arms",
+            "era": "at",
+            "quote": "The root of the evil is not the construction of new, more dreadful weapons. It is the spirit of conquest.",
+            "speaker": "Ludwig von Mises"
+        },
+        {
+            "tech": "Computers",
+            "era": "at",
+            "quote": "Computers are like Old Testament gods: lots of rules and no mercy.",
+            "speaker": "Joseph Campbell"
+        },
+        {
+            "tech": "Ecology",
+            "era": "at",
+            "quote": "Only within the moment of time represented by the present century has one species, man, acquired significant power to alter the nature of his world.",
+            "speaker": "Rachel Carson"
+        },
+        {
+            "tech": "Nuclear Fission",
+            "era": "at",
+            "quote": "I am become Death, the destroyer of worlds.",
+            "speaker": "J. Robert Oppenheimer"
+        },
+        {
+            "tech": "Penicillin",
+            "era": "at",
+            "quote": "Everything passes - Robust art\nAlone is eternal.\nThe bust\nSurvives the city.",
+            "speaker": "Theophile Gautier"
+        },
+        {
+            "tech": "Radar",
+            "era": "at",
+            "quote": "Vision is the art of seeing things invisible.",
+            "speaker": "Jonathan Swift"
+        },
+        {
+            "tech": "Rocketry",
+            "era": "at",
+            "quote": "A good rule for rocket experimenters to follow is this: always assume that it will explode.",
+            "speaker": "Astronautics Magazine, 1937"
+        },
+        {
+            "tech": "Advanced Ballistics",
+            "era": "if",
+            "quote": "Our scientific power has outrun our spiritual power. We have guided missiles and misguided men.",
+            "speaker": "Martin Luther King, Jr."
+        },
+        {
+            "tech": "Future Tech",
+            "era": "if",
+            "quote": "I think we agree, the past is over.",
+            "speaker": "George W. Bush"
+        },
+        {
+            "tech": "Globalization",
+            "era": "if",
+            "quote": "The new electronic interdependence recreates the world in the image of a global village.",
+            "speaker": "Marshall McLuhan"
+        },
+        {
+            "tech": "Lasers",
+            "era": "if",
+            "quote": "The night is far spent, the day is at hand: let us therefore cast off the works of darkness, and let us put on the armor of light.",
+            "speaker": "The Holy Bible: Romans, 13:12"
+        },
+        {
+            "tech": "Mobile Tactics",
+            "era": "if",
+            "quote": "All men can see these tactics whereby I conquer, but what none can see is the strategy out of which victory is evolved.",
+            "speaker": "Sun Tzu"
+        },
+        {
+            "tech": "Nanotechnology",
+            "era": "if",
+            "quote": "The impact of nanotechnology is expected to exceed the impact that the electronics revolution has had on our lives.",
+            "speaker": "Richard Schwartz"
+        },
+        {
+            "tech": "Nuclear Fusion",
+            "era": "if",
+            "quote": "The release of atomic energy has not created a new problem. It has merely made more urgent the necessity of solving an existing one.",
+            "speaker": "Albert Einstein"
+        },
+        {
+            "tech": "Particle Physics",
+            "era": "if",
+            "quote": "Every particle of matter is attracted by or gravitates to every other particle of matter with a force inversely proportional to the squares of their distances.",
+            "speaker": "Isaac Newton"
+        },
+        {
+            "tech": "Robotics",
+            "era": "if",
+            "quote": "1. A robot may not injure a human being or, through inaction, allow a human being to come to harm.\n2. A robot must obey any orders given to it by human beings, except when such orders would conflict with the First Law.\n3. A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.",
+            "speaker": "Isaac Asimov"
+        },
+        {
+            "tech": "Satellites",
+            "era": "if",
+            "quote": "Now, somehow, in some new way, the sky seemed almost alien.",
+            "speaker": "Lyndon B. Johnson"
+        },
+        {
+            "tech": "Stealth",
+            "era": "if",
+            "quote": "Be extremely subtle, even to the point of formlessness. Be extremely mysterious, even to the point of soundlessness. Thereby you can be the director of the opponent's fate.",
+            "speaker": "Sun Tzu"
+        },
+        {
+            "tech": "Telecommunications",
+            "era": "if",
+            "quote": "The more we elaborate our means of communication, the less we communicate.",
+            "speaker": "J.B. Priestly"
+        },
+        {
+            "tech": "The Internet",
+            "era": "if",
+            "quote": "The Internet is the first thing that humanity has built that humanity doesn't understand, the largest experiment in anarchy that we have ever had.",
+            "speaker": "Eric Schmidt"
+        }
+    ]
+}
