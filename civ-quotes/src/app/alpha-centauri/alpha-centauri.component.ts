@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Quote } from './acquote';
+import { Quote } from './ac-quote';
 
 @Component({
   selector: 'app-alpha-centauri',
@@ -25,24 +25,23 @@ export class AlphaCentauriComponent implements OnInit {
   otherQuotes = new Array<Quote>();
 
   constructor() { 
-    let holdQuotes = new Array<Quote>();
-    holdQuotes = require('./ac-quotes.json').quotes;
+    const allQuotes = require('./ac-quotes.json').quotes as Array<Quote>;
 
-    this.uopQuotes = holdQuotes.filter(quote => quote.faction === "uop");
-    this.lbQuotes = holdQuotes.filter(quote => quote.faction === "lb");
-    this.sfQuotes = holdQuotes.filter(quote => quote.faction === "sf");
-    this.pfQuotes = holdQuotes.filter(quote => quote.faction === "pf");
-    this.hhQuotes = holdQuotes.filter(quote => quote.faction === "hh");
-    this.miQuotes = holdQuotes.filter(quote => quote.faction === "mi");
-    this.gsQuotes = holdQuotes.filter(quote => quote.faction === "gs");
-    this.ccQuotes = holdQuotes.filter(quote => quote.faction === "cc");
-    this.npQuotes = holdQuotes.filter(quote => quote.faction === "np");
-    this.fdQuotes = holdQuotes.filter(quote => quote.faction === "fd");
-    this.daQuotes = holdQuotes.filter(quote => quote.faction === "da");
-    this.cpQuotes = holdQuotes.filter(quote => quote.faction === "cp");
-    this.mcQuotes = holdQuotes.filter(quote => quote.faction === "mc");
-    this.muQuotes = holdQuotes.filter(quote => quote.faction === "mu");
-    this.otherQuotes = holdQuotes.filter(quote => quote.faction === "other");
+    this.uopQuotes = allQuotes.filter(quote => quote.faction === "uop");
+    this.lbQuotes = allQuotes.filter(quote => quote.faction === "lb");
+    this.sfQuotes = allQuotes.filter(quote => quote.faction === "sf");
+    this.pfQuotes = allQuotes.filter(quote => quote.faction === "pf");
+    this.hhQuotes = allQuotes.filter(quote => quote.faction === "hh");
+    this.miQuotes = allQuotes.filter(quote => quote.faction === "mi");
+    this.gsQuotes = allQuotes.filter(quote => quote.faction === "gs");
+    this.ccQuotes = allQuotes.filter(quote => quote.faction === "cc");
+    this.npQuotes = allQuotes.filter(quote => quote.faction === "np");
+    this.fdQuotes = allQuotes.filter(quote => quote.faction === "fd");
+    this.daQuotes = allQuotes.filter(quote => quote.faction === "da");
+    this.cpQuotes = allQuotes.filter(quote => quote.faction === "cp");
+    this.mcQuotes = allQuotes.filter(quote => quote.faction === "mc");
+    this.muQuotes = allQuotes.filter(quote => quote.faction === "mu");
+    this.otherQuotes = allQuotes.filter(quote => quote.faction === "other");
   }
 
   ngOnInit(): void {

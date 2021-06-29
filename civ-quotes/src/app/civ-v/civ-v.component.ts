@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TechQuote, WonderQuote } from './civv-quotes';
+import { TechQuote, WonderQuote } from './civ-v-quotes';
 
 @Component({
   selector: 'app-civ-v',

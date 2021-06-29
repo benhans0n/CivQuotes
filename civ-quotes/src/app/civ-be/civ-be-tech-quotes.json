@@ -1,0 +1,599 @@
+{
+    "quotes": [
+        {
+            "tech": "Alien Adaptation",
+            "faction": "bra",
+            "quote": "All opposing forces start to resemble each other as conflict continues.",
+            "speaker": "Rejinaldo Leonardo Pedro Bolivar de Alencar-Araripe",
+            "work": "Principles of Modern War"
+        },
+        {
+            "tech": "Alien Biology",
+            "faction": "arc",
+            "quote": "Patent your discoveries. Each new species represents an opportunity for uncontestable ownership of that lifeform.",
+            "speaker": "Suzanne Marjorie Fielding",
+            "work": "Transplanetary Management, Methods, and Resources"
+        },
+        {
+            "tech": "Alien Domestication",
+            "faction": "pau",
+            "quote": "Aurochs used to kill our ancestors, until we bred the cow. Wolves hunted us, until we bred the dog. Someday the life of this world will come at our call and carry our children upon their backs.",
+            "speaker": "Samatar Jama Barre",
+            "work": "This is Not Exile"
+        },
+        {
+            "tech": "Alien Ecology",
+            "faction": "ply",
+            "quote": "There is a historical idiom which states, 'What you don't know can't hurt you.' It does not apply to fungi.",
+            "speaker": "Hutama",
+            "work": "We are All Destined to Prosper"
+        },
+        {
+            "tech": "Alien Ethics",
+            "faction": "pau",
+            "quote": "The Golden Rule runs across all good ethics. Let's define our neighbor broadly, and spread love through the universe.",
+            "speaker": "Samatar Jama Barre",
+            "work": "This is Not Exile"
+        },
+        {
+            "tech": "Alien Evolution",
+            "faction": "pac",
+            "quote": "It frustrates me that people are still surprised when this new planet reacts violently to the presence of an offworld species with its own agenda.",
+            "speaker": "Daoming Sochua",
+            "work": "Scientific Morality, Vol. VII"
+        },
+        {
+            "tech": "Alien Genetics",
+            "faction": "o",
+            "quote": "Maid of chitin, storm and lightning, how's your garden grow? Miasma mist and beetle hiss and Siege Worms in a row.",
+            "speaker": "Traditional colonial children's rhyme",
+            "work": ""
+        },
+        {
+            "tech": "Alien Hybridization",
+            "faction": "kvp",
+            "quote": "To achieve comprehension, you must yield to assimilation. None survive without wounds. None go forward uncompromised.",
+            "speaker": "Kavitha Thakur",
+            "work": "Bhagavad 4"
+        },
+        {
+            "tech": "Alien Lifeforms",
+            "faction": "fiu",
+            "quote": "We have discovered alien life on our new world. Unsurprisingly, it grows, reproduces, dies, and cannot understand French.",
+            "speaker": "Élodie",
+            "work": "Remarques"
+        },
+        {
+            "tech": "Alien Materials",
+            "faction": "o",
+            "quote": "Floatstone beat Anansi and Coyote at poker, and won the right to leave the ground. But Floatstone forgot to ask for wings to fly, and so it just sort of hangs around feeling sorry for itself.",
+            "speaker": "The Uncle Nevercloned Stories",
+            "work": ""
+        },
+        {
+            "tech": "Alien Sciences",
+            "faction": "pau",
+            "quote": "When you meet a new neighbor, you greet her with heartfelt courtesy. So also will we get to know our new alien neighbors.",
+            "speaker": "Samatar Jama Barre",
+            "work": "This is Not Exile"
+        },
+        {
+            "tech": "Artificial Evolution",
+            "faction": "ply",
+            "quote": "If you want a better deal with evolution, cut out the middleman.",
+            "speaker": "Hutama",
+            "work": "We are All Destined to Prosper"
+        },
+        {
+            "tech": "Artificial Intelligence",
+            "faction": "pac",
+            "quote": "Cognition in the human brain should not be of elevated status because it is implemented in cells instead of silicon.",
+            "speaker": "Daoming Sochua",
+            "work": "Scientific Morality, Vol II"
+        },
+        {
+            "tech": "Astrodynamics",
+            "faction": "pau",
+            "quote": "I never cease to find beauty in the fact that even though we walk among the stars, we still hold them in awe.",
+            "speaker": "Samatar Jama Barre",
+            "work": "This is Not Exile"
+        },
+        {
+            "tech": "Augmentation",
+            "faction": "sla",
+            "quote": "Strong machines rally weak flesh when the spirit is willing!",
+            "speaker": "Vadim Kozlov",
+            "work": "Axioms from the Minutes of the Central Directorate"
+        },
+        {
+            "tech": "Autogyros",
+            "faction": "bra",
+            "quote": "Advocates of maneuver warfare must not fall into the trap of loving maneuver for its own sake.",
+            "speaker": "Rejinaldo Leonardo Pedro Bolivar de Alencar-Araripe",
+            "work": "Principles of Modern War"
+        },
+        {
+            "tech": "Autonomous Systems",
+            "faction": "pac",
+            "quote": "When provided with adequate data and field of view, anyone can predict the future.",
+            "speaker": "Daoming Sochua",
+            "work": "Scientific Morality Vol.IX"
+        },
+        {
+            "tech": "Ballistic LEV",
+            "faction": "bra",
+            "quote": "We don't need better bullets. We need a better way to deliver them into the bodies of our enemies.",
+            "speaker": "Rejinaldo Leonardo Pedro Bolivar de Alencar-Araripe",
+            "work": "Principles of Modern War"
+        },
+        {
+            "tech": "Ballistics",
+            "faction": "bra",
+            "quote": "Oppression, chaos, and death may come from the barrel of a gun... but so, occasionally, does victory.",
+            "speaker": "Rejinaldo Leonardo Pedro Bolivar de Alencar-Araripe",
+            "work": "Principles of Modern War"
+        },
+        {
+            "tech": "Biochemistry",
+            "faction": "ply",
+            "quote": "Biochemistry on this world is like a good contract; it looks straightforward but there are some real devils in the details.",
+            "speaker": "Hutama",
+            "work": "We Shall All Prosper"
+        },
+        {
+            "tech": "Bioengineering",
+            "faction": "o",
+            "quote": "If it's a sin to 'play God,' then why would He leave His tools lying around?",
+            "speaker": "The Uncle Nevercloned Stories",
+            "work": ""
+        },
+        {
+            "tech": "Biology",
+            "faction": "pau",
+            "quote": "In your veins runs iron made from the heart of a long-dead star. Such does the universe love life.",
+            "speaker": "Samatar Jama Barre",
+            "work": "This is Not Exile"
+        },
+        {
+            "tech": "Biometallurgy",
+            "faction": "fiu",
+            "quote": "Few have mastered the art of keeping a garden in perfect shape, especially since we have started growing titanium.",
+            "speaker": "Élodie",
+            "work": ""
+        },
+        {
+            "tech": "Bionics",
+            "faction": "o",
+            "quote": "If you listen at night, you can sometimes hear Casey Jones, the Wabash Cannonball, with his iron legs still running a mile a minute!",
+            "speaker": "The Uncle Nevercloned Stories",
+            "work": "Remarques"
+        },
+        {
+            "tech": "Biospheres",
+            "faction": "pau",
+            "quote": "We have forgotten that when nature goes about her work, she sings to herself. Have you heard the song of this world?",
+            "speaker": "Samatar Jama Barre",
+            "work": "This is Not Exile"
+        },
+        {
+            "tech": "Chemistry",
+            "faction": "ply",
+            "quote": "A four-billion year old world's worth of resources, shared among a handful of people. We're gonna make a fortune here!",
+            "speaker": "Hutama",
+            "work": "We are All Destined to Prosper"
+        },
+        {
+            "tech": "Civil Support",
+            "faction": "ply",
+            "quote": "You don't win an argument until the other fella thinks your ideas were his the whole time.",
+            "speaker": "Hutama",
+            "work": "We Shall All Prosper"
+        },
+        {
+            "tech": "Climate Control",
+            "faction": "sla",
+            "quote": "Stop talking about the weather and do something about it for once!",
+            "speaker": "Vadim Kozlov",
+            "work": "Axioms from the Minutes of the Central Directorate"
+        },
+        {
+            "tech": "Cognition",
+            "faction": "ply",
+            "quote": "I think I know what you're thinking, and you think you know what I know about your thinking, but you're wrong.",
+            "speaker": "Hutama",
+            "work": "We are All Destined to Prosper"
+        },
+        {
+            "tech": "Collaborative Thought",
+            "faction": "fiu",
+            "quote": "Of course consensus is uninspiring and trite. However, inspiring, original ideas are often tragically wrong-headed.",
+            "speaker": "Élodie",
+            "work": "Remarques"
+        },
+        {
+            "tech": "Communications",
+            "faction": "fiu",
+            "quote": "One of the finest shadings of communication is the difference between 'I didn't understand that,' and 'I understand that, but I don't care.'",
+            "speaker": "Élodie",
+            "work": "Remarques"
+        },
+        {
+            "tech": "Computing",
+            "faction": "ply",
+            "quote": "I love computers because they automate the tedious stuff and give us more time for important things like market manipulation.",
+            "speaker": "Hutama",
+            "work": "We are All Destined to Prosper"
+        },
+        {
+            "tech": "Cybernetics",
+            "faction": "pac",
+            "quote": "The fact that human beings were able to get to new worlds with the  obtuse computer sciences of the Seeding is simultaneously impressive and embarrassing.",
+            "speaker": "Daoming Sochua",
+            "work": "Scientific Morality, Vol I"
+        },
+        {
+            "tech": "Dark Networks",
+            "faction": "kvp",
+            "quote": "I exhale into your left ear the secret of life. I inhale through your right ear to remove the thought. As it crosses your mind, it leaves no trace. You walk on, ignorant of your loss.",
+            "speaker": "Kavitha Thakur",
+            "work": "Kali Meditation"
+        },
+        {
+            "tech": "Defense Grid",
+            "faction": "fie",
+            "quote": "Omnipresent and effective security measures make even the worst neighbors tolerable.",
+            "speaker": "Élodie",
+            "work": "Remarques"
+        },
+        {
+            "tech": "Designer Lifeforms",
+            "faction": "pac",
+            "quote": "If you can't build a better mousetrap, build a better mouse.",
+            "speaker": "Daoming Sochua",
+            "work": "Scientific Morality Vol.I"
+        },
+        {
+            "tech": "Ecology",
+            "faction": "o",
+            "quote": "When Coyote learned he was the only one of his kind on the new planet, his howl echoed through the rifts and off the distant hills.",
+            "speaker": "The Uncle Nevercloned Stories",
+            "work": ""
+        },
+        {
+            "tech": "Engineering",
+            "faction": "sla",
+            "quote": "Instruct the children not to dream of toys or sweets. Instruct them to dream of infrastructure.",
+            "speaker": "Vadim Kozlov",
+            "work": "Axioms from the Minutes of the Central Directorate"
+        },
+        {
+            "tech": "Euthenics",
+            "faction": "fiu",
+            "quote": "The secret to being happy is to delight in the absurd, repress the irritating, and keep good wine close at hand.",
+            "speaker": "Élodie",
+            "work": "Remarques"
+        },
+        {
+            "tech": "Exotic Matter",
+            "faction": "ply",
+            "quote": "If I could rewrite the laws of the universe, I'd put a few loopholes in there for myself.",
+            "speaker": "Hutama",
+            "work": "We are All Destined to Prosper"
+        },
+        {
+            "tech": "Fabrication",
+            "faction": "pac",
+            "quote": "A useful heuristic for determining metacognition is to ask: Does this organism merely create tools? Or does it create tools which create new tools?",
+            "speaker": "Daoming Sochua",
+            "work": "Scientific Morality, Vol VII"
+        },
+        {
+            "tech": "Field Theory",
+            "faction": "pac",
+            "quote": "This is demonstrated by taking any set of arbitrary-dimensional fields and describing them axiomatically. The proof is trivial and left to the student.",
+            "speaker": "Daoming Sochua",
+            "work": "Scientific Morality, Vol. VI"
+        },
+        {
+            "tech": "Genetic Design",
+            "faction": "kvp",
+            "quote": "Do you change the steps in the dance of life? Or does the dance of life change your step?",
+            "speaker": "Kavitha Thakur",
+            "work": "Bhagavad 4"
+        },
+        {
+            "tech": "Genetic Mapping",
+            "faction": "ply",
+            "quote": "If you're going to rejigger an organism's genotype, you should give it the courtesy of reading its manual first.",
+            "speaker": "Hutama",
+            "work": "We are All Destined to Prosper"
+        },
+        {
+            "tech": "Genetics",
+            "faction": "bra",
+            "quote": "You go to war with the soldiers you have. Make sure those are the soldiers you want.",
+            "speaker": "Rejinaldo Leonardo Pedro Bolivar de Alencar-Araripe",
+            "work": "Principles of Modern War"
+        },
+        {
+            "tech": "Geophysics",
+            "faction": "kvp",
+            "quote": "We, the dust of a dying world, must listen to the stones of a living one.",
+            "speaker": "Kavitha Thakur",
+            "work": "The Exodite Sutra"
+        },
+        {
+            "tech": "Geoscaping",
+            "faction": "o",
+            "quote": "The five oceans of Earth are: the Pacific, the Atlantic, the Titanic, the Arctic and the Indian.",
+            "speaker": "Ganesh Edmin",
+            "work": "Lists of Prehistory"
+        },
+        {
+            "tech": "Habitation",
+            "faction": "o",
+            "quote": "We once believed that our destiny was controlled by the Gods. As we learned more about nature, we changed our minds. Now that we control our destiny, let us hope they never change back.",
+            "speaker": "Anonymous",
+            "work": ""
+        },
+        {
+            "tech": "Human Conservation",
+            "faction": "pau",
+            "quote": "Forgetting the sacrifice made by our brothers and sisters so we could live on this new world is shameful. Live your life in remembrance of the suffering we few left behind.",
+            "speaker": "Samatar Jama Barre",
+            "work": "This is Not Exile"
+        },
+        {
+            "tech": "Human Idealism",
+            "faction": "arc",
+            "quote": "The only reason you are here is because a committee picked who to send. Ponder why they chose you instead of their own self-interest.",
+            "speaker": "Suzanne Marjorie Fielding",
+            "work": "Transplanetary Management, Methods, and Resources"
+        },
+        {
+            "tech": "Hypercomputing",
+            "faction": "pac",
+            "quote": "Good AI prevents bad operators from using computers to conduct useless tasks at high speeds to many degrees of vacuous precision.",
+            "speaker": "Daoming Sochua",
+            "work": "Scientific Morality, Vol VIII"
+        },
+        {
+            "tech": "Hyperconductors",
+            "faction": "arc",
+            "quote": "Resistance, in regards to electrical conductivity, is undesirable. In regards to hyperconductivity, it is futile.",
+            "speaker": "Suzanne Marjorie Fielding",
+            "work": "Transplanetary Management, Methods, and Resources"
+        },
+        {
+            "tech": "Industrial Ecology",
+            "faction": "sla",
+            "quote": "The laws of nature are weaker than planning, resolve, purpose, and will.",
+            "speaker": "Vadim Kozlov",
+            "work": "Axioms from the Minutes of the Central Directorate"
+        },
+        {
+            "tech": "Mechatronics",
+            "faction": "ply",
+            "quote": "Machines can be journeymen to machine apprentices, as long as we are still the masters.",
+            "speaker": "Hutama",
+            "work": "We are All Destined to Prosper"
+        },
+        {
+            "tech": "Metamaterials",
+            "faction": "ply",
+            "quote": "If you've got a particle whose properties violate the laws of physics, either we don't understand the laws of physics or there's something special about that particle. Tomayto, Tomahto.",
+            "speaker": "Hutama",
+            "work": "We are All Destined to Prosper"
+        },
+        {
+            "tech": "Mobile LEV",
+            "faction": "bra",
+            "quote": "The best way to survive a firefight is to be elsewhere when your enemy starts one.",
+            "speaker": "Rejinaldo Leonardo Pedro Bolivar de Alencar-Araripe",
+            "work": "Principles of Modern War"
+        },
+        {
+            "tech": "Nanorobotics",
+            "faction": "pac",
+            "quote": "Once you reduce robotics and programming to molecular manipulation then it becomes a simple affair, suitable to the lower percentile intellects.",
+            "speaker": "Daoming Sochua",
+            "work": "Scientific Morality Vol. IX"
+        },
+        {
+            "tech": "Nanotechnology",
+            "faction": "pau",
+            "quote": "Nothing is too small; nobody is insignificant. The biggest trees grow from the smallest seeds.",
+            "speaker": "Samatar Jama Barre",
+            "work": "This is Not Exile"
+        },
+        {
+            "tech": "Neural Uploading",
+            "faction": "pac",
+            "quote": "If you replicate the neurological activity of an individual on a computer, for all intents and purposes, the computer is that individual.",
+            "speaker": "Daoming Sochua",
+            "work": "Scientific Morality, Vol III"
+        },
+        {
+            "tech": "Orbital Automation",
+            "faction": "sla",
+            "quote": "The trend towards automation speaks to our nature. We create that which may persist without us -- In this we are strong. We depend on that which requires nothing of us in return -- In this we are flawed.",
+            "speaker": "Vadim Kozlov",
+            "work": "Axioms from the Minutes of the Central Directorate"
+        },
+        {
+            "tech": "Orbital Networks",
+            "faction": "kvp",
+            "quote": "Seraphim, Cherubim, Devas, Fravashi, and Yakshas, extend thy arms to cover us, hear us and convey our prayer to the Lord Creator.",
+            "speaker": "Kavitha Thakur",
+            "work": "Daily Devotionals for Comm Operators"
+        },
+        {
+            "tech": "Organics",
+            "faction": "arc",
+            "quote": "Life is an inherently depreciating asset.",
+            "speaker": "Suzanne Marjorie Fielding",
+            "work": "Transplanetary Management, Methods, and Resources"
+        },
+        {
+            "tech": "Photosystems",
+            "faction": "kvp",
+            "quote": "Like the sun, I shine upon my disciples. Like the flowers, they turn to me and blossom.",
+            "speaker": "Kavitha Thakur",
+            "work": "Bhagavad 4"
+        },
+        {
+            "tech": "Physics",
+            "faction": "pac",
+            "quote": "Consider a simple problem, such as navigation in a spaceship approaching lightspeed...",
+            "speaker": "Daoming Sochua",
+            "work": "Scientific Morality Vol. I"
+        },
+        {
+            "tech": "Pioneering",
+            "faction": "sla",
+            "quote": "The universe is either in progress or in entropy. We choose progress!",
+            "speaker": "Vadim Kozlov",
+            "work": "Axioms from the Minutes of the Central Directorate"
+        },
+        {
+            "tech": "Planetary Engineering",
+            "faction": "sla",
+            "quote": "We can always trade space for time. We have surplus space and not enough time.",
+            "speaker": "Vadim Kozlov",
+            "work": "Axioms from the Minutes of the Central Directorate"
+        },
+        {
+            "tech": "Planetary Survey",
+            "faction": "arc",
+            "quote": "All planets possess inherent value and establishing the exact dollar value of the property should be a priority.",
+            "speaker": "Suzanne Marjorie Fielding",
+            "work": "Transplanetary Management, Methods, and Resources"
+        },
+        {
+            "tech": "Power Systems",
+            "faction": "pac",
+            "quote": "The necessity of an artificial power source is a myth. An ecosystem powers itself. When humanity learns to live in harmony with its surroundings, we will reap the same benefits of power.",
+            "speaker": "Daoming Sochua",
+            "work": "Scientific Morality Vol.VII"
+        },
+        {
+            "tech": "Protogenetics",
+            "faction": "ply",
+            "quote": "The easiest way to win the game is to write the rules.",
+            "speaker": "Hutama",
+            "work": "We Shall All Prosper"
+        },
+        {
+            "tech": "Robotics",
+            "faction": "sla",
+            "quote": "Robots do not complain, question, or rest, which makes them good role models for the rest of you.",
+            "speaker": "Vadim Kozlov",
+            "work": "Axioms from the Minutes of the Central Directorate"
+        },
+        {
+            "tech": "Seismic Induction",
+            "faction": "o",
+            "quote": "John Henry pulled out two 5-pound nano-oscillators, one for each side of the fault. They shook and shook, the earth trembling everywhere. Half an hour later, John Henry had shook himself up a mountain, while the industrial engineers had only managed a tiny hill.",
+            "speaker": "The Uncle Nevercloned Stories",
+            "work": ""
+        },
+        {
+            "tech": "Servomachinery",
+            "faction": "sla",
+            "quote": "Morality is measured by the progress of our work. A machine whose works bring us more progress is more moral than a lesser machine.",
+            "speaker": "Vadim Kozlov",
+            "work": "Axioms from the Minutes of the Central Directorate"
+        },
+        {
+            "tech": "Social Dynamics",
+            "faction": "fiu",
+            "quote": "Culture and fashion are wracked by pointless ideological wars. Whichever ideology wins immediately becomes cliché.",
+            "speaker": "Élodie",
+            "work": "Remarques"
+        },
+        {
+            "tech": "Surrogacy",
+            "faction": "arc",
+            "quote": "Computational and human resources should never have been separate strategic assets.",
+            "speaker": "Suzanne Marjorie Fielding",
+            "work": "Transplanetary Management, Methods, and Resources"
+        },
+        {
+            "tech": "Swarm Intelligence",
+            "faction": "bra",
+            "quote": "Command decisions are not made on a single data point. They are the result of a thousand data points crystallized in a single moment.",
+            "speaker": "Rejinaldo Leonardo Pedro Bolivar de Alencar-Araripe",
+            "work": "Principles of Modern War"
+        },
+        {
+            "tech": "Swarm Robotics",
+            "faction": "arc",
+            "quote": "The capacity for stupid agents to produce smart outcomes has a lesson for the manager. Your employees do not need to know very much for you to get the desired results.",
+            "speaker": "Suzanne Marjorie Fielding",
+            "work": "Transplanetary Management, Methods, and Resources"
+        },
+        {
+            "tech": "Synergetics",
+            "faction": "arc",
+            "quote": "What is best for the shareholders of the American Reclamation Corporation? That's what's best for you.",
+            "speaker": "Suzanne Marjorie Fielding",
+            "work": "Transplanetary Management, Methods, and Resources"
+        },
+        {
+            "tech": "Synthetic Thought",
+            "faction": "o",
+            "quote": "Turingschande: Noun. Shame felt upon discovering one has mistaken an artificial intelligence for a close relation.",
+            "speaker": "Dictionary of Colonial Idioms v.1.39",
+            "work": ""
+        },
+        {
+            "tech": "Tactical LEV",
+            "faction": "bra",
+            "quote": "The best troops are young enough to relish combat and old enough to prefer not walking into it.",
+            "speaker": "Rejinaldo Leonardo Pedro Bolivar de Alencar-Araripe",
+            "work": "Principles of Modern War"
+        },
+        {
+            "tech": "Tactical Robotics",
+            "faction": "bra",
+            "quote": "It has been said, 'The point of war is not to die for your country, but to make your enemy die for theirs'; a goal which is more readily accomplished if your side never has to take the field.",
+            "speaker": "Rejinaldo Leonardo Pedro Bolivar de Alencar-Araripe",
+            "work": "Principles of Modern War"
+        },
+        {
+            "tech": "Terraforming",
+            "faction": "sla",
+            "quote": "Yes, the world is beautiful and unspoiled. But it is wrong. Correct it at once.",
+            "speaker": "Vadim Kozlov",
+            "work": "Axioms from the Minutes of the Central Directorate"
+        },
+        {
+            "tech": "Tissue Engineering",
+            "faction": "pac",
+            "quote": "Natural selection is an effective process for organic optimization, but is too slow to be truly useful.",
+            "speaker": "Daoming Sochua",
+            "work": "Scientific Morality Vol. III"
+        },
+        {
+            "tech": "Transcendental Math",
+            "faction": "pac",
+            "quote": "Mathematical proof is the only foundation for ethics that I can respect. Progress in mathematics is progress in morality.",
+            "speaker": "Daoming Sochua",
+            "work": "Scientific Morality Vol. I"
+        },
+        {
+            "tech": "Transgenics",
+            "faction": "pac",
+            "quote": "Genetics is chemistry, and chemistry is a tool, and a tool is only as useful as you make it.",
+            "speaker": "Daoming Sochua",
+            "work": "Scientific Morality Vol. IV"
+        },
+        {
+            "tech": "Vertical Farming",
+            "faction": "ply",
+            "quote": "In the case of the skyscraper, which has existed since the 19th century, it was not the concept which needed to evolve, but rather the minds of those who used it.",
+            "speaker": "Hutama",
+            "work": "We are All Destined to Prosper"
+        }
+    ]
+}

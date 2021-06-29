@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Quote } from './civivquote';
+import { Quote } from './civ-iv-quote';
 
 @Component({
   selector: 'app-civ-iv',
@@ -15,15 +15,14 @@ export class CivIvComponent implements OnInit {
   moQuotes = new Array<Quote>();
 
   constructor() {
-    let holdQuotes = new Array<Quote>();
-    holdQuotes = require('./civ-iv-quotes.json').quotes;
+    const allQuotes = require('./civ-iv-quotes.json').quotes as Array<Quote>;
 
-    this.aQuotes = holdQuotes.filter(quote => quote.era === "a");
-    this.cQuotes = holdQuotes.filter(quote => quote.era === "c");
-    this.mQuotes = holdQuotes.filter(quote => quote.era === "m");
-    this.rQuotes = holdQuotes.filter(quote => quote.era === "r");
-    this.iQuotes = holdQuotes.filter(quote => quote.era === "i");
-    this.moQuotes = holdQuotes.filter(quote => quote.era === "mo");
+    this.aQuotes = allQuotes.filter(quote => quote.era === "a");
+    this.cQuotes = allQuotes.filter(quote => quote.era === "c");
+    this.mQuotes = allQuotes.filter(quote => quote.era === "m");
+    this.rQuotes = allQuotes.filter(quote => quote.era === "r");
+    this.iQuotes = allQuotes.filter(quote => quote.era === "i");
+    this.moQuotes = allQuotes.filter(quote => quote.era === "mo");
    }
 
   ngOnInit(): void {
