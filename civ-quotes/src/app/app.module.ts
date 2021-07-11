@@ -30,12 +30,12 @@ import { CivViComponent } from './civ-vi/civ-vi.component';
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-      { path: '', redirectTo: 'alpha-centauri', pathMatch: 'full' },
-      { path: 'alpha-centauri', component: AlphaCentauriComponent },
-      { path: 'civ-iv', component: CivIvComponent },
-      { path: 'civ-v', component: CivVComponent },
-      { path: 'civ-be', component: CivBeComponent },
-      { path: 'civ-vi', component: CivViComponent }
+      { path: '', redirectTo: 'alpha-centauri', pathMatch: 'full', data: {title: 'Civ Quotes'} },
+      { path: 'alpha-centauri', component: AlphaCentauriComponent, data: {title: 'Sid Meier\'s Alpha Centauri Quotes'} },
+      { path: 'civ-iv', component: CivIvComponent, data: {title: 'Civilization IV Quotes'} },
+      { path: 'civ-v', component: CivVComponent, data: {title: 'Civilization V Quotes'} },
+      { path: 'civ-be', component: CivBeComponent, data: {title: 'Civilization: Beyond Earth Quotes'} },
+      { path: 'civ-vi', component: CivViComponent, data: {title: 'Civilization VI Quotes'} }
     ]),
     AppRoutingModule,
     BrowserAnimationsModule,
