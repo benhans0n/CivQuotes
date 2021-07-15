@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Quote } from './ac-quote';
 
 @Component({
@@ -6,8 +6,8 @@ import { Quote } from './ac-quote';
   templateUrl: './alpha-centauri.component.html',
   styleUrls: ['./alpha-centauri.component.css']
 })
-export class AlphaCentauriComponent implements OnInit {
-  
+export class AlphaCentauriComponent {
+
   uopQuotes = new Array<Quote>();
   lbQuotes = new Array<Quote>();
   sfQuotes = new Array<Quote>();
@@ -24,9 +24,8 @@ export class AlphaCentauriComponent implements OnInit {
   muQuotes = new Array<Quote>();
   otherQuotes = new Array<Quote>();
 
-  constructor() { 
+  constructor() {
     const allQuotes = require('./ac-quotes.json').quotes as Array<Quote>;
-
     this.uopQuotes = allQuotes.filter(quote => quote.faction === "uop");
     this.lbQuotes = allQuotes.filter(quote => quote.faction === "lb");
     this.sfQuotes = allQuotes.filter(quote => quote.faction === "sf");
@@ -43,10 +42,4 @@ export class AlphaCentauriComponent implements OnInit {
     this.muQuotes = allQuotes.filter(quote => quote.faction === "mu");
     this.otherQuotes = allQuotes.filter(quote => quote.faction === "other");
   }
-
-  ngOnInit(): void {
-  }
 }
-
-
-

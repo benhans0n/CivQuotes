@@ -1,12 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import { TechQuote, WonderQuote } from './civ-v-quotes';
+import { Component } from '@angular/core';
+import { EraQuote, TechQuote, WonderQuote } from './civ-v-quotes';
 
 @Component({
   selector: 'app-civ-v',
   templateUrl: './civ-v.component.html',
   styleUrls: ['./civ-v.component.css']
 })
-export class CivVComponent implements OnInit {
+export class CivVComponent {
   aTechQuotes = new Array<TechQuote>();
   cTechQuotes = new Array<TechQuote>();
   mTechQuotes = new Array<TechQuote>();
@@ -25,9 +25,15 @@ export class CivVComponent implements OnInit {
   atWonderQuotes = new Array<WonderQuote>();
   ifWonderQuotes = new Array<WonderQuote>();
 
+  cEraQuotes = new Array<EraQuote>();
+  mEraQuotes = new Array<EraQuote>();
+  rEraQuotes = new Array<EraQuote>();
+  iEraQuotes = new Array<EraQuote>();
+  moEraQuotes = new Array<EraQuote>();
+  fEraQuotes = new Array<EraQuote>();
+
   constructor() {
     const allTechQuotes = require('./civ-v-tech-quotes.json').quotes as Array<TechQuote>;
-
     this.aTechQuotes = allTechQuotes.filter(quote => quote.era === "a");
     this.cTechQuotes = allTechQuotes.filter(quote => quote.era === "c");
     this.mTechQuotes = allTechQuotes.filter(quote => quote.era === "m");
@@ -37,7 +43,7 @@ export class CivVComponent implements OnInit {
     this.atTechQuotes = allTechQuotes.filter(quote => quote.era === "at");
     this.ifTechQuotes = allTechQuotes.filter(quote => quote.era === "if");
 
-    const allWonderQuotes= require('./civ-v-wonder-quotes.json').quotes as Array<WonderQuote>;
+    const allWonderQuotes = require('./civ-v-wonder-quotes.json').quotes as Array<WonderQuote>;
     this.aWonderQuotes = allWonderQuotes.filter(quote => quote.era === "a");
     this.cWonderQuotes = allWonderQuotes.filter(quote => quote.era === "c");
     this.mWonderQuotes = allWonderQuotes.filter(quote => quote.era === "m");
@@ -46,8 +52,13 @@ export class CivVComponent implements OnInit {
     this.moWonderQuotes = allWonderQuotes.filter(quote => quote.era === "mo");
     this.atWonderQuotes = allWonderQuotes.filter(quote => quote.era === "at");
     this.ifWonderQuotes = allWonderQuotes.filter(quote => quote.era === "if");
-   }
 
-  ngOnInit(): void {
+    const allEraQuotes = require('./civ-v-era-quotes.json').quotes as Array<EraQuote>;
+    this.cEraQuotes = allEraQuotes.filter(quote => quote.era === "c");
+    this.mEraQuotes = allEraQuotes.filter(quote => quote.era === "m");
+    this.rEraQuotes = allEraQuotes.filter(quote => quote.era === "r");
+    this.iEraQuotes = allEraQuotes.filter(quote => quote.era === "i");
+    this.moEraQuotes = allEraQuotes.filter(quote => quote.era === "mo");
+    this.fEraQuotes = allEraQuotes.filter(quote => quote.era === "f");
   }
 }

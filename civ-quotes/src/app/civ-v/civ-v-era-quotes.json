@@ -1,0 +1,94 @@
+{
+    "quotes": [
+        {
+            "era": "c",
+            "quote": "Proud is the spirit of Zeus-fostered kings - their honor comes from Zeus, and Zeus, god of council, loves them.",
+            "speaker": "Homer"
+        },
+        {
+            "era": "c",
+            "quote": "He who knows others is wise;\nHe who knows himself is enlightened.",
+            "speaker": "Lao-tzu"
+        },
+        {
+            "era": "c",
+            "quote": "The king's might is greater than human, and his arm is very long.",
+            "speaker": "Herodotus"
+        },
+        {
+            "era": "m",
+            "quote": "An emperor is subject to no one but God and Justice.",
+            "speaker": "Frederick I, Barbarossa"
+        },
+        {
+            "era": "m",
+            "quote": "This life of man appears for a short space, but of what went before, or what is to follow, we are utterly ignorant.",
+            "speaker": "Venerable Bede"
+        },
+        {
+            "era": "m",
+            "quote": "The voice of the people is the voice of God.",
+            "speaker": "Alcuin"
+        },
+        {
+            "era": "r",
+            "quote": "Whoever desires to found a state and give it laws, must start with assuming that all men are bad and ever ready to display their vicious nature, whenever they may find occasion for it.",
+            "speaker": "Niccolo Machiavelli"
+        },
+        {
+            "era": "r",
+            "quote": "In the country of the blind, the one-eyed man is king.",
+            "speaker": "Desiderius Erasmus"
+        },
+        {
+            "era": "r",
+            "quote": "Do you not know, my son, with what little understanding the world is ruled?",
+            "speaker": "Pope Julius III"
+        },
+        {
+            "era": "i",
+            "quote": "We admit of no government by divine right… the only legitimate right to govern is an express grant of power from the governed.",
+            "speaker": "William Henry Harrison"
+        },
+        {
+            "era": "i",
+            "quote": "If you pick up a starving dog and make him prosperous, he will not bite you. This is the principal difference between a dog and a man.",
+            "speaker": "Mark Twain"
+        },
+        {
+            "era": "i",
+            "quote": "The day of small nations has long passed away. The day of Empires has come.",
+            "speaker": "Joseph Chamberlain"
+        },
+        {
+            "era": "mo",
+            "quote": "The only thing we have to fear is fear itself.",
+            "speaker": "Franklin Delano Roosevelt"
+        },
+        {
+            "era": "mo",
+            "quote": "A single death is a tragedy; a million deaths is a statistic.",
+            "speaker": "Joseph Stalin"
+        },
+        {
+            "era": "mo",
+            "quote": "Mr. Gorbachev, tear down this wall!",
+            "speaker": "Ronald Reagan"
+        },
+        {
+            "era": "f",
+            "quote": "For tomorrow belongs to the people who prepare for it today.",
+            "speaker": "African proverb"
+        },
+        {
+            "era": "f",
+            "quote": "The future is not what it used to be.",
+            "speaker": "Paul Valery"
+        },
+        {
+            "era": "f",
+            "quote": "I never think about the future. It comes soon enough.",
+            "speaker": "Albert Einstein"
+        }
+    ]
+}

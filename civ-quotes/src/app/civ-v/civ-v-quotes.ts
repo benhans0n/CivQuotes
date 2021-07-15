@@ -18,8 +18,20 @@ export class WonderQuote {
     quote: string;
     speaker: string;
 
-    constructor(wonder:string,era:string, quote:string, speaker:string) {
+    constructor(wonder:string, era:string, quote:string, speaker:string) {
         this.wonder = wonder;
+        this.era = era;
+        this.quote = quote;
+        this.speaker = speaker;
+    }
+}
+
+export class EraQuote {
+    era: string;
+    quote: string;
+    speaker: string;
+
+    constructor(era:string, quote:string, speaker:string) {
         this.era = era;
         this.quote = quote;
         this.speaker = speaker;

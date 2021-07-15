@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { TechQuote } from './civ-be-quotes';
 
 @Component({
@@ -6,7 +6,7 @@ import { TechQuote } from './civ-be-quotes';
   templateUrl: './civ-be.component.html',
   styleUrls: ['./civ-be.component.css']
 })
-export class CivBeComponent implements OnInit {
+export class CivBeComponent {
   arcQuotes = new Array<TechQuote>();
   braQuotes = new Array<TechQuote>();
   fiuQuotes = new Array<TechQuote>();
@@ -17,9 +17,8 @@ export class CivBeComponent implements OnInit {
   slaQuotes = new Array<TechQuote>();
   otherQuotes = new Array<TechQuote>();
 
-  constructor() { 
+  constructor() {
     const allTechQuotes = require('./civ-be-tech-quotes.json').quotes as Array<TechQuote>;
-
     this.arcQuotes = allTechQuotes.filter(quote => quote.faction === "arc");
     this.braQuotes = allTechQuotes.filter(quote => quote.faction === "bra");
     this.fiuQuotes = allTechQuotes.filter(quote => quote.faction === "fiu");
@@ -29,8 +28,5 @@ export class CivBeComponent implements OnInit {
     this.plyQuotes = allTechQuotes.filter(quote => quote.faction === "ply");
     this.slaQuotes = allTechQuotes.filter(quote => quote.faction === "sla");
     this.otherQuotes = allTechQuotes.filter(quote => quote.faction === "o");
-  }
-
-  ngOnInit(): void {
   }
 }
