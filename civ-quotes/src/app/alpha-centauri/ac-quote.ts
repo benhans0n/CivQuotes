@@ -5,7 +5,7 @@ export class Quote {
     work: string;
     flavor_text: string;
 
-    constructor(faction:string, quote:string, speaker:string, work:string, flavor_text:string) {
+    constructor(faction: string, quote: string, speaker: string, work: string, flavor_text: string) {
         this.faction = faction;
         this.quote = quote;
         this.speaker = speaker;

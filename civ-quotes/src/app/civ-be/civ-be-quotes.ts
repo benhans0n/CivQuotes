@@ -5,7 +5,7 @@ export class TechQuote {
     speaker: string;
     work: string;
 
-    constructor(tech:string, faction: string, quote:string, speaker:string, work:string) {
+    constructor(tech: string, faction: string, quote: string, speaker: string, work: string) {
         this.tech = tech;
         this.faction = faction;
         this.quote = quote;
@@ -21,7 +21,7 @@ export class WonderQuote {
     speaker: string;
     work: string;
 
-    constructor(wonder:string, faction: string, quote:string, speaker:string, work:string) {
+    constructor(wonder: string, faction: string, quote: string, speaker: string, work: string) {
         this.wonder = wonder;
         this.faction = faction;
         this.quote = quote;
@@ -37,7 +37,7 @@ export class AffinityQuote {
     speaker: string;
     work: string;
 
-    constructor(affinity:string, level:string, quote:string, speaker:string, work: string) {
+    constructor(affinity: string, level: string, quote: string, speaker: string, work: string) {
         this.affinity = affinity;
         this.level = level;
         this.quote = quote;

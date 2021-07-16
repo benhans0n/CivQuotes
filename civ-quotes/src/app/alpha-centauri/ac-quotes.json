@@ -608,14 +608,14 @@
             "speaker": "CEO Nwabudike Morgan",
             "work": "\"The Centauri Monopoly\"",
             "flavor_text": "(Would have accompanied discovery of the deleted \"Global Energy Theory\" tech)"
-        },    
+        },
         {
             "faction": "mi",
             "quote": "Planet's Primary, Alpha Centauri A, blasts unimaginable quantities of energy into space each instant, and virtually every joule of it is wasted entirely. Incomprehensible riches can be ours if we can but stretch our arms wide enough to dip from this eternal river of wealth.",
             "speaker": "CEO Nwabudike Morgan",
             "work": "\"The Centauri Monopoly\"",
             "flavor_text": "(Accompanies first construction of the Nessus Mining Station orbital improvement)"
-        },    
+        },
         {
             "faction": "mi",
             "quote": "We estimate the during the next mission century most of Planet's industries will be moved off-planet to Nessus Prime and other orbital facilities. Many of our industries will benefit greatly from the low gravity environments available in space, particularly those involving genetically engineered microbes.",
@@ -636,14 +636,14 @@
             "speaker": "CEO Nwabudike Morgan",
             "work": "\"The Centauri Monopoly\"",
             "flavor_text": "(Accompanies first construction of the Quantum Converter base facility)"
-        },    
+        },
         {
             "faction": "mi",
             "quote": "It will happen, and it will happen in our lifetimes. Fusion Power isn't just the future. Fusion Power is now.",
             "speaker": "T. M. Morgan-Reilly",
             "work": "Morgan Metagenics",
             "flavor_text": "(Accompanies first construction of the Fusion Lab base facility)"
-        },    
+        },
         {
             "faction": "mi",
             "quote": "What goes up...better doggone well stay up.",
@@ -664,14 +664,14 @@
             "speaker": "CEO Nwabudike Morgan",
             "work": "MorganLink 3DVision Live Interview",
             "flavor_text": "(Accompanies discovery of the \"Superconductor\" tech)"
-        },    
+        },
         {
             "faction": "mi",
             "quote": "Yes, yes, we've all heard the philosophers babble about \"oneness\" being \"beautiful\" and \"holy\". But let me tell you that this kind of oneness certainly isn't pretty and if you're not careful it will scare the bejeezus out of you.",
             "speaker": "Anonymous Lab Technician",
             "work": "MorganLink 3DVision Live Interview",
             "flavor_text": "(Accompanies discovery of the \"Singularity Mechanics\" tech)"
-        },    
+        },
         {
             "faction": "mi",
             "quote": "We are no longer particularly in the business of writing software to perform specific tasks. We now teach the software how to learn, and in the primary bonding process it molds itself around the task to be performed. The feedback loop never really ends, so a tenth year polysentience can be a priceless jewel or a psychotic wreck, but it is the primary bonding process—the childhood, if you will—that has the most far-reaching repercussions.",
@@ -692,14 +692,14 @@
             "speaker": "Anonymous Metagenics Dockworker",
             "work": "MorganLink 3DVision Live Interview",
             "flavor_text": "(Accompanies discovery of the \"Super Tensile Solids\" tech)"
-        },    
+        },
         {
             "faction": "mi",
             "quote": "I plan to live forever, of course, but barring that I'd settle for a couple thousand years. Even five hundred would be pretty nice.",
             "speaker": "CEO Nwabudike Morgan",
             "work": "MorganLink 3D-Vision Interview",
             "flavor_text": "(Accompies completion of the Secret Project \"The Longevity Vaccine\")"
-        },    
+        },
         {
             "faction": "mi",
             "quote": "Organic Superlube? Oh, it's great stuff, great stuff. You really have to keep an eye on it, though - it'll try and slide away from you the first chance it gets.",
@@ -720,14 +720,14 @@
             "speaker": "CEO Nwabudike Morgan",
             "work": "\"The Ethics of Greed\"",
             "flavor_text": "(Accompanies discovery of the \"Applied Relativity\" tech)"
-        },    
+        },
         {
             "faction": "mi",
             "quote": "Resources exist to be consumed. And consumed they will be, if not by this generation then by some future. By what right does this forgotten future seek to deny us our birthright? None I say! Let us take what is ours, chew and eat our fill.",
             "speaker": "CEO Nwabudike Morgan",
             "work": "\"The Ethics of Greed\"",
             "flavor_text": "(Accompanies discovery of the \"Industrial Base\" tech)"
-        },    
+        },
         {
             "faction": "mi",
             "quote": "Look at any photograph or work of art. If you could duplicate exactly the first tiny dot of color, and then the next and the next, you would end with a perfect copy of the whole, indistinguishable from the original in every way, including the so-called \"moral value\" of the art itself. Nothing can transcend its smallest elements.",
@@ -748,14 +748,14 @@
             "speaker": "CEO Nwabudike Morgan",
             "work": "Strategy Session",
             "flavor_text": "(Accompanies discovery of the \"Synthetic Fossil Fuels\" tech)"
-        },    
+        },
         {
             "faction": "mi",
             "quote": "Objects once measured in meters have become so small that they cannot be seen by the naked eye, with revolutionary applications across the board. Gentlemen, forget what your courtesans have told you: size does matter!",
             "speaker": "CEO Nwabudike Morgan",
             "work": "Morgan Industries Annual Report",
             "flavor_text": "(Accompanies discovery of the \"Nanominiaturization\" tech)"
-        },    
+        },
         {
             "faction": "mi",
             "quote": "In the borehole pressure mines 100km beneath Planetsurface, at the Mohorovicic Discontinuity where crust gives way to mantle, temperatures often reach levels well in excess of 1000 degrees Celsius. Exploitation of Planet's resources under such brutal conditions has required quantum advances in robotic and teleoperational technology.",
@@ -776,7 +776,7 @@
             "speaker": "CEO Nwabudike Morgan",
             "work": "\"The Centauri Monopoly\"",
             "flavor_text": "(from GURPS Alpha Centauri supplement)"
-        },    
+        },
         {
             "faction": "mi",
             "quote": "Let's get to work.",
@@ -797,21 +797,21 @@
             "speaker": "Lady Deirdre Skye",
             "work": "\"Planet Dreams\"",
             "flavor_text": "(Accompanies discovery of the \"Centauri Empathy\" tech)"
-        },        
+        },
         {
             "faction": "gs",
             "quote": "The fungus has been Planet's dominant lifeform since about the time of the Lower Paleozoic on Earth. But when, once every hundred million years or so, the neural net at last achieves the critical mass necessary to become sentient, the final metamorphosis kills of most of the other life on the planet. It is possible that we humans can help to break this tragic cycle.",
             "speaker": "Lady Deirdre Skye",
             "work": "\"Planet Dreams\"",
             "flavor_text": "(Accompanies discovery of the \"Sentient Econometics\" tech)"
-        },        
+        },
         {
             "faction": "gs",
             "quote": "You see in this dome the intermingling of native and Earth plants. Outside, they are competitors, struggling over the trace elements required for life. Often, one destroys the other. Here, they are tended with care and kept well nourished. They thrive together, and the native fungus does not unleash its terrible defenses. As you can see, competition is unnecessary when resources are plentiful and population growth is controlled.",
             "speaker": "Lady Deirdre Skye",
             "work": "\"Planet Dreams\"",
             "flavor_text": "(Accompanies first construction of the Hybrid Forest base facility)"
-        },        
+        },
         {
             "faction": "gs",
             "quote": "Sky farms are fantastically beautiful, with their kilometer long networks of glass framed in grids of metal, and the sunlight shining through jungles of vegetation inside. When one of them catches the light, you can see the refracted beauty for miles; they are life-giving stars on a desolate planet...gardens on the wing.",
@@ -825,21 +825,21 @@
             "speaker": "Lady Deirdre Skye",
             "work": "\"The Early Years\"",
             "flavor_text": "(Accompanies first construction of the Perimeter Defense base facility)"
-        },        
+        },
         {
             "faction": "gs",
             "quote": "The prevalence of anoxic environments rich in organic material, combined with the presence of nitrated compounds has led to an astonishing variety of underground organisms which live in the absence of oxygen and\"breathe\" nitrate. Likewise, the scarcity of carbon in the environment has forced plants to economize on its use. Thus, all our efforts to return carbon to the biosphere will encourage the native life to proliferate. Conversely, the huge quantities of nitrate in the soil will be heaven to human farmers.",
             "speaker": "Lady Deirdre Skye",
             "work": "\"The Early Years\"",
             "flavor_text": "(Accompanies discovery of the \"Ecological Engineering\" tech)"
-        },        
+        },
         {
             "faction": "gs",
             "quote": "I believe Planet will talk to us if we are willing to listen. These fungal stalks behave as multistate relays: taken together, the neural net connectivity must be staggering. Can a planet be said to have achieved sentience?",
             "speaker": "Lady Deirdre Skye",
             "work": "\"Arguments in Council\"",
             "flavor_text": "(Accompanies completion of the Secret Project \"The Xenoempathy Dome\")"
-        },        
+        },
         {
             "faction": "gs",
             "quote": "From the delicate strands,\nbetween minds we weave out mesh:\na blanket to warm the soul.",
@@ -853,21 +853,21 @@
             "speaker": "Lady Deirdre Skye",
             "work": "\"Conversations With Planet\"",
             "flavor_text": "(Accompanies discovery of the \"Advanced Ecological Engineering\" tech)"
-        },        
+        },
         {
             "faction": "gs",
             "quote": "You are orphans, earthdeirdre, your homeworld already buried so young among the aeons. Yet now you fill the skies where we watched a million sunsets with flames and contrails, paying no heed to the hard lessons the universe has tried to teach you. Are you a breath of life to invigorate a complacent world, you earthhumans, or an insidious cancer which must be excised?",
             "speaker": "Lady Deirdre Skye",
             "work": "\"Conversations With Planet\"",
             "flavor_text": "Epilogue (Accompanies first construction of the Aerospace Complex base facility)"
-        },        
+        },
         {
             "faction": "gs",
             "quote": "Eternity lies ahead of us, and behind. Have you drunk your fill?",
             "speaker": "Lady Deirdre Skye",
             "work": "\"Conversations With Planet\"",
             "flavor_text": "Epilogue (Accompanies discovery of the \"Transcendant Thought\" tech)"
-        },        
+        },
         {
             "faction": "gs",
             "quote": "No longer mere earthbeings and planetbeings are we, but bright children of the stars! And together we shall dance in and out of ten billion years, celebrating the gift of consciousness until the stars themselves grow cold and weary, and our thoughts turn again to the beginning.",
@@ -881,21 +881,21 @@
             "speaker": "Lady Deirdre Skye",
             "work": "\"Conversations With Planet\"",
             "flavor_text": "(Accompanies discovery of the \"Secrets of Alpha Centauri\" tech)"
-        },        
+        },
         {
             "faction": "gs",
             "quote": "We welcome you, earthdeidre and earthwheat and earthtree as\nhonored guests, for you add great power to our ancient song—\nplanetfungus and planetworm and planetmind sing and play\nhere, and you are welcome among us.",
             "speaker": "Lady Deirdre Skye",
             "work": "\"Conversations With Planet\"",
             "flavor_text": "(Accompanies completion of the Secret Project \"The Pholus Mutagen\")"
-        },        
+        },
         {
             "faction": "gs",
             "quote": "Planet's atmosphere, though a gasping death to humans and most animals, is paradise for Earth plants. The high nitrate content of the soil and the rich yellow sunlight bring an abundant harvest wherever adjustments can be made for the unusual soil conditions.",
             "speaker": "Lady Deirdre Skye",
             "work": "\"A Comparative Biology of Planet\"",
             "flavor_text": "(Accompanies discovery of the \"Centauri Ecology\" tech)"
-        },        
+        },
         {
             "faction": "gs",
             "quote": "The Isle of the Deep is really not a single creature but a colony of thousands of individual tubules, an aquatic vector of the Mind Worm which terrorizes Planet's continents. Over its lifetime certain tubules secrete a tough, gluelike substance which hardens to form the characteristic shell that floats the colony and creates the appearance of a rogue island.",
@@ -909,21 +909,21 @@
             "speaker": "Lady Deirdre Skye",
             "work": "\"A Comparative Biology of Planet\"",
             "flavor_text": "(Accompanies first construction of the Biology Lab base facility)"
-        },        
+        },
         {
             "faction": "gs",
             "quote": "As we approached, we were confronted with the ruined splendor of Sparta Command. The true immensity of the place became instantly apparent as our Quantum Tank crunched over the rubble and parked next to a shattered bunker, but the extent of the destruction took weeks to assess. The shielded datacore had sustained several massive breaches and smoke still billowed from the numerous cannon ports. There were few signs of human life.",
             "speaker": "Lady Deirdre Skye",
             "work": "\"Our Secret War\"",
             "flavor_text": "(Accompanies first construction of the Headquarters base facility)"
-        },        
+        },
         {
             "faction": "gs",
             "quote": "As the writhing, teeming mass of mindworms swarmed over the outer perimeter, we saw the defenders recoil in horror. \"Stay calm! Use your flame guns!\" shouted the commander, but to no avail. It is well known that the Mind Worm Boil uses psychic terror to paralyze its prey, and then carefully implants ravenous larvae into the brains of its still-conscious victims. Even with the best weapons, only the most disciplined troops can resist this horrific attack.",
             "speaker": "Lady Deirdre Skye",
             "work": "\"Our Secret War\"",
             "flavor_text": "(Accompanies completion of the Secret Project \"The Citizen's Defense Force\")"
-        },        
+        },
         {
             "faction": "gs",
             "quote": "Symbols are the key to telepathy. The mind wraps its secrets in symbols; when we discover the symbols that shape our enemies thought, we can penetrate the vault of his mind.",
@@ -937,14 +937,14 @@
             "speaker": "Gaian Acolyte's Prayer",
             "work": "",
             "flavor_text": "(Accompanies completion of the Secret Project \"The Weather Paradigm\")"
-        },        
+        },
         {
             "faction": "gs",
             "quote": "In the end, our devotion to Planet is driven by faith. While the other factions prosper by carelessly devouring the wealth of Planet, we stand firm in our belief that Planet has moral significance of its own. They gain strength from plunder. We gain strength from the beauty and value of the thing we serve.",
             "speaker": "Lady Deirdre Skye",
             "work": "\"Arguments in Council\"",
             "flavor_text": "(from GURPS Alpha Centauri supplement)"
-        },        
+        },
         {
             "faction": "gs",
             "quote": "In ancient times, the members of our own family and tribe were human, but all else was a dangerous Other. Our entire history can be considered a process of pushing this boundary back, toward a point at which nothing that thinks can be said to be alien to us.",
@@ -965,21 +965,21 @@
             "speaker": "Prime Function Aki Zeta-5",
             "work": "\"One Future\"",
             "flavor_text": "(Accompanies discovery of the \"Progenitor Psych\" tech)"
-        },               
+        },
         {
             "faction": "cc",
             "quote": "The Progenitor race appears to sense, and possibly even manipulate, local fields an untrained human cannot percieve without mechanical aid, including at the very least electricity and magnetism. This sensitivity creates entirely new worlds of artistic endeavors for the race—or it may be developed into a powerful combat awareness that can foil any attempt at surprise.",
             "speaker": "Prime Function Aki Zeta-5",
             "work": "\"Alien Analysis\"",
             "flavor_text": "(Accompanies discovery of the \"Field Modulation\" tech)"
-        },               
+        },
         {
             "faction": "cc",
             "quote": "And here we tinker with metal, to try to give it a kind of life, and suffer those who would scoff at our efforts. But who's to say that, if intelligence had evolved in some other form in past millennia, the ancestors of these beings would not now scoff at the idea of intelligence residing within meat?",
             "speaker": "Prime Function Aki Zeta-5",
             "work": "\"The Fallacies of Self-Awareness\"",
             "flavor_text": "(Accompanies discovery of the \"Sentient Resonance\" tech)"
-        },               
+        },
         {
             "faction": "cc",
             "quote": "The question I pose to you is simple. Who is to be the master, you or the bits of talented meat that secrete hormones for you? Your glands are the product of aeons of evolution, and they are not to be scorned, but neither are they to be obeyed blindly.",
@@ -1000,28 +1000,28 @@
             "speaker": "Captain Ulrik Svensgaard",
             "work": "\"The Shadow Resonance\"",
             "flavor_text": "(Accompanies first construction of the Brood Pit base facility)"
-        },                           
+        },
         {
             "faction": "np",
             "quote": "Juvenile Sealurks, when isolated from the collective planetary consciousness, perform astounding feats as underwater sheepdogs. Vast schools of calorie rich Sporefish may be herded by only a few well trained specimens. Just don't let them get too close to the fungus, or they'll turn on you like a Razorshark.",
             "speaker": "Captain Ulrik Svensgaard",
             "work": "\"Tending the Sea\"",
             "flavor_text": "(Accompanies first construction of the Aquafarm base facility)"
-        },                           
+        },
         {
             "faction": "np",
             "quote": "Each individual pipe contains a hot slurry of minerals drawn from Planet's crust and makes a sound like rain falling on a tin roof. When they converge on the trunkline the sound is a terrifying thunder, a thunder of untold wealth, and power.",
             "speaker": "Captain Ulrik Svensgaard",
             "work": "\"Tending the Sea\"",
             "flavor_text": "(Accompanies first construction of the Subsea Trunkline base facility)"
-        },                           
+        },
         {
             "faction": "np",
             "quote": "The boundary between cold water and warm, the Thermocline, has been important to undersea warfare for hundreds of years of man's history. Now we have found away to harness that power for constructive purposes. Once what cloaked us can now feed us. Once what shielded us from death, now brings us life.",
             "speaker": "Captain Ulrik Svensgaard",
             "work": "\"The Ripple and the Wave\"",
             "flavor_text": "(Accompanies first construction of the Thermocline Transducer base facility)"
-        },                           
+        },
         {
             "faction": "np",
             "quote": "Let the others fight their religious wars and bicker over the scraps of the Unity. At sea, you can face down the elements and win battles worth winning. At sea, you can find treasure the like of which the land-huggers will never know. At sea, you can be free, really free for the first time in your life.",

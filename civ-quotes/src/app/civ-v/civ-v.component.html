@@ -8,13 +8,21 @@
     <mat-card-content>
         All quotes are copied verbatim from the game files.
         <br>
-        Tech quotes collected from the CIV5GameTextInfos_Civilopedia.xml and CIV5GameTextInfos_Civilopedia_Inherited_Expansion2.xml files.
-        The technology list includes the technologies added in the 2 expansions, as well as Telegraph and Mass Media, which were removed.
+        Tech quotes collected from the CIV5GameTextInfos_Civilopedia.xml and
+        CIV5GameTextInfos_Civilopedia_Inherited_Expansion2.xml files.
+        The technology list includes the technologies added in the 2 expansions, as well as Telegraph and Mass Media,
+        which were removed.
         <br>
-        Wonder quotes collected form the CIV5GameTextInfos_Civilopedia.xml, CIV5GameTextInfos_Civilopedia_Expansion2.xml, CIV5GameTextInfos_Civilopedia_Inherited_Expansion2.xml, and CIV5GameTextInfos_Buildings_NewWonders.xml files.
-        The wonders list includes the wonders added in the 2 expansions, as well as the United Nations, which was removed.
+        Wonder quotes collected form the CIV5GameTextInfos_Civilopedia.xml,
+        CIV5GameTextInfos_Civilopedia_Expansion2.xml, CIV5GameTextInfos_Civilopedia_Inherited_Expansion2.xml, and
+        CIV5GameTextInfos_Buildings_NewWonders.xml files.
+        The wonders list includes the wonders added in the 2 expansions, as well as the United Nations, which was
+        removed.
         <br>
-        <b>All quotes are organized alphabetically in their respective era and type (i.e. technology, wonder) section.</b>
+        <b>
+            All quotes are organized alphabetically in their respective era and type (i.e. technology, wonder)
+            section.
+        </b>
     </mat-card-content>
 </mat-card>
 
@@ -24,21 +32,23 @@
     <mat-card-title>
         Ancient Era
     </mat-card-title>
-    <mat-divider ></mat-divider>
+    <mat-divider></mat-divider>
     <mat-card-content>
         <mat-list>
             <mat-list-item *ngFor="let quote of aTechQuotes">
-                <b matLine><h1>{{quote.tech}}</h1></b>
+                <b matLine>
+                    <h1>{{quote.tech}}</h1>
+                </b>
                 <i matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5 !important;">
                     {{quote.quote}}
                 </i>
-                
+
                 <br matLine>
                 <p matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5;">
                     <strong> — {{quote.speaker}}</strong>
-                <p></p>  
+                <p></p>
                 <mat-divider matLine></mat-divider>
             </mat-list-item>
         </mat-list>
@@ -49,21 +59,23 @@
     <mat-card-title>
         Classical Era
     </mat-card-title>
-    <mat-divider ></mat-divider>
+    <mat-divider></mat-divider>
     <mat-card-content>
         <mat-list>
             <mat-list-item *ngFor="let quote of cTechQuotes">
-                <b matLine><h1>{{quote.tech}}</h1></b>
+                <b matLine>
+                    <h1>{{quote.tech}}</h1>
+                </b>
                 <i matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5 !important;">
                     {{quote.quote}}
                 </i>
-                
+
                 <br matLine>
                 <p matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5;">
                     <strong> — {{quote.speaker}}</strong>
-                <p></p>  
+                <p></p>
                 <mat-divider matLine></mat-divider>
             </mat-list-item>
         </mat-list>
@@ -74,21 +86,23 @@
     <mat-card-title>
         Medieval Era
     </mat-card-title>
-    <mat-divider ></mat-divider>
+    <mat-divider></mat-divider>
     <mat-card-content>
         <mat-list>
             <mat-list-item *ngFor="let quote of mTechQuotes">
-                <b matLine><h1>{{quote.tech}}</h1></b>
+                <b matLine>
+                    <h1>{{quote.tech}}</h1>
+                </b>
                 <i matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5 !important;">
                     {{quote.quote}}
                 </i>
-                
+
                 <br matLine>
                 <p matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5;">
                     <strong> — {{quote.speaker}}</strong>
-                <p></p>  
+                <p></p>
                 <mat-divider matLine></mat-divider>
             </mat-list-item>
         </mat-list>
@@ -99,21 +113,23 @@
     <mat-card-title>
         Renaissance Era
     </mat-card-title>
-    <mat-divider ></mat-divider>
+    <mat-divider></mat-divider>
     <mat-card-content>
         <mat-list>
             <mat-list-item *ngFor="let quote of rTechQuotes">
-                <b matLine><h1>{{quote.tech}}</h1></b>
+                <b matLine>
+                    <h1>{{quote.tech}}</h1>
+                </b>
                 <i matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5 !important;">
                     {{quote.quote}}
                 </i>
-                
+
                 <br matLine>
                 <p matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5;">
                     <strong> — {{quote.speaker}}</strong>
-                <p></p>  
+                <p></p>
                 <mat-divider matLine></mat-divider>
             </mat-list-item>
         </mat-list>
@@ -124,21 +140,23 @@
     <mat-card-title>
         Industrial Era
     </mat-card-title>
-    <mat-divider ></mat-divider>
+    <mat-divider></mat-divider>
     <mat-card-content>
         <mat-list>
             <mat-list-item *ngFor="let quote of iTechQuotes">
-                <b matLine><h1>{{quote.tech}}</h1></b>
+                <b matLine>
+                    <h1>{{quote.tech}}</h1>
+                </b>
                 <i matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5 !important;">
                     {{quote.quote}}
                 </i>
-                
+
                 <br matLine>
                 <p matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5;">
                     <strong> — {{quote.speaker}}</strong>
-                <p></p>  
+                <p></p>
                 <mat-divider matLine></mat-divider>
             </mat-list-item>
         </mat-list>
@@ -149,21 +167,23 @@
     <mat-card-title>
         Modern Era
     </mat-card-title>
-    <mat-divider ></mat-divider>
+    <mat-divider></mat-divider>
     <mat-card-content>
         <mat-list>
             <mat-list-item *ngFor="let quote of moTechQuotes">
-                <b matLine><h1>{{quote.tech}}</h1></b>
+                <b matLine>
+                    <h1>{{quote.tech}}</h1>
+                </b>
                 <i matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5 !important;">
                     {{quote.quote}}
                 </i>
-                
+
                 <br matLine>
                 <p matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5;">
                     <strong> — {{quote.speaker}}</strong>
-                <p></p>  
+                <p></p>
                 <mat-divider matLine></mat-divider>
             </mat-list-item>
         </mat-list>
@@ -174,21 +194,23 @@
     <mat-card-title>
         Atomic Era
     </mat-card-title>
-    <mat-divider ></mat-divider>
+    <mat-divider></mat-divider>
     <mat-card-content>
         <mat-list>
             <mat-list-item *ngFor="let quote of atTechQuotes">
-                <b matLine><h1>{{quote.tech}}</h1></b>
+                <b matLine>
+                    <h1>{{quote.tech}}</h1>
+                </b>
                 <i matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5 !important;">
                     {{quote.quote}}
                 </i>
-                
+
                 <br matLine>
                 <p matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5;">
                     <strong> — {{quote.speaker}}</strong>
-                <p></p>  
+                <p></p>
                 <mat-divider matLine></mat-divider>
             </mat-list-item>
         </mat-list>
@@ -199,21 +221,23 @@
     <mat-card-title>
         Information Era
     </mat-card-title>
-    <mat-divider ></mat-divider>
+    <mat-divider></mat-divider>
     <mat-card-content>
         <mat-list>
             <mat-list-item *ngFor="let quote of ifTechQuotes">
-                <b matLine><h1>{{quote.tech}}</h1></b>
+                <b matLine>
+                    <h1>{{quote.tech}}</h1>
+                </b>
                 <i matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5 !important;">
                     {{quote.quote}}
                 </i>
-                
+
                 <br matLine>
                 <p matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5;">
                     <strong> — {{quote.speaker}}</strong>
-                <p></p>  
+                <p></p>
                 <mat-divider matLine></mat-divider>
             </mat-list-item>
         </mat-list>
@@ -226,21 +250,23 @@
     <mat-card-title>
         Ancient Era
     </mat-card-title>
-    <mat-divider ></mat-divider>
+    <mat-divider></mat-divider>
     <mat-card-content>
         <mat-list>
             <mat-list-item *ngFor="let quote of aWonderQuotes">
-                <b matLine><h1>{{quote.wonder}}</h1></b>
+                <b matLine>
+                    <h1>{{quote.wonder}}</h1>
+                </b>
                 <i matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5 !important;">
                     {{quote.quote}}
                 </i>
-                
+
                 <br matLine>
                 <p matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5;">
                     <strong> — {{quote.speaker}}</strong>
-                <p></p>  
+                <p></p>
                 <mat-divider matLine></mat-divider>
             </mat-list-item>
         </mat-list>
@@ -251,21 +277,23 @@
     <mat-card-title>
         Classical Era
     </mat-card-title>
-    <mat-divider ></mat-divider>
+    <mat-divider></mat-divider>
     <mat-card-content>
         <mat-list>
             <mat-list-item *ngFor="let quote of cWonderQuotes">
-                <b matLine><h1>{{quote.wonder}}</h1></b>
+                <b matLine>
+                    <h1>{{quote.wonder}}</h1>
+                </b>
                 <i matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5 !important;">
                     {{quote.quote}}
                 </i>
-                
+
                 <br matLine>
                 <p matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5;">
                     <strong> — {{quote.speaker}}</strong>
-                <p></p>  
+                <p></p>
                 <mat-divider matLine></mat-divider>
             </mat-list-item>
         </mat-list>
@@ -276,21 +304,23 @@
     <mat-card-title>
         Medieval Era
     </mat-card-title>
-    <mat-divider ></mat-divider>
+    <mat-divider></mat-divider>
     <mat-card-content>
         <mat-list>
             <mat-list-item *ngFor="let quote of mWonderQuotes">
-                <b matLine><h1>{{quote.wonder}}</h1></b>
+                <b matLine>
+                    <h1>{{quote.wonder}}</h1>
+                </b>
                 <i matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5 !important;">
                     {{quote.quote}}
                 </i>
-                
+
                 <br matLine>
                 <p matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5;">
                     <strong> — {{quote.speaker}}</strong>
-                <p></p>  
+                <p></p>
                 <mat-divider matLine></mat-divider>
             </mat-list-item>
         </mat-list>
@@ -301,21 +331,23 @@
     <mat-card-title>
         Renaissance Era
     </mat-card-title>
-    <mat-divider ></mat-divider>
+    <mat-divider></mat-divider>
     <mat-card-content>
         <mat-list>
             <mat-list-item *ngFor="let quote of rWonderQuotes">
-                <b matLine><h1>{{quote.wonder}}</h1></b>
+                <b matLine>
+                    <h1>{{quote.wonder}}</h1>
+                </b>
                 <i matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5 !important;">
                     {{quote.quote}}
                 </i>
-                
+
                 <br matLine>
                 <p matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5;">
                     <strong> — {{quote.speaker}}</strong>
-                <p></p>  
+                <p></p>
                 <mat-divider matLine></mat-divider>
             </mat-list-item>
         </mat-list>
@@ -326,21 +358,23 @@
     <mat-card-title>
         Industrial Era
     </mat-card-title>
-    <mat-divider ></mat-divider>
+    <mat-divider></mat-divider>
     <mat-card-content>
         <mat-list>
             <mat-list-item *ngFor="let quote of iWonderQuotes">
-                <b matLine><h1>{{quote.wonder}}</h1></b>
+                <b matLine>
+                    <h1>{{quote.wonder}}</h1>
+                </b>
                 <i matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5 !important;">
                     {{quote.quote}}
                 </i>
-                
+
                 <br matLine>
                 <p matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5;">
                     <strong> — {{quote.speaker}}</strong>
-                <p></p>  
+                <p></p>
                 <mat-divider matLine></mat-divider>
             </mat-list-item>
         </mat-list>
@@ -351,21 +385,23 @@
     <mat-card-title>
         Modern Era
     </mat-card-title>
-    <mat-divider ></mat-divider>
+    <mat-divider></mat-divider>
     <mat-card-content>
         <mat-list>
             <mat-list-item *ngFor="let quote of moWonderQuotes">
-                <b matLine><h1>{{quote.wonder}}</h1></b>
+                <b matLine>
+                    <h1>{{quote.wonder}}</h1>
+                </b>
                 <i matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5 !important;">
                     {{quote.quote}}
                 </i>
-                
+
                 <br matLine>
                 <p matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5;">
                     <strong> — {{quote.speaker}}</strong>
-                <p></p>  
+                <p></p>
                 <mat-divider matLine></mat-divider>
             </mat-list-item>
         </mat-list>
@@ -376,21 +412,23 @@
     <mat-card-title>
         Atomic Era
     </mat-card-title>
-    <mat-divider ></mat-divider>
+    <mat-divider></mat-divider>
     <mat-card-content>
         <mat-list>
             <mat-list-item *ngFor="let quote of atWonderQuotes">
-                <b matLine><h1>{{quote.wonder}}</h1></b>
+                <b matLine>
+                    <h1>{{quote.wonder}}</h1>
+                </b>
                 <i matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5 !important;">
                     {{quote.quote}}
                 </i>
-                
+
                 <br matLine>
                 <p matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5;">
                     <strong> — {{quote.speaker}}</strong>
-                <p></p>  
+                <p></p>
                 <mat-divider matLine></mat-divider>
             </mat-list-item>
         </mat-list>
@@ -401,21 +439,23 @@
     <mat-card-title>
         Information Era
     </mat-card-title>
-    <mat-divider ></mat-divider>
+    <mat-divider></mat-divider>
     <mat-card-content>
         <mat-list>
             <mat-list-item *ngFor="let quote of ifWonderQuotes">
-                <b matLine><h1>{{quote.wonder}}</h1></b>
+                <b matLine>
+                    <h1>{{quote.wonder}}</h1>
+                </b>
                 <i matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5 !important;">
                     {{quote.quote}}
                 </i>
-                
+
                 <br matLine>
                 <p matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5;">
                     <strong> — {{quote.speaker}}</strong>
-                <p></p>  
+                <p></p>
                 <mat-divider matLine></mat-divider>
             </mat-list-item>
         </mat-list>
@@ -428,7 +468,7 @@
     <mat-card-title>
         Classical Era
     </mat-card-title>
-    <mat-divider ></mat-divider>
+    <mat-divider></mat-divider>
     <mat-card-content>
         <mat-list>
             <mat-list-item *ngFor="let quote of cEraQuotes">
@@ -436,12 +476,12 @@
                 white-space: pre-wrap !important; line-height: 1.5 !important;">
                     {{quote.quote}}
                 </i>
-                
+
                 <br matLine>
                 <p matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5;">
                     <strong> — {{quote.speaker}}</strong>
-                <p></p>  
+                <p></p>
                 <mat-divider matLine></mat-divider>
             </mat-list-item>
         </mat-list>
@@ -452,7 +492,7 @@
     <mat-card-title>
         Medieval Era
     </mat-card-title>
-    <mat-divider ></mat-divider>
+    <mat-divider></mat-divider>
     <mat-card-content>
         <mat-list>
             <mat-list-item *ngFor="let quote of mEraQuotes">
@@ -460,12 +500,12 @@
                 white-space: pre-wrap !important; line-height: 1.5 !important;">
                     {{quote.quote}}
                 </i>
-                
+
                 <br matLine>
                 <p matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5;">
                     <strong> — {{quote.speaker}}</strong>
-                <p></p>  
+                <p></p>
                 <mat-divider matLine></mat-divider>
             </mat-list-item>
         </mat-list>
@@ -476,7 +516,7 @@
     <mat-card-title>
         Renaissance Era
     </mat-card-title>
-    <mat-divider ></mat-divider>
+    <mat-divider></mat-divider>
     <mat-card-content>
         <mat-list>
             <mat-list-item *ngFor="let quote of rEraQuotes">
@@ -484,12 +524,12 @@
                 white-space: pre-wrap !important; line-height: 1.5 !important;">
                     {{quote.quote}}
                 </i>
-                
+
                 <br matLine>
                 <p matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5;">
                     <strong> — {{quote.speaker}}</strong>
-                <p></p>  
+                <p></p>
                 <mat-divider matLine></mat-divider>
             </mat-list-item>
         </mat-list>
@@ -500,7 +540,7 @@
     <mat-card-title>
         Industrial Era
     </mat-card-title>
-    <mat-divider ></mat-divider>
+    <mat-divider></mat-divider>
     <mat-card-content>
         <mat-list>
             <mat-list-item *ngFor="let quote of iEraQuotes">
@@ -508,12 +548,12 @@
                 white-space: pre-wrap !important; line-height: 1.5 !important;">
                     {{quote.quote}}
                 </i>
-                
+
                 <br matLine>
                 <p matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5;">
                     <strong> — {{quote.speaker}}</strong>
-                <p></p>  
+                <p></p>
                 <mat-divider matLine></mat-divider>
             </mat-list-item>
         </mat-list>
@@ -524,7 +564,7 @@
     <mat-card-title>
         Modern Era
     </mat-card-title>
-    <mat-divider ></mat-divider>
+    <mat-divider></mat-divider>
     <mat-card-content>
         <mat-list>
             <mat-list-item *ngFor="let quote of moEraQuotes">
@@ -532,12 +572,12 @@
                 white-space: pre-wrap !important; line-height: 1.5 !important;">
                     {{quote.quote}}
                 </i>
-                
+
                 <br matLine>
                 <p matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5;">
                     <strong> — {{quote.speaker}}</strong>
-                <p></p>  
+                <p></p>
                 <mat-divider matLine></mat-divider>
             </mat-list-item>
         </mat-list>
@@ -548,7 +588,7 @@
     <mat-card-title>
         Future Era
     </mat-card-title>
-    <mat-divider ></mat-divider>
+    <mat-divider></mat-divider>
     <mat-card-content>
         <mat-list>
             <mat-list-item *ngFor="let quote of fEraQuotes">
@@ -556,12 +596,12 @@
                 white-space: pre-wrap !important; line-height: 1.5 !important;">
                     {{quote.quote}}
                 </i>
-                
+
                 <br matLine>
                 <p matLine style="word-wrap: break-word !important;
                 white-space: pre-wrap !important; line-height: 1.5;">
                     <strong> — {{quote.speaker}}</strong>
-                <p></p>  
+                <p></p>
                 <mat-divider matLine></mat-divider>
             </mat-list-item>
         </mat-list>

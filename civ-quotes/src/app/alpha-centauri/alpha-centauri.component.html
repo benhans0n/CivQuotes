@@ -6,400 +6,417 @@
     <mat-divider></mat-divider>
     <br>
     <mat-card-content>
-        Collected from the absolutely wonderful source on <a href="https://tvtropes.org/pmwiki/pmwiki.php/Quotes/SidMeiersAlphaCentauri">TV Tropes</a>. 
+        Collected from the absolutely wonderful source on <a
+            href="https://tvtropes.org/pmwiki/pmwiki.php/Quotes/SidMeiersAlphaCentauri">TV Tropes</a>.
         <br>
-        All credit for retrieving these quotes goes to the contributors there, as my machine is unable to run Alpha Centauri. All quotes are copied verbatim from TV Tropes.
-        Due to the fact that there are no ages, <b>all quotes are filed under the faction which the quotee belongs to</b>, with work and tech or special project being listed next to the quotee.
+        All credit for retrieving these quotes goes to the contributors there, as my machine is unable to run Alpha
+        Centauri. All quotes are copied verbatim from TV Tropes.
+        Due to the fact that there are no ages, <b>all quotes are filed under the faction which the quotee belongs
+            to</b>, with work and tech or special project being listed next to the quotee.
     </mat-card-content>
 </mat-card>
 
+<div class="quote-card">
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-card-title style="margin-top: 1em; margin-bottom: 1em;">
+                    University of Planet
+                </mat-card-title>
+            </mat-expansion-panel-header>
+            <mat-list>
+                <mat-list-item *ngFor="let quote of uopQuotes">
+                    <i matLine class="quote-card-text">
+                        {{quote.quote}}
+                    </i>
 
-<mat-card class="quote-card" style="margin-top: 1%">
-    <mat-card-title>
-        University of Planet
-    </mat-card-title>
-    <mat-divider ></mat-divider>
-    <mat-card-content>
-        <mat-list>
-            <mat-list-item *ngFor="let quote of uopQuotes">
-                <i matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5 !important;">
-                    {{quote.quote}}
-                </i>
-                
-                <br matLine>
-                <p matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5;">
-                    <strong> — {{quote.speaker}}</strong>
-                    <em *ngIf="quote.work">, </em>
-                    <i>{{quote.work}}</i> {{quote.flavor_text}}
-                <p></p>  
-                <mat-divider matLine></mat-divider>
-            </mat-list-item>
-        </mat-list>
-    </mat-card-content>
-</mat-card>
+                    <br matLine>
+                    <p matLine class="quote-card-text">
+                        <strong> — {{quote.speaker}}</strong>
+                        <em *ngIf="quote.work">, </em>
+                        <i>{{quote.work}}</i> {{quote.flavor_text}}
+                    <p></p>
+                    <mat-divider matLine></mat-divider>
+                </mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
 
-<mat-card class="quote-card" style="margin-top: 1%">
-    <mat-card-title>
-        Lord's Believers
-    </mat-card-title>
-    <mat-divider ></mat-divider>
-    <mat-card-content>
-        <mat-list>
-            <mat-list-item *ngFor="let quote of lbQuotes">
-                <i matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5 !important;">
-                    {{quote.quote}}
-                </i>
-                
-                <br matLine>
-                <p matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5;">
-                    <strong> — {{quote.speaker}}</strong>
-                    <em *ngIf="quote.work">, </em>
-                    <i>{{quote.work}}</i> {{quote.flavor_text}}
-                </p>  
-                <mat-divider matLine></mat-divider>
-            </mat-list-item>
-        </mat-list>
-    </mat-card-content>
-</mat-card>
+<div class="quote-card">
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-card-title style="margin-top: 1em; margin-bottom: 1em;">
+                    Lord's Believers
+                </mat-card-title>
+            </mat-expansion-panel-header>
+            <mat-list>
+                <mat-list-item *ngFor="let quote of lbQuotes">
+                    <i matLine class="quote-card-text">
+                        {{quote.quote}}
+                    </i>
 
-<mat-card class="quote-card" style="margin-top: 1%">
-    <mat-card-title>
-        Spartan Federation
-    </mat-card-title>
-    <mat-divider ></mat-divider>
-    <mat-card-content>
-        <mat-list>
-            <mat-list-item *ngFor="let quote of sfQuotes">
-                <i matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5 !important;">
-                    {{quote.quote}}
-                </i>
-                
-                <br matLine>
-                <p matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5;">
-                    <strong> — {{quote.speaker}}</strong>
-                    <em *ngIf="quote.work">, </em>
-                    <i>{{quote.work}}</i> {{quote.flavor_text}}
-                </p>
-                <mat-divider matLine></mat-divider>
-            </mat-list-item>
-        </mat-list>
-    </mat-card-content>
-</mat-card>
+                    <br matLine>
+                    <p matLine class="quote-card-text">
+                        <strong> — {{quote.speaker}}</strong>
+                        <em *ngIf="quote.work">, </em>
+                        <i>{{quote.work}}</i> {{quote.flavor_text}}
+                    <p></p>
+                    <mat-divider matLine></mat-divider>
+                </mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
 
-<mat-card class="quote-card" style="margin-top: 1%">
-    <mat-card-title>
-        Peacekeeping Forces
-    </mat-card-title>
-    <mat-divider ></mat-divider>
-    <mat-card-content>
-        <mat-list>
-            <mat-list-item *ngFor="let quote of pfQuotes">
-                <i matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5 !important;">
-                    {{quote.quote}}
-                </i>
-                
-                <br matLine>
-                <p matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5;">
-                    <strong> — {{quote.speaker}}</strong>
-                    <em *ngIf="quote.work">, </em>
-                    <i>{{quote.work}}</i> {{quote.flavor_text}}
-                </p>
-                <mat-divider matLine></mat-divider>
-            </mat-list-item>
-        </mat-list>
-    </mat-card-content>
-</mat-card>
+<div class="quote-card">
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-card-title style="margin-top: 1em; margin-bottom: 1em;">
+                    Spartan Federation
+                </mat-card-title>
+            </mat-expansion-panel-header>
+            <mat-list>
+                <mat-list-item *ngFor="let quote of sfQuotes">
+                    <i matLine class="quote-card-text">
+                        {{quote.quote}}
+                    </i>
 
-<mat-card class="quote-card" style="margin-top: 1%">
-    <mat-card-title>
-        Human Hive
-    </mat-card-title>
-    <mat-divider ></mat-divider>
-    <mat-card-content>
-        <mat-list>
-            <mat-list-item *ngFor="let quote of hhQuotes">
-                <i matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5 !important;">
-                    {{quote.quote}}
-                </i>
-                
-                <br matLine>
-                <p matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5;">
-                    <strong> — {{quote.speaker}}</strong>
-                    <em *ngIf="quote.work">, </em>
-                    <i>{{quote.work}}</i> {{quote.flavor_text}}
-                </p>
-                <mat-divider matLine></mat-divider>
-            </mat-list-item>
-        </mat-list>
-    </mat-card-content>
-</mat-card>
+                    <br matLine>
+                    <p matLine class="quote-card-text">
+                        <strong> — {{quote.speaker}}</strong>
+                        <em *ngIf="quote.work">, </em>
+                        <i>{{quote.work}}</i> {{quote.flavor_text}}
+                    <p></p>
+                    <mat-divider matLine></mat-divider>
+                </mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
 
-<mat-card class="quote-card" style="margin-top: 1%">
-    <mat-card-title>
-        Morgan Industries
-    </mat-card-title>
-    <mat-divider ></mat-divider>
-    <mat-card-content>
-        <mat-list>
-            <mat-list-item *ngFor="let quote of miQuotes">
-                <i matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5 !important;">
-                    {{quote.quote}}
-                </i>
-                
-                <br matLine>
-                <p matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5;">
-                    <strong> — {{quote.speaker}}</strong>
-                    <em *ngIf="quote.work">, </em>
-                    <i>{{quote.work}}</i> {{quote.flavor_text}}
-                </p>
-                <mat-divider matLine></mat-divider>
-            </mat-list-item>
-        </mat-list>
-    </mat-card-content>
-</mat-card>
+<div class="quote-card">
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-card-title style="margin-top: 1em; margin-bottom: 1em;">
+                    Peacekeeping Forces
+                </mat-card-title>
+            </mat-expansion-panel-header>
+            <mat-list>
+                <mat-list-item *ngFor="let quote of pfQuotes">
+                    <i matLine class="quote-card-text">
+                        {{quote.quote}}
+                    </i>
 
-<mat-card class="quote-card" style="margin-top: 1%">
-    <mat-card-title>
-        Gaia's Stepdaughters
-    </mat-card-title>
-    <mat-divider ></mat-divider>
-    <mat-card-content>
-        <mat-list>
-            <mat-list-item *ngFor="let quote of gsQuotes">
-                <i matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5 !important;">
-                    {{quote.quote}}
-                </i>
-                
-                <br matLine>
-                <p matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5;">
-                    <strong> — {{quote.speaker}}</strong>
-                    <em *ngIf="quote.work">, </em>
-                    <i>{{quote.work}}</i> {{quote.flavor_text}}
-                </p>
-                <mat-divider matLine></mat-divider>
-            </mat-list-item>
-        </mat-list>
-    </mat-card-content>
-</mat-card>
+                    <br matLine>
+                    <p matLine class="quote-card-text">
+                        <strong> — {{quote.speaker}}</strong>
+                        <em *ngIf="quote.work">, </em>
+                        <i>{{quote.work}}</i> {{quote.flavor_text}}
+                    <p></p>
+                    <mat-divider matLine></mat-divider>
+                </mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
 
-<mat-card class="quote-card" style="margin-top: 1%">
-    <mat-card-title>
-        The Cybernetic Consciousness
-    </mat-card-title>
-    <mat-divider ></mat-divider>
-    <mat-card-content>
-        <mat-list>
-            <mat-list-item *ngFor="let quote of ccQuotes">
-                <i matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5 !important;">
-                    {{quote.quote}}
-                </i>
-                
-                <br matLine>
-                <p matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5;">
-                    <strong> — {{quote.speaker}}</strong>
-                    <em *ngIf="quote.work">, </em>
-                    <i>{{quote.work}}</i> {{quote.flavor_text}}
-                </p>
-                <mat-divider matLine></mat-divider>
-            </mat-list-item>
-        </mat-list>
-    </mat-card-content>
-</mat-card>
+<div class="quote-card">
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-card-title style="margin-top: 1em; margin-bottom: 1em;">
+                    Human Hive
+                </mat-card-title>
+            </mat-expansion-panel-header>
+            <mat-list>
+                <mat-list-item *ngFor="let quote of hhQuotes">
+                    <i matLine class="quote-card-text">
+                        {{quote.quote}}
+                    </i>
 
-<mat-card class="quote-card" style="margin-top: 1%">
-    <mat-card-title>
-        Nautilus Pirates
-    </mat-card-title>
-    <mat-divider ></mat-divider>
-    <mat-card-content>
-        <mat-list>
-            <mat-list-item *ngFor="let quote of npQuotes">
-                <i matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5 !important;">
-                    {{quote.quote}}
-                </i>
-                
-                <br matLine>
-                <p matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5;">
-                    <strong> — {{quote.speaker}}</strong>
-                    <em *ngIf="quote.work">, </em>
-                    <i>{{quote.work}}</i> {{quote.flavor_text}}
-                </p>
-                <mat-divider matLine></mat-divider>
-            </mat-list-item>
-        </mat-list>
-    </mat-card-content>
-</mat-card>
+                    <br matLine>
+                    <p matLine class="quote-card-text">
+                        <strong> — {{quote.speaker}}</strong>
+                        <em *ngIf="quote.work">, </em>
+                        <i>{{quote.work}}</i> {{quote.flavor_text}}
+                    <p></p>
+                    <mat-divider matLine></mat-divider>
+                </mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
 
-<mat-card class="quote-card" style="margin-top: 1%">
-    <mat-card-title>
-        The Free Drones
-    </mat-card-title>
-    <mat-divider ></mat-divider>
-    <mat-card-content>
-        <mat-list>
-            <mat-list-item *ngFor="let quote of fdQuotes">
-                <i matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5 !important;">
-                    {{quote.quote}}
-                </i>
-                
-                <br matLine>
-                <p matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5;">
-                    <strong> — {{quote.speaker}}</strong>
-                    <em *ngIf="quote.work">, </em>
-                    <i>{{quote.work}}</i> {{quote.flavor_text}}
-                </p>
-                <mat-divider matLine></mat-divider>
-            </mat-list-item>
-        </mat-list>
-    </mat-card-content>
-</mat-card>
+<div class="quote-card">
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-card-title style="margin-top: 1em; margin-bottom: 1em;">
+                    Morgan Industries
+                </mat-card-title>
+            </mat-expansion-panel-header>
+            <mat-list>
+                <mat-list-item *ngFor="let quote of miQuotes">
+                    <i matLine class="quote-card-text">
+                        {{quote.quote}}
+                    </i>
 
-<mat-card class="quote-card" style="margin-top: 1%">
-    <mat-card-title>
-        The Data Angels
-    </mat-card-title>
-    <mat-divider ></mat-divider>
-    <mat-card-content>
-        <mat-list>
-            <mat-list-item *ngFor="let quote of daQuotes">
-                <i matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5 !important;">
-                    {{quote.quote}}
-                </i>
-                
-                <br matLine>
-                <p matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5;">
-                    <strong> — {{quote.speaker}}</strong>
-                    <em *ngIf="quote.work">, </em>
-                    <i>{{quote.work}}</i> {{quote.flavor_text}}
-                </p>
-                <mat-divider matLine></mat-divider>
-            </mat-list-item>
-        </mat-list>
-    </mat-card-content>
-</mat-card>
+                    <br matLine>
+                    <p matLine class="quote-card-text">
+                        <strong> — {{quote.speaker}}</strong>
+                        <em *ngIf="quote.work">, </em>
+                        <i>{{quote.work}}</i> {{quote.flavor_text}}
+                    <p></p>
+                    <mat-divider matLine></mat-divider>
+                </mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
 
-<mat-card class="quote-card" style="margin-top: 1%">
-    <mat-card-title>
-        The Cult of Planet
-    </mat-card-title>
-    <mat-divider ></mat-divider>
-    <mat-card-content>
-        <mat-list>
-            <mat-list-item *ngFor="let quote of cpQuotes">
-                <i matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5 !important;">
-                    {{quote.quote}}
-                </i>
-                
-                <br matLine>
-                <p matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5;">
-                    <strong> — {{quote.speaker}}</strong>
-                    <em *ngIf="quote.work">, </em>
-                    <i>{{quote.work}}</i> {{quote.flavor_text}}
-                </p>
-                <mat-divider matLine></mat-divider>
-            </mat-list-item>
-        </mat-list>
-    </mat-card-content>
-</mat-card>
+<div class="quote-card">
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-card-title style="margin-top: 1em; margin-bottom: 1em;">
+                    Gaia's Stepdaughters
+                </mat-card-title>
+            </mat-expansion-panel-header>
+            <mat-list>
+                <mat-list-item *ngFor="let quote of gsQuotes">
+                    <i matLine class="quote-card-text">
+                        {{quote.quote}}
+                    </i>
 
-<mat-card class="quote-card" style="margin-top: 1%">
-    <mat-card-title>
-        Manifold Caretakers
-    </mat-card-title>
-    <mat-divider ></mat-divider>
-    <mat-card-content>
-        <mat-list>
-            <mat-list-item *ngFor="let quote of mcQuotes">
-                <i matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5 !important;">
-                    {{quote.quote}}
-                </i>
-                
-                <br matLine>
-                <p matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5;">
-                    <strong> — {{quote.speaker}}</strong>
-                    <em *ngIf="quote.work">, </em>
-                    <i>{{quote.work}}</i> {{quote.flavor_text}}
-                </p>
-                <mat-divider matLine></mat-divider>
-            </mat-list-item>
-        </mat-list>
-    </mat-card-content>
-</mat-card>
+                    <br matLine>
+                    <p matLine class="quote-card-text">
+                        <strong> — {{quote.speaker}}</strong>
+                        <em *ngIf="quote.work">, </em>
+                        <i>{{quote.work}}</i> {{quote.flavor_text}}
+                    <p></p>
+                    <mat-divider matLine></mat-divider>
+                </mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
 
-<mat-card class="quote-card" style="margin-top: 1%">
-    <mat-card-title>
-        Manifold Usurpers
-    </mat-card-title>
-    <mat-divider ></mat-divider>
-    <mat-card-content>
-        <mat-list>
-            <mat-list-item *ngFor="let quote of muQuotes">
-                <i matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5 !important;">
-                    {{quote.quote}}
-                </i>
-                
-                <br matLine>
-                <p matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5;">
-                    <strong> — {{quote.speaker}}</strong>
-                    <em *ngIf="quote.work">, </em>
-                    <i>{{quote.work}}</i> {{quote.flavor_text}}
-                </p>
-                <mat-divider matLine></mat-divider>
-            </mat-list-item>
-        </mat-list>
-    </mat-card-content>
-</mat-card>
+<div class="quote-card">
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-card-title style="margin-top: 1em; margin-bottom: 1em;">
+                    The Cybernetic Consciousness
+                </mat-card-title>
+            </mat-expansion-panel-header>
+            <mat-list>
+                <mat-list-item *ngFor="let quote of ccQuotes">
+                    <i matLine class="quote-card-text">
+                        {{quote.quote}}
+                    </i>
 
-<mat-card class="quote-card" style="margin-top: 1%">
-    <mat-card-title>
-        Other
-    </mat-card-title>
-    <mat-divider ></mat-divider>
-    <mat-card-content>
-        <mat-list>
-            <mat-list-item *ngFor="let quote of otherQuotes">
-                <i matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5 !important;">
-                    {{quote.quote}}
-                </i>
-                
-                <br matLine>
-                <p matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5;">
-                    <strong> — {{quote.speaker}}</strong>
-                    <em *ngIf="quote.work">, </em>
-                    <i>{{quote.work}}</i> {{quote.flavor_text}}
-                </p>
-                <mat-divider matLine></mat-divider>
-            </mat-list-item>
-        </mat-list>
-    </mat-card-content>
-</mat-card>
+                    <br matLine>
+                    <p matLine class="quote-card-text">
+                        <strong> — {{quote.speaker}}</strong>
+                        <em *ngIf="quote.work">, </em>
+                        <i>{{quote.work}}</i> {{quote.flavor_text}}
+                    <p></p>
+                    <mat-divider matLine></mat-divider>
+                </mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
+
+<div class="quote-card">
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-card-title style="margin-top: 1em; margin-bottom: 1em;">
+                    Nautilus Pirates
+                </mat-card-title>
+            </mat-expansion-panel-header>
+            <mat-list>
+                <mat-list-item *ngFor="let quote of npQuotes">
+                    <i matLine class="quote-card-text">
+                        {{quote.quote}}
+                    </i>
+
+                    <br matLine>
+                    <p matLine class="quote-card-text">
+                        <strong> — {{quote.speaker}}</strong>
+                        <em *ngIf="quote.work">, </em>
+                        <i>{{quote.work}}</i> {{quote.flavor_text}}
+                    <p></p>
+                    <mat-divider matLine></mat-divider>
+                </mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
+
+<div class="quote-card">
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-card-title style="margin-top: 1em; margin-bottom: 1em;">
+                    The Free Drones
+                </mat-card-title>
+            </mat-expansion-panel-header>
+            <mat-list>
+                <mat-list-item *ngFor="let quote of fdQuotes">
+                    <i matLine class="quote-card-text">
+                        {{quote.quote}}
+                    </i>
+
+                    <br matLine>
+                    <p matLine class="quote-card-text">
+                        <strong> — {{quote.speaker}}</strong>
+                        <em *ngIf="quote.work">, </em>
+                        <i>{{quote.work}}</i> {{quote.flavor_text}}
+                    <p></p>
+                    <mat-divider matLine></mat-divider>
+                </mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
+
+<div class="quote-card">
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-card-title style="margin-top: 1em; margin-bottom: 1em;">
+                    The Data Angels
+                </mat-card-title>
+            </mat-expansion-panel-header>
+            <mat-list>
+                <mat-list-item *ngFor="let quote of daQuotes">
+                    <i matLine class="quote-card-text">
+                        {{quote.quote}}
+                    </i>
+
+                    <br matLine>
+                    <p matLine class="quote-card-text">
+                        <strong> — {{quote.speaker}}</strong>
+                        <em *ngIf="quote.work">, </em>
+                        <i>{{quote.work}}</i> {{quote.flavor_text}}
+                    <p></p>
+                    <mat-divider matLine></mat-divider>
+                </mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
+
+<div class="quote-card">
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-card-title style="margin-top: 1em; margin-bottom: 1em;">
+                    The Cult of Planet
+                </mat-card-title>
+            </mat-expansion-panel-header>
+            <mat-list>
+                <mat-list-item *ngFor="let quote of cpQuotes">
+                    <i matLine class="quote-card-text">
+                        {{quote.quote}}
+                    </i>
+
+                    <br matLine>
+                    <p matLine class="quote-card-text">
+                        <strong> — {{quote.speaker}}</strong>
+                        <em *ngIf="quote.work">, </em>
+                        <i>{{quote.work}}</i> {{quote.flavor_text}}
+                    <p></p>
+                    <mat-divider matLine></mat-divider>
+                </mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
+
+<div class="quote-card">
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-card-title style="margin-top: 1em; margin-bottom: 1em;">
+                    Manifold Caretakers
+                </mat-card-title>
+            </mat-expansion-panel-header>
+            <mat-list>
+                <mat-list-item *ngFor="let quote of mcQuotes">
+                    <i matLine class="quote-card-text">
+                        {{quote.quote}}
+                    </i>
+
+                    <br matLine>
+                    <p matLine class="quote-card-text">
+                        <strong> — {{quote.speaker}}</strong>
+                        <em *ngIf="quote.work">, </em>
+                        <i>{{quote.work}}</i> {{quote.flavor_text}}
+                    <p></p>
+                    <mat-divider matLine></mat-divider>
+                </mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
+
+<div class="quote-card">
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-card-title style="margin-top: 1em; margin-bottom: 1em;">
+                    Manifold Usurpers
+                </mat-card-title>
+            </mat-expansion-panel-header>
+            <mat-list>
+                <mat-list-item *ngFor="let quote of muQuotes">
+                    <i matLine class="quote-card-text">
+                        {{quote.quote}}
+                    </i>
+
+                    <br matLine>
+                    <p matLine class="quote-card-text">
+                        <strong> — {{quote.speaker}}</strong>
+                        <em *ngIf="quote.work">, </em>
+                        <i>{{quote.work}}</i> {{quote.flavor_text}}
+                    <p></p>
+                    <mat-divider matLine></mat-divider>
+                </mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
+
+<div class="quote-card">
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-card-title style="margin-top: 1em; margin-bottom: 1em;">
+                    Other
+                </mat-card-title>
+            </mat-expansion-panel-header>
+            <mat-list>
+                <mat-list-item *ngFor="let quote of otherQuotes">
+                    <i matLine class="quote-card-text">
+                        {{quote.quote}}
+                    </i>
+
+                    <br matLine>
+                    <p matLine class="quote-card-text">
+                        <strong> — {{quote.speaker}}</strong>
+                        <em *ngIf="quote.work">, </em>
+                        <i>{{quote.work}}</i> {{quote.flavor_text}}
+                    <p></p>
+                    <mat-divider matLine></mat-divider>
+                </mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>

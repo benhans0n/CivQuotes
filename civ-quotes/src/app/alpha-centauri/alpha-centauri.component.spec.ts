@@ -8,9 +8,8 @@ describe('AlphaCentauriComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AlphaCentauriComponent ]
-    })
-    .compileComponents();
+      declarations: [AlphaCentauriComponent]
+    }).compileComponents();
   });
 
   beforeEach(() => {
