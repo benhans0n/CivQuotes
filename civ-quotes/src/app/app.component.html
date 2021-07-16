@@ -1,21 +1,39 @@
 <mat-toolbar class="main-toolbar">
-  <mat-toolbar-row>
-    <a mat-button [routerLink]="'/alpha-centauri'" (click)="setTitle('Civ Quotes')">
-      <h1>Civ Quotes</h1>
-    </a>
-    <span class="nav-menu"></span>
+    <mat-toolbar-row>
+        <a mat-button [routerLink]="'/alpha-centauri'" (click)="setTitle('Civ Quotes')">
+            <h1>Civ Quotes</h1>
+        </a>
+        <span class="nav-menu"></span>
 
-    <a mat-button [routerLink]="'/alpha-centauri'" class="toolbar-button"> SM's Alpha Centauri </a>
-    <span class="button-spacer"></span>
-    <a mat-button [routerLink]="'/civ-iv'" class="toolbar-button"> SM's Civilization IV </a>
-    <span class="button-spacer"></span>
-    <a mat-button [routerLink]="'/civ-v'" class="toolbar-button"> SM's Civilization V </a>
-    <span class="button-spacer"></span>
-    <a mat-button [routerLink]="'/civ-be'" class="toolbar-button"> SM's Civilization: Beyond Earth </a>
-    <span class="button-spacer"></span>
-    <a mat-button [routerLink]="'/civ-vi'" class="toolbar-button"> SM's Civilization VI </a>
-    <span class="button-spacer"></span>
-  </mat-toolbar-row>
+        <div *ngIf="!isMobile" style="margin-right: 2%;">
+            <a mat-button [routerLink]="'/alpha-centauri'" class="toolbar-button"> SM's Alpha Centauri </a>
+            <span class="button-spacer"></span>
+            <a mat-button [routerLink]="'/civ-iv'" class="toolbar-button"> SM's Civilization IV </a>
+            <span class="button-spacer"></span>
+            <a mat-button [routerLink]="'/civ-v'" class="toolbar-button"> SM's Civilization V </a>
+            <span class="button-spacer"></span>
+            <a mat-button [routerLink]="'/civ-be'" class="toolbar-button"> SM's Civilization: Beyond Earth </a>
+            <span class="button-spacer"></span>
+            <a mat-button [routerLink]="'/civ-vi'" class="toolbar-button"> SM's Civilization VI </a>
+            <span class="button-spacer"></span>
+        </div>
+
+        <div *ngIf="isMobile">
+            <button mat-button [matMenuTriggerFor]="menu">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <div style="width:min-content">
+                    <a mat-button [routerLink]="'/alpha-centauri'" style="width: 100%; text-align: left;"> SM's Alpha Centauri </a>
+                <a mat-button [routerLink]="'/civ-iv'" style="width: 100%; text-align: left;"> SM's Civilization IV </a>
+                <a mat-button [routerLink]="'/civ-v'" style="width: 100%; text-align: left;"> SM's Civilization V </a>
+                <a mat-button [routerLink]="'/civ-be'" style="width: 100%; text-align: left;"> SM's Civilization: Beyond Earth </a>
+                <a mat-button [routerLink]="'/civ-vi'" style="width: 100%; text-align: left;"> SM's Civilization VI </a>
+                </div>
+                
+            </mat-menu>
+        </div>
+    </mat-toolbar-row>
 </mat-toolbar>
 <router-outlet></router-outlet>
 <div style="margin-top: 2%; background-color: grey; width: 100%; height: 10em;"></div>

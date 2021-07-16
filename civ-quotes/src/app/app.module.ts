@@ -13,6 +13,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatMenuModule } from '@angular/material/menu';
 import { AlphaCentauriComponent } from './alpha-centauri/alpha-centauri.component';
 import { CivIvComponent } from './civ-iv/civ-iv.component';
 import { CivVComponent } from './civ-v/civ-v.component';
@@ -40,7 +41,8 @@ import { CivViComponent } from './civ-vi/civ-vi.component';
     MatButtonModule,
     MatDividerModule,
     MatCardModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatMenuModule
   ],
   providers: [
     Title

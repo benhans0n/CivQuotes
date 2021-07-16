@@ -10,6 +10,8 @@ import { filter, map } from 'rxjs/operators';
 })
 export class AppComponent implements OnInit {
   title = 'Civ Quotes';
+  isMobile = false;
+
   public constructor(private titleService: Title, private router: Router, private activatedRoute: ActivatedRoute) { }
 
   public setTitle(newTitle: string) {
@@ -17,6 +19,9 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
+    if (window.screen.width < 769) {
+      this.isMobile = true;
+    }
     const appTitle = this.titleService.getTitle();
     this.router
       .events.pipe(
