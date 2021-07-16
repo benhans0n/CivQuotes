@@ -16,14 +16,12 @@ export class TechQuote {
 
 export class WonderQuote {
     wonder: string;
-    faction: string;
     quote: string;
     speaker: string;
     work: string;
 
     constructor(wonder: string, faction: string, quote: string, speaker: string, work: string) {
         this.wonder = wonder;
-        this.faction = faction;
         this.quote = quote;
         this.speaker = speaker;
         this.work = work;

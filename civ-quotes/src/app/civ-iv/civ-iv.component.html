@@ -14,153 +14,158 @@
     </mat-card-content>
 </mat-card>
 
+<div class="quote-card">
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-card-title style="margin-top: 1em; margin-bottom: 1em;">
+                    Ancient Era
+                </mat-card-title>
+            </mat-expansion-panel-header>
+            <mat-list>
+                <mat-list-item *ngFor="let quote of aQuotes">
+                    <b matLine><h1>{{quote.tech}}</h1></b>
+                    <i matLine class="quote-card-text">
+                        {{quote.quote}}
+                    </i>
 
-<mat-card class="quote-card" style="margin-top: 1%">
-    <mat-card-title>
-        Ancient Era
-    </mat-card-title>
-    <mat-divider ></mat-divider>
-    <mat-card-content>
-        <mat-list>
-            <mat-list-item *ngFor="let quote of aQuotes">
-                <b matLine><h1>{{quote.tech}}</h1></b>
-                <i matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5 !important;">
-                    {{quote.quote}}
-                </i>
-                
-                <br matLine>
-                <p matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5;">
-                    <strong> — {{quote.speaker}}</strong>
-                <p></p>  
-                <mat-divider matLine></mat-divider>
-            </mat-list-item>
-        </mat-list>
-    </mat-card-content>
-</mat-card>
+                    <br matLine>
+                    <p matLine class="quote-card-text">
+                        <strong> — {{quote.speaker}}</strong>
+                    <p></p>
+                    <mat-divider matLine></mat-divider>
+                </mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
 
-<mat-card class="quote-card" style="margin-top: 1%">
-    <mat-card-title>
-        Classical Era
-    </mat-card-title>
-    <mat-divider ></mat-divider>
-    <mat-card-content>
-        <mat-list>
-            <mat-list-item *ngFor="let quote of cQuotes">
-                <b matLine><h1>{{quote.tech}}</h1></b>
-                <i matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5 !important;">
-                    {{quote.quote}}
-                </i>
-                
-                <br matLine>
-                <p matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5;">
-                    <strong> — {{quote.speaker}}</strong>
-                <p></p>  
-                <mat-divider matLine></mat-divider>
-            </mat-list-item>
-        </mat-list>
-    </mat-card-content>
-</mat-card>
+<div class="quote-card">
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-card-title style="margin-top: 1em; margin-bottom: 1em;">
+                    Classical Era
+                </mat-card-title>
+            </mat-expansion-panel-header>
+            <mat-list>
+                <mat-list-item *ngFor="let quote of cQuotes">
+                    <b matLine><h1>{{quote.tech}}</h1></b>
+                    <i matLine class="quote-card-text">
+                        {{quote.quote}}
+                    </i>
 
-<mat-card class="quote-card" style="margin-top: 1%">
-    <mat-card-title>
-        Medieval Era
-    </mat-card-title>
-    <mat-divider ></mat-divider>
-    <mat-card-content>
-        <mat-list>
-            <mat-list-item *ngFor="let quote of mQuotes">
-                <b matLine><h1>{{quote.tech}}</h1></b>
-                <i matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5 !important;">
-                    {{quote.quote}}
-                </i>
-                
-                <br matLine>
-                <p matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5;">
-                    <strong> — {{quote.speaker}}</strong>
-                <p></p>  
-                <mat-divider matLine></mat-divider>
-            </mat-list-item>
-        </mat-list>
-    </mat-card-content>
-</mat-card>
+                    <br matLine>
+                    <p matLine class="quote-card-text">
+                        <strong> — {{quote.speaker}}</strong>
+                    <p></p>
+                    <mat-divider matLine></mat-divider>
+                </mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
 
-<mat-card class="quote-card" style="margin-top: 1%">
-    <mat-card-title>
-        Renaissance Era
-    </mat-card-title>
-    <mat-divider ></mat-divider>
-    <mat-card-content>
-        <mat-list>
-            <mat-list-item *ngFor="let quote of rQuotes">
-                <b matLine><h1>{{quote.tech}}</h1></b>
-                <i matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5 !important;">
-                    {{quote.quote}}
-                </i>
-                
-                <br matLine>
-                <p matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5;">
-                    <strong> — {{quote.speaker}}</strong>
-                <p></p>  
-                <mat-divider matLine></mat-divider>
-            </mat-list-item>
-        </mat-list>
-    </mat-card-content>
-</mat-card>
+<div class="quote-card">
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-card-title style="margin-top: 1em; margin-bottom: 1em;">
+                    Medieval Era
+                </mat-card-title>
+            </mat-expansion-panel-header>
+            <mat-list>
+                <mat-list-item *ngFor="let quote of mQuotes">
+                    <b matLine><h1>{{quote.tech}}</h1></b>
+                    <i matLine class="quote-card-text">
+                        {{quote.quote}}
+                    </i>
 
-<mat-card class="quote-card" style="margin-top: 1%">
-    <mat-card-title>
-        Industrial Era
-    </mat-card-title>
-    <mat-divider ></mat-divider>
-    <mat-card-content>
-        <mat-list>
-            <mat-list-item *ngFor="let quote of iQuotes">
-                <b matLine><h1>{{quote.tech}}</h1></b>
-                <i matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5 !important;">
-                    {{quote.quote}}
-                </i>
-                
-                <br matLine>
-                <p matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5;">
-                    <strong> — {{quote.speaker}}</strong>
-                <p></p>  
-                <mat-divider matLine></mat-divider>
-            </mat-list-item>
-        </mat-list>
-    </mat-card-content>
-</mat-card>
+                    <br matLine>
+                    <p matLine class="quote-card-text">
+                        <strong> — {{quote.speaker}}</strong>
+                    <p></p>
+                    <mat-divider matLine></mat-divider>
+                </mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
 
-<mat-card class="quote-card" style="margin-top: 1%">
-    <mat-card-title>
-        Modern Era
-    </mat-card-title>
-    <mat-divider ></mat-divider>
-    <mat-card-content>
-        <mat-list>
-            <mat-list-item *ngFor="let quote of moQuotes">
-                <b matLine><h1>{{quote.tech}}</h1></b>
-                <i matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5 !important;">
-                    {{quote.quote}}
-                </i>
-                
-                <br matLine>
-                <p matLine style="word-wrap: break-word !important;
-                white-space: pre-wrap !important; line-height: 1.5;">
-                    <strong> — {{quote.speaker}}</strong>
-                <p></p>  
-                <mat-divider matLine></mat-divider>
-            </mat-list-item>
-        </mat-list>
-    </mat-card-content>
-</mat-card>
+<div class="quote-card">
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-card-title style="margin-top: 1em; margin-bottom: 1em;">
+                    Renaissance Era
+                </mat-card-title>
+            </mat-expansion-panel-header>
+            <mat-list>
+                <mat-list-item *ngFor="let quote of rQuotes">
+                    <b matLine><h1>{{quote.tech}}</h1></b>
+                    <i matLine class="quote-card-text">
+                        {{quote.quote}}
+                    </i>
+
+                    <br matLine>
+                    <p matLine class="quote-card-text">
+                        <strong> — {{quote.speaker}}</strong>
+                    <p></p>
+                    <mat-divider matLine></mat-divider>
+                </mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
+
+<div class="quote-card">
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-card-title style="margin-top: 1em; margin-bottom: 1em;">
+                    Industrial Era
+                </mat-card-title>
+            </mat-expansion-panel-header>
+            <mat-list>
+                <mat-list-item *ngFor="let quote of iQuotes">
+                    <b matLine><h1>{{quote.tech}}</h1></b>
+                    <i matLine class="quote-card-text">
+                        {{quote.quote}}
+                    </i>
+
+                    <br matLine>
+                    <p matLine class="quote-card-text">
+                        <strong> — {{quote.speaker}}</strong>
+                    <p></p>
+                    <mat-divider matLine></mat-divider>
+                </mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
+
+<div class="quote-card">
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-card-title style="margin-top: 1em; margin-bottom: 1em;">
+                    Modern Era
+                </mat-card-title>
+            </mat-expansion-panel-header>
+            <mat-list>
+                <mat-list-item *ngFor="let quote of moQuotes">
+                    <b matLine><h1>{{quote.tech}}</h1></b>
+                    <i matLine class="quote-card-text">
+                        {{quote.quote}}
+                    </i>
+
+                    <br matLine>
+                    <p matLine class="quote-card-text">
+                        <strong> — {{quote.speaker}}</strong>
+                    <p></p>
+                    <mat-divider matLine></mat-divider>
+                </mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>

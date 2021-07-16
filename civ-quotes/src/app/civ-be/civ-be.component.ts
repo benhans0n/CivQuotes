@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TechQuote } from './civ-be-quotes';
+import { TechQuote, WonderQuote } from './civ-be-quotes';
 
 @Component({
   selector: 'app-civ-be',
@@ -16,6 +16,7 @@ export class CivBeComponent {
   plyQuotes = new Array<TechQuote>();
   slaQuotes = new Array<TechQuote>();
   otherQuotes = new Array<TechQuote>();
+  wonderQuotes = new Array<WonderQuote>();
 
   constructor() {
     const allTechQuotes = require('./civ-be-tech-quotes.json').quotes as Array<TechQuote>;
@@ -28,5 +29,7 @@ export class CivBeComponent {
     this.plyQuotes = allTechQuotes.filter(quote => quote.faction === "ply");
     this.slaQuotes = allTechQuotes.filter(quote => quote.faction === "sla");
     this.otherQuotes = allTechQuotes.filter(quote => quote.faction === "o");
+
+    this.wonderQuotes = require('./civ-be-wonder-quotes.json').quotes as Array<WonderQuote>;
   }
 }
