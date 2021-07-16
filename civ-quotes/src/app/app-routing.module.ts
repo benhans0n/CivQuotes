@@ -5,9 +5,11 @@ import { CivBeComponent } from './civ-be/civ-be.component';
 import { CivIvComponent } from './civ-iv/civ-iv.component';
 import { CivVComponent } from './civ-v/civ-v.component';
 import { CivViComponent } from './civ-vi/civ-vi.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'alpha-centauri', pathMatch: 'full', data: { title: 'Civ Quotes' } },
+  { path: '', redirectTo: 'home', pathMatch: 'full', data: { title: 'Civ Quotes' } },
+  { path: 'home', component: HomeComponent, data: { title: 'Civ Quotes'}},
   { path: 'alpha-centauri', component: AlphaCentauriComponent, data: { title: 'Sid Meier\'s Alpha Centauri Quotes' } },
   { path: 'civ-iv', component: CivIvComponent, data: { title: 'Civilization IV Quotes' } },
   { path: 'civ-v', component: CivVComponent, data: { title: 'Civilization V Quotes' } },

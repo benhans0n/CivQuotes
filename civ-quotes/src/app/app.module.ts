@@ -19,6 +19,7 @@ import { CivIvComponent } from './civ-iv/civ-iv.component';
 import { CivVComponent } from './civ-v/civ-v.component';
 import { CivBeComponent } from './civ-be/civ-be.component';
 import { CivViComponent } from './civ-vi/civ-vi.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CivViComponent } from './civ-vi/civ-vi.component';
     CivIvComponent,
     CivVComponent,
     CivBeComponent,
-    CivViComponent
+    CivViComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
