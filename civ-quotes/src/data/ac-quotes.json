@@ -1,4 +1,62 @@
 {
+    "factions": [
+        {
+            "id": "uop",
+            "name": "University of Planet"
+        },
+        {
+            "id": "lb",
+            "name": "Lord's Believers"
+        },
+        {
+            "id": "sf",
+            "name": "Spartan Federation"
+        },
+        {
+            "id": "pf",
+            "name": "Peacekeeping Forces"
+        },
+        {
+            "id": "hh",
+            "name": "Human Hive"
+        },
+        {
+            "id": "mi",
+            "name": "Morgan Industries"
+        },
+        {
+            "id": "gs",
+            "name": "Gaia's Stepdaughters"
+        },
+        {
+            "id": "np",
+            "name": "Nautilus Pirates"
+        },
+        {
+            "id": "fd",
+            "name": "The Free Drones"
+        },
+        {
+            "id": "da",
+            "name": "The Data Angels"
+        },
+        {
+            "id": "cp",
+            "name": "The Cult of Planet"
+        },
+        {
+            "id": "mc",
+            "name": "Manifold Caretakers"
+        },
+        {
+            "id": "mu",
+            "name": "Manifold Usurpers"
+        },
+        {
+            "id": "other",
+            "name": "Other"
+        }
+    ],
     "quotes": [
         {
             "faction": "uop",
