@@ -63,7 +63,7 @@ export default function GameMenu() {
             <Popper
                 open={open}
                 anchorEl={anchorRef.current}
-                anchorOrigin={{horizontal: 'right', vertical: 'top'}}
+                anchororigin={{horizontal: 'right', vertical: 'top'}}
                 role={undefined}
                 placement="top-end"
                 transition

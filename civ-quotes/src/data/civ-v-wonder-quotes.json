@@ -1,4 +1,38 @@
 {
+    "eras": [
+        {
+            "id": "a",
+            "name": "Ancient Era"
+        },
+        {
+            "id": "c",
+            "name": "Classical Era"
+        },
+        {
+            "id": "m",
+            "name": "Medieval Era"
+        },
+        {
+            "id": "r",
+            "name": "Renaissance Era"
+        },
+        {
+            "id": "i",
+            "name": "Industrial Era"
+        },
+        {
+            "id": "mo",
+            "name": "Modern Era"
+        },
+        {
+            "id": "at",
+            "name": "Atomic Era"
+        },
+        {
+            "id": "if",
+            "name": "Information Era"
+        }
+    ],
     "quotes": [
         {
             "wonder": "Great Library",
