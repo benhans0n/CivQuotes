@@ -4,7 +4,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import AlphaCentauriQuotes from '../data/ac-quotes.json'
+import CivIVQuotes from '../data/civ-iv-quotes.json'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Navbar from '../components/navbar';
@@ -34,20 +34,22 @@ const AlphaCentauriPage = () => {
     return (
         <main>
             <Navbar />
-            {AlphaCentauriQuotes.factions.map((faction, i) => {
-                return <Box style={accordionStyles.box(isDesktop)} key={i}>
-                    <Accordion style={accordionStyles.accordion}>
+            {CivIVQuotes.eras.map((era) => {
+                return <Box style={accordionStyles.box(isDesktop)}>
+                    <Accordion style={accordionStyle}>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
-                            aria-controls="uop-content"
-                            id="uop-header"
                         >
-                            <Typography>{faction.name}</Typography>
+                            <Typography>{era.name}</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            {AlphaCentauriQuotes.quotes.filter(quote => quote.faction === faction.id).map((quote, j) => {
-                                return <Card style={accordionStyles.card} key={i + '.' + j}>
+                            {CivIVQuotes.quotes.filter(quote => quote.era === era.id).map((quote) => {
+                                return <Card style={cardStyle}>
                                     <CardContent>
+                                        <Typography>
+                                            <b>{quote.tech}</b>
+                                        </Typography>
+                                        <br></br>
                                         <Typography sx={{ fontSize: 16 }}>
                                             <i>
                                                 {quote.quote}
@@ -55,7 +57,7 @@ const AlphaCentauriPage = () => {
                                         </Typography>
                                         <br></br>
                                         <Typography sx={{ fontSize: 12 }}>
-                                            <b>— {quote.speaker}</b>, <i>{quote.work}</i> {quote.flavor_text}
+                                            <b>— {quote.speaker}</b>
                                         </Typography>
                                     </CardContent>
                                 </Card>
