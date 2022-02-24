@@ -36,7 +36,7 @@ const AlphaCentauriPage = () => {
             <Navbar />
             {CivIVQuotes.eras.map((era) => {
                 return <Box style={accordionStyles.box(isDesktop)}>
-                    <Accordion style={accordionStyle}>
+                    <Accordion style={accordionStyles.accordion}>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
                         >
@@ -44,7 +44,7 @@ const AlphaCentauriPage = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             {CivIVQuotes.quotes.filter(quote => quote.era === era.id).map((quote) => {
-                                return <Card style={cardStyle}>
+                                return <Card style={accordionStyles.card}>
                                     <CardContent>
                                         <Typography>
                                             <b>{quote.tech}</b>
