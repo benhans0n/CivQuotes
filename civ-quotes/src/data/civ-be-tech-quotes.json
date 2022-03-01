@@ -1,4 +1,42 @@
 {
+    "factions": [
+        {
+            "id": "arc",
+            "name":  "American Reclamation Corporation"
+        },
+        {
+            "id": "bra",
+            "name":  "Brasilia"
+        },
+        {
+            "id": "fiu",
+            "name":  "Franco-Iberia"
+        },
+        {
+            "id": "kvp",
+            "name":  "Kavithan Protectorate"
+        },
+        {
+            "id": "pac",
+            "name":  "Pan-Asian Cooperative"
+        },
+        {
+            "id": "pau",
+            "name":  "People's African Union"
+        },
+        {
+            "id": "ply",
+            "name":  "Polystralia"
+        },
+        {
+            "id": "sla",
+            "name":  "Slavic Federation"
+        },
+        {
+            "id": "o",
+            "name":  "Other"
+        }
+    ],
     "quotes": [
         {
             "tech": "Alien Adaptation",
