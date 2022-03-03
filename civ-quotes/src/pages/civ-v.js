@@ -34,7 +34,7 @@ const styles = {
 }
 
 // markup
-const AlphaCentauriPage = () => {
+const CivVPage = () => {
     const isDesktop = useMediaQuery('(min-width: 768px)');
 
     return (
@@ -43,7 +43,6 @@ const AlphaCentauriPage = () => {
             <h2 style={styles.h2(isDesktop)}> Technologies </h2>
             {CivVTechQuotes.eras.map((era) => {
                 return <Box style={styles.box(isDesktop)}>
-
                     <Accordion style={styles.accordion}>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
@@ -146,4 +145,4 @@ const AlphaCentauriPage = () => {
     )
 }
 
-export default AlphaCentauriPage
+export default CivVPage

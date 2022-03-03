@@ -4,7 +4,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import CivIVQuotes from '../data/civ-iv-quotes.json'
+import CivVITechQuotes from '../data/civ-vi-tech-quotes.json'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Navbar from '../components/navbar';
@@ -12,7 +12,7 @@ import { Box } from '@mui/system';
 import { useMediaQuery } from '@mui/material';
 
 // styles
-const accordionStyles = {
+const styles = {
     box: isDesktop => ({
         width: isDesktop ? 60 + "%" : 100 + "%",
         marginLeft: isDesktop ? 20 + "%" : 0 + "%",
@@ -21,30 +21,35 @@ const accordionStyles = {
     accordion: {
         backgroundColor: "#cccccc"
     },
-
     card: {
         marginBottom: 1 + "%"
-    }
+    },
+    h2: isDesktop => ({
+        marginLeft: isDesktop ? 20 + "%" : 1 + "%",
+        color: '#ffffff',
+        fontFamily: "sans-serif"
+    })
 }
 
 // markup
-const CivIVPage = () => {
+const CivVIPage = () => {
     const isDesktop = useMediaQuery('(min-width: 768px)');
 
     return (
         <main>
             <Navbar />
-            {CivIVQuotes.eras.map((era) => {
-                return <Box style={accordionStyles.box(isDesktop)}>
-                    <Accordion style={accordionStyles.accordion}>
+            <h2 style={styles.h2(isDesktop)}> Technologies </h2>
+            {CivVITechQuotes.eras.map((era) => {
+                return <Box style={styles.box(isDesktop)}>
+                    <Accordion style={styles.accordion}>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
                         >
                             <Typography>{era.name}</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            {CivIVQuotes.quotes.filter(quote => quote.era === era.id).map((quote) => {
-                                return <Card style={accordionStyles.card}>
+                            {CivVITechQuotes.quotes.filter(quote => quote.era === era.id).map((quote) => {
+                                return <Card style={styles.card}>
                                     <CardContent>
                                         <Typography>
                                             <b>{quote.tech}</b>
@@ -52,13 +57,25 @@ const CivIVPage = () => {
                                         <br></br>
                                         <Typography sx={{ fontSize: 16 }}>
                                             <i>
-                                                {quote.quote}
+                                                {quote.quotes[0].quote}
                                             </i>
                                         </Typography>
                                         <br></br>
                                         <Typography sx={{ fontSize: 12 }}>
-                                            <b>— {quote.speaker}</b>
+                                            <b>— {quote.quotes[0].speaker}</b>
                                         </Typography>
+                                        <hr hidden={quote.quotes[1] == null}></hr>
+                                        <div hidden={quote.quotes[1] == null}>
+                                            <Typography sx={{ fontSize: 16 }}>
+                                                <i>
+                                                    {quote.quotes[1] == null ? "" : quote.quotes[1].quote}
+                                                </i>
+                                            </Typography>
+                                            <br></br>
+                                            <Typography sx={{ fontSize: 12 }}>
+                                                <b>— {quote.quotes[1] == null ? "" : quote.quotes[1].speaker}</b>
+                                            </Typography>
+                                        </div>
                                     </CardContent>
                                 </Card>
                             })}
@@ -66,9 +83,8 @@ const CivIVPage = () => {
                     </Accordion>
                 </Box>
             })}
-
         </main>
     )
 }
 
-export default CivIVPage
+export default CivVIPage

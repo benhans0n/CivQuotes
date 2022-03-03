@@ -33,7 +33,7 @@ const styles = {
 }
 
 // markup
-const AlphaCentauriPage = () => {
+const CivBEPage = () => {
     const isDesktop = useMediaQuery('(min-width: 768px)');
 
     return (
@@ -71,7 +71,6 @@ const AlphaCentauriPage = () => {
                     </Accordion>
                 </Box>
             })}
-
             <h2 style={styles.h2(isDesktop)}> Wonders </h2>
             <Box style={styles.box(isDesktop)}>
                 <Accordion style={styles.accordion}>
@@ -107,4 +106,4 @@ const AlphaCentauriPage = () => {
     )
 }
 
-export default AlphaCentauriPage
+export default CivBEPage
