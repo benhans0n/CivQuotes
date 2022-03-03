@@ -62,7 +62,7 @@ const CivBEPage = () => {
                                         </Typography>
                                         <br></br>
                                         <Typography sx={{ fontSize: 12 }}>
-                                            <b>— {quote.speaker}</b>{quote.work != "" ? ", " : ""}<i>{quote.work != "" ? quote.work : ""}</i>
+                                            <b>— {quote.speaker}</b>{quote.work !== "" ? ", " : ""}<i>{quote.work !== "" ? quote.work : ""}</i>
                                         </Typography>
                                     </CardContent>
                                 </Card>
@@ -94,7 +94,7 @@ const CivBEPage = () => {
                                     </Typography>
                                     <br></br>
                                     <Typography sx={{ fontSize: 12 }}>
-                                        <b>— {quote.speaker}</b>{quote.work != "" ? ", " : ""}<i>{quote.work != "" ? quote.work : ""}</i>
+                                        <b>— {quote.speaker}</b>{quote.work !== "" ? ", " : ""}<i>{quote.work !== "" ? quote.work : ""}</i>
                                     </Typography>
                                 </CardContent>
                             </Card>
