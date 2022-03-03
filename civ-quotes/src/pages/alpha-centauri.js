@@ -10,6 +10,7 @@ import CardContent from '@mui/material/CardContent';
 import Navbar from '../components/navbar';
 import { Box } from '@mui/system';
 import { useMediaQuery } from '@mui/material';
+import { Helmet } from 'react-helmet';
 
 // styles
 const accordionStyles = {
@@ -33,6 +34,11 @@ const AlphaCentauriPage = () => {
 
     return (
         <main>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Sid Meier's Alpha Centauri Quotes</title>
+                <link rel="canonical" href="http://civquotes.com/alpha-centauri" />
+            </Helmet>
             <Navbar />
             {AlphaCentauriQuotes.factions.map((faction, i) => {
                 return <Box style={accordionStyles.box(isDesktop)} key={i}>

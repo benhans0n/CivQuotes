@@ -11,6 +11,7 @@ import CardContent from '@mui/material/CardContent';
 import Navbar from '../components/navbar';
 import { Box } from '@mui/system';
 import { useMediaQuery } from '@mui/material';
+import { Helmet } from 'react-helmet';
 
 // styles
 const styles = {
@@ -38,6 +39,11 @@ const CivBEPage = () => {
 
     return (
         <main>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Civilization: Beyond Earth Quotes</title>
+                <link rel="canonical" href="http://civquotes.com/civ-be" />
+            </Helmet>
             <Navbar />
             <h2 style={styles.h2(isDesktop)}> Technologies </h2>
             {CivBETechQuotes.factions.map((faction) => {
