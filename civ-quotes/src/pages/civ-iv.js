@@ -13,7 +13,7 @@ import { useMediaQuery } from '@mui/material';
 import { Helmet } from 'react-helmet';
 
 // styles
-const accordionStyles = {
+const styles = {
     box: isDesktop => ({
         width: isDesktop ? 60 + "%" : 100 + "%",
         marginLeft: isDesktop ? 20 + "%" : 0 + "%",
@@ -41,8 +41,8 @@ const CivIVPage = () => {
             </Helmet>
             <Navbar />
             {CivIVQuotes.eras.map((era) => {
-                return <Box style={accordionStyles.box(isDesktop)}>
-                    <Accordion style={accordionStyles.accordion}>
+                return <Box style={styles.box(isDesktop)}>
+                    <Accordion style={styles.accordion}>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
                         >
@@ -50,7 +50,7 @@ const CivIVPage = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             {CivIVQuotes.quotes.filter(quote => quote.era === era.id).map((quote) => {
-                                return <Card style={accordionStyles.card}>
+                                return <Card style={styles.card}>
                                     <CardContent>
                                         <Typography>
                                             <b>{quote.tech}</b>
