@@ -10,6 +10,7 @@ import CardContent from '@mui/material/CardContent';
 import Navbar from '../components/navbar';
 import { Box } from '@mui/system';
 import { useMediaQuery } from '@mui/material';
+import { Helmet } from 'react-helmet';
 
 // styles
 const styles = {
@@ -37,6 +38,11 @@ const CivVIPage = () => {
 
     return (
         <main>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Civilization VI Quotes</title>
+                <link rel="canonical" href="http://civquotes.com/civ-vi" />
+            </Helmet>
             <Navbar />
             <h2 style={styles.h2(isDesktop)}> Technologies </h2>
             {CivVITechQuotes.eras.map((era) => {
