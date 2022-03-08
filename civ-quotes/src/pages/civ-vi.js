@@ -62,7 +62,7 @@ const CivVIPage = () => {
                                         </Typography>
                                         <br></br>
                                         <Typography sx={{ fontSize: 16 }}>
-                                            <i>
+                                            <i style={{whiteSpace: "pre-line"}}>
                                                 {quote.quotes[0].quote}
                                             </i>
                                         </Typography>
@@ -73,7 +73,7 @@ const CivVIPage = () => {
                                         <hr hidden={quote.quotes[1] == null}></hr>
                                         <div hidden={quote.quotes[1] == null}>
                                             <Typography sx={{ fontSize: 16 }}>
-                                                <i>
+                                                <i style={{whiteSpace: "pre-line"}}>
                                                     {quote.quotes[1] == null ? "" : quote.quotes[1].quote}
                                                 </i>
                                             </Typography>

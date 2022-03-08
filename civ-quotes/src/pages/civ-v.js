@@ -64,7 +64,7 @@ const CivVPage = () => {
                                         </Typography>
                                         <br></br>
                                         <Typography sx={{ fontSize: 16 }}>
-                                            <i>
+                                            <i style={{whiteSpace: "pre-line"}}>
                                                 {quote.quote}
                                             </i>
                                         </Typography>
@@ -98,7 +98,7 @@ const CivVPage = () => {
                                         </Typography>
                                         <br></br>
                                         <Typography sx={{ fontSize: 16 }}>
-                                            <i>
+                                            <i style={{whiteSpace: "pre-line"}}>
                                                 {quote.quote}
                                             </i>
                                         </Typography>
@@ -132,7 +132,7 @@ const CivVPage = () => {
                                         </Typography>
                                         <br></br>
                                         <Typography sx={{ fontSize: 16 }}>
-                                            <i>
+                                            <i style={{whiteSpace: "pre-line"}}>
                                                 {quote.quote}
                                             </i>
                                         </Typography>

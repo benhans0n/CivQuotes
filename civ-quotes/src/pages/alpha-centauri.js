@@ -55,7 +55,7 @@ const AlphaCentauriPage = () => {
                                 return <Card style={accordionStyles.card} key={i + '.' + j}>
                                     <CardContent>
                                         <Typography sx={{ fontSize: 16 }}>
-                                            <i>
+                                            <i style={{whiteSpace: "pre-line"}}>
                                                 {quote.quote}
                                             </i>
                                         </Typography>
