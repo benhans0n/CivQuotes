@@ -62,7 +62,7 @@ const CivBEPage = () => {
                                             <b>{quote.tech}</b>
                                         </Typography>
                                         <Typography sx={{ fontSize: 16 }}>
-                                            <i>
+                                            <i style={{whiteSpace: "pre-line"}}>
                                                 {quote.quote}
                                             </i>
                                         </Typography>
@@ -94,7 +94,7 @@ const CivBEPage = () => {
                                     </Typography>
                                     <br></br>
                                     <Typography sx={{ fontSize: 16 }}>
-                                        <i>
+                                        <i style={{whiteSpace: "pre-line"}}>
                                             {quote.quote}
                                         </i>
                                     </Typography>
