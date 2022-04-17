@@ -94,7 +94,7 @@ const CivVPage = () => {
                                 return <Card style={styles.card}>
                                     <CardContent>
                                         <Typography>
-                                            <b>{quote.tech}</b>
+                                            <b>{quote.wonder}</b>
                                         </Typography>
                                         <br></br>
                                         <Typography sx={{ fontSize: 16 }}>
@@ -127,10 +127,6 @@ const CivVPage = () => {
                             {CivVEraQuotes.quotes.filter(quote => quote.era === era.id).map((quote) => {
                                 return <Card style={styles.card}>
                                     <CardContent>
-                                        <Typography>
-                                            <b>{quote.tech}</b>
-                                        </Typography>
-                                        <br></br>
                                         <Typography sx={{ fontSize: 16 }}>
                                             <i style={{whiteSpace: "pre-line"}}>
                                                 {quote.quote}
