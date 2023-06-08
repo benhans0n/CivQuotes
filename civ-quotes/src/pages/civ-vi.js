@@ -5,6 +5,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import CivVITechQuotes from '../data/civ-vi-tech-quotes.json'
+import CivVIWonderQuotes from '../data/civ-vi-wonder-quotes.json'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Navbar from '../components/navbar';
@@ -82,6 +83,40 @@ const CivVIPage = () => {
                                                 <b>— {quote.quotes[1] == null ? "" : quote.quotes[1].speaker}</b>
                                             </Typography>
                                         </div>
+                                    </CardContent>
+                                </Card>
+                            })}
+                        </AccordionDetails>
+                    </Accordion>
+                </Box>
+            })}
+            <h2 style={styles.h2(isDesktop)}> Wonders </h2>
+            {CivVIWonderQuotes.eras.map((era) => {
+                return <Box style={styles.box(isDesktop)}>
+
+                    <Accordion style={styles.accordion}>
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                        >
+                            <Typography>{era.name}</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            {CivVIWonderQuotes.quotes.filter(quote => quote.era === era.id).map((quote) => {
+                                return <Card style={styles.card}>
+                                    <CardContent>
+                                        <Typography>
+                                            <b>{quote.wonder}</b> <span style={{fontSize: 12}}>- Unlocked by {quote.unlocking_tech}</span>
+                                        </Typography>
+                                        <br></br>
+                                        <Typography sx={{ fontSize: 16 }}>
+                                            <i style={{whiteSpace: "pre-line"}}>
+                                                {quote.quotes[0].quote}
+                                            </i>
+                                        </Typography>
+                                        <br></br>
+                                        <Typography sx={{ fontSize: 12 }}>
+                                            <b>— {quote.quotes[0].speaker}</b>
+                                        </Typography>
                                     </CardContent>
                                 </Card>
                             })}
