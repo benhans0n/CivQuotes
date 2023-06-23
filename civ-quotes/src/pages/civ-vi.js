@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import CivVITechQuotes from '../data/civ-vi-tech-quotes.json'
 import CivVIWonderQuotes from '../data/civ-vi-wonder-quotes.json'
+import CivVINaturalWonderQuotes from '../data/civ-vi-natural-wonder-quotes.json'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Navbar from '../components/navbar';
@@ -124,6 +125,36 @@ const CivVIPage = () => {
                     </Accordion>
                 </Box>
             })}
+            <h2 style={styles.h2(isDesktop)}> Natural Wonders </h2>
+            <Box style={styles.box(isDesktop)}>
+                <Accordion style={styles.accordion}>
+                    <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                    >
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        {CivVINaturalWonderQuotes.quotes.map((quote) => {
+                            return <Card style={styles.card}>
+                                <CardContent>
+                                    <Typography>
+                                        <b>{quote.wonder}</b>
+                                    </Typography>
+                                    <br></br>
+                                    <Typography sx={{ fontSize: 16 }}>
+                                        <i style={{whiteSpace: "pre-line"}}>
+                                            {quote.quotes[0].quote}
+                                        </i>
+                                    </Typography>
+                                    <br></br>
+                                    <Typography sx={{ fontSize: 12 }}>
+                                        <b>— {quote.quotes[0].speaker}</b>
+                                    </Typography>
+                                </CardContent>
+                            </Card>
+                        })}
+                    </AccordionDetails>
+                </Accordion>
+            </Box>
         </main>
     )
 }
