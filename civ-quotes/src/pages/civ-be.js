@@ -5,6 +5,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import CivBETechQuotes from '../data/civ-be-tech-quotes.json'
+import CivBEAffinityQuotes from '../data/civ-be-affinities-quotes.json'
 import CivBEWonderQuotes from '../data/civ-be-wonder-quotes.json'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -49,9 +50,7 @@ const CivBEPage = () => {
             {CivBETechQuotes.factions.map((faction) => {
                 return <Box style={styles.box(isDesktop)}>
                     <Accordion style={styles.accordion}>
-                        <AccordionSummary
-                            expandIcon={<ExpandMoreIcon />}
-                        >
+                        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                             <Typography>{faction.name}</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
@@ -77,12 +76,40 @@ const CivBEPage = () => {
                     </Accordion>
                 </Box>
             })}
+            <h2 style={styles.h2(isDesktop)}> Affinities </h2>
+            {CivBEAffinityQuotes.affinities.map((affinity) => {
+                return <Box style={styles.box(isDesktop)}>
+                    <Accordion style={styles.accordion}>
+                        <AccordionSummary expandIcon={<ExpandMoreIcon/>}>
+                            <Typography>{affinity.name}</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            {CivBEAffinityQuotes.quotes.filter(quote => quote.affinity === affinity.id).map((quote) => {
+                                return <Card style={styles.card}>
+                                    <CardContent>
+                                        <Typography>
+                                            <b>Level {quote.level}</b>
+                                        </Typography>
+                                        <Typography sx={{ fontSize: 16 }}>
+                                            <i style={{whiteSpace: "pre-line"}}>
+                                                {quote.quote}
+                                            </i>
+                                        </Typography>
+                                        <br></br>
+                                        <Typography sx={{ fontSize: 12 }}>
+                                            <b>— {quote.speaker}</b>{quote.work !== "" ? ", " : ""}<i>{quote.work !== "" ? quote.work : ""}</i>
+                                        </Typography>
+                                    </CardContent>
+                                </Card>
+                            })}
+                        </AccordionDetails>
+                    </Accordion>
+                </Box>
+            })}
             <h2 style={styles.h2(isDesktop)}> Wonders </h2>
             <Box style={styles.box(isDesktop)}>
                 <Accordion style={styles.accordion}>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                    >
+                    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                         <Typography>Wonders</Typography>
                     </AccordionSummary>
                     <AccordionDetails>

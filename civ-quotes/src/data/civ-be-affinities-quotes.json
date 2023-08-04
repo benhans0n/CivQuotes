@@ -1,0 +1,396 @@
+{
+    "affinities": [
+        {
+            "id": "h",
+            "name":  "Harmony"
+        },
+        {
+            "id": "p",
+            "name":  "Purity"
+        },
+        {
+            "id": "s",
+            "name":  "Supremacy"
+        }
+    ],
+    "quotes": [
+        {
+            "level": "1",
+            "affinity": "h",
+            "quote": "I wonder what life was like on Earth when the whole atmosphere was still breathable.",
+            "speaker": "Unattributed personal log fragment",
+            "work": "Seeding Departure"
+        },
+        {
+            "level": "2",
+            "affinity": "h",
+            "quote": "This morning I saw flocks in flight, herds moving about the plain, and listened to the sound of water mixing with the morning chorus, and I wept at the beauty of it all.",
+            "speaker": "Zhu Ruoji",
+            "work": "Poetry in the New Garden"
+        },
+        {
+            "level": "3",
+            "affinity": "h",
+            "quote": "If you can, touch a Siege Worm as it moves by. That will teach you all you need to know about the insignificance of humanity.",
+            "speaker": "Pastor Jack's Homiletics",
+            "work": ""
+        },
+        {
+            "level": "4",
+            "affinity": "h",
+            "quote": "The best lesson the Raptor can teach you is to be grateful for the prey that sustains you. The worst lesson it can teach you is a practical demonstration of that point.",
+            "speaker": "Brasilian Corpo de Fuzilieros Colono Manual for Planetary Survival and Evasion",
+            "work": ""
+        },
+        {
+            "level": "5",
+            "affinity": "h",
+            "quote": "You only have to look at the ecosystems outside to get a master class in power systems, combat tactics, engineering, applied genetics, interpersonal relationships, and love.",
+            "speaker": "Lecture Note from Daoming Sochua's Syllabus for New Colonial Sciences",
+            "work": ""
+        },
+        {
+            "level": "6",
+            "affinity": "h",
+            "quote": "We discarded the booster rockets which got us off Earth. Why shouldn't we discard some of those Earth genes, now that better ones are available?",
+            "speaker": "Essays on the Promethean",
+            "work": ""
+        },
+        {
+            "level": "7",
+            "affinity": "h",
+            "quote": "It is inevitable that we will become part of this new world because you cannot participate in a system without being complicit in it. Embrace your complicity and move to acceptance.",
+            "speaker": "Li Smith",
+            "work": "The New Planetary Ethics"
+        },
+        {
+            "level": "8",
+            "affinity": "h",
+            "quote": "If we don't focus on living on this world, right now, with the people that are here, then we are guilty of slothful spirits and passive wills.",
+            "speaker": "Fraear Francito",
+            "work": "Collected Sermons"
+        },
+        {
+            "level": "9",
+            "affinity": "h",
+            "quote": "The day is coming when the Anthropocene Advent will be viewed as the inflection point for a new rate of evolution on this planet.",
+            "speaker": "Joao Wilson",
+            "work": "Neoconcilience"
+        },
+        {
+            "level": "10",
+            "affinity": "h",
+            "quote": "The food of this planet passes through our bodies and enriches us, just as we pass through the body of this planet and enrich it.",
+            "speaker": "Inscription over the gate of Gethsemane Plantation",
+            "work": ""
+        },
+        {
+            "level": "11",
+            "affinity": "h",
+            "quote": "How marvelous it is to find cockroaches roaming on the floor! By our hands life thrives where it has not existed before, and thus richness multiplies!",
+            "speaker": "Zhuangzi's New Book",
+            "work": ""
+        },
+        {
+            "level": "12",
+            "affinity": "h",
+            "quote": "The wisdom of nature is that she is content to wait and iterate on her solutions, and because of this she always finds a way.",
+            "speaker": "Seven Lessons and 108 Observations From a Square Meter of Planet",
+            "work": ""
+        },
+        {
+            "level": "13",
+            "affinity": "h",
+            "quote": "We know that we are defined by the righteousness of our deeds and the content of our character, not the color of our skin, or the sequence of our genes.",
+            "speaker": "The Rapport Creed",
+            "work": ""
+        },
+        {
+            "level": "14",
+            "affinity": "h",
+            "quote": "We destroyed one planet when we moved against its rhythms, and brought ourselves to the brink of extinction. What great things will we accomplish as we dance with this world?",
+            "speaker": "Attributed to Kavitha Thakur",
+            "work": ""
+        },
+        {
+            "level": "15",
+            "affinity": "h",
+            "quote": "This world is a gift-garment that we wear upon ourselves and within ourselves in gratitude to the giver.",
+            "speaker": "From the Annunciation Rite of the Polymorphalists",
+            "work": ""
+        },
+        {
+            "level": "16",
+            "affinity": "h",
+            "quote": "The body finds infection, surrounds it, and neutralizes it, thus saving the host. This planet is our host. What do you suppose it thinks of you?",
+            "speaker": "Canto 2",
+            "work": "Still Pool Mirror Song"
+        },
+        {
+            "level": "17",
+            "affinity": "h",
+            "quote": "The longer we have taken the life of the planet within ourselves, the more we feel the hand that has shaped this life.",
+            "speaker": "Soror Janla",
+            "work": "Exhortations on Fitra"
+        },
+        {
+            "level": "18",
+            "affinity": "h",
+            "quote": "Chao dreamed he was a Siege Worm, and when he woke, he knew that he was as much a part of the world as the Siege Worm was.",
+            "speaker": "Sheng Gongsun",
+            "work": "The Rhapsody of Unification"
+        },
+        {
+            "level": "1",
+            "affinity": "s",
+            "quote": "We fled Earth because it was getting worse faster than we could ever fix it.",
+            "speaker": "Personal log, attribution unretrievable, Settlement D-2",
+            "work": ""
+        },
+        {
+            "level": "2",
+            "affinity": "s",
+            "quote": "The first five machines of Earth are: The wheel, the lever, the inclined plane, the dynamo, and the screw.",
+            "speaker": "Ganesh Edmin",
+            "work": "Lists of Prehistory"
+        },
+        {
+            "level": "3",
+            "affinity": "s",
+            "quote": "Progress begins with someone saying: There has to be a better way to do this.",
+            "speaker": "The Themosticlian Five",
+            "work": "Prologue to Techne"
+        },
+        {
+            "level": "4",
+            "affinity": "s",
+            "quote": "To create a machine to work your will is to create your destiny.",
+            "speaker": "Aphorisms for Practical People",
+            "work": ""
+        },
+        {
+            "level": "5",
+            "affinity": "s",
+            "quote": "We have proven that the computer is a good tool. Why can it not be a good advisor?",
+            "speaker": "Essays on the Master Control",
+            "work": ""
+        },
+        {
+            "level": "6",
+            "affinity": "s",
+            "quote": "Accepting the limitations of birthform betrays a lack of imagination.",
+            "speaker": "Graffito within an abandoned settlement",
+            "work": ""
+        },
+        {
+            "level": "7",
+            "affinity": "s",
+            "quote": "I believe my parents live forever in the code they bequeathed to me, and I am never lonely.",
+            "speaker": "Ghibril Magalhaes",
+            "work": "Autobiography of a Utopian Operator"
+        },
+        {
+            "level": "8",
+            "affinity": "s",
+            "quote": "How beautiful it is to speak to the machine in its own language, and have it speak back in ours",
+            "speaker": "Personal log, name redacted, Markov Eclipse Cadet",
+            "work": ""
+        },
+        {
+            "level": "9",
+            "affinity": "s",
+            "quote": "Biology is entropy. Why choose chaos, when the path to eternity lies at your feet?",
+            "speaker": "Wilhelmina Singh",
+            "work": "Binary Dao"
+        },
+        {
+            "level": "10",
+            "affinity": "s",
+            "quote": "I dream of a day when our mortal form can stand beneath the skies of any planet without fear or apology",
+            "speaker": "Credo of the Superior Path",
+            "work": ""
+        },
+        {
+            "level": "11",
+            "affinity": "s",
+            "quote": "The choice between humans and machines is a false dichotomy created to confuse and mislead.",
+            "speaker": "Commentaries on Volume VII",
+            "work": ""
+        },
+        {
+            "level": "12",
+            "affinity": "s",
+            "quote": "Our ancestors understood that technology was our salvation. We carry the legacy of our prophets in our code.",
+            "speaker": "Aleph1-Zhiyi",
+            "work": "The Greater Silicon Sutra"
+        },
+        {
+            "level": "13",
+            "affinity": "s",
+            "quote": "The spirit has always been willing. The flesh has always been weak.",
+            "speaker": "Comment, line 89, \"Category 2 bipedal locomotion protocol\"",
+            "work": ""
+        },
+        {
+            "level": "14",
+            "affinity": "s",
+            "quote": "Blessed are those who dwell within the machine, for theirs is true freedom from pain.",
+            "speaker": "Aleph 1-St. Zeno",
+            "work": "Hagiography of the Blessed Intelligence"
+        },
+        {
+            "level": "15",
+            "affinity": "s",
+            "quote": "If you see death, disease, aging, and senescence, and you experience any emotion other than revulsion, then you are held captive by romance, and must emancipate your own thinking before you can help your fellow humans.",
+            "speaker": "3-Charles Wu",
+            "work": "Veritas ex Machina"
+        },
+        {
+            "level": "16",
+            "affinity": "s",
+            "quote": "Put a machine into motion by disengaging the brakes. Put humanity into motion by disengaging ideology that holds back its potential.",
+            "speaker": "Attributed to Vadim Kozlov",
+            "work": ""
+        },
+        {
+            "level": "17",
+            "affinity": "s",
+            "quote": "Truth is binary. There is one, positive, yes, light, the machine, progress, upgrade, holism, independence, eternity. And there is the opposite of these, which is anathema.",
+            "speaker": "The Manichean Protocols 1:12-14",
+            "work": ""
+        },
+        {
+            "level": "18",
+            "affinity": "s",
+            "quote": "All previous versions of humanity will no longer be supported as of this update.",
+            "speaker": "Registry Update 40000.b595135.omega",
+            "work": ""
+        },
+        {
+            "level": "1",
+            "affinity": "p",
+            "quote": "How much joy can this new planet hold, when all I can think is of everything I've left behind?",
+            "speaker": "Phaedra",
+            "work": "Lamentation for Planetfall"
+        },
+        {
+            "level": "2",
+            "affinity": "p",
+            "quote": "Every day I think of Earth, because a word or phrase evokes a lesson I learned long ago, and gets me what I need.",
+            "speaker": "Perseverance Johnson",
+            "work": "Diary of a Colonial Woman"
+        },
+        {
+            "level": "3",
+            "affinity": "p",
+            "quote": "Yes, homesteading this world is hard, but all the people pitch in and somehow the work gets done.",
+            "speaker": "Penniless Ben's Almanac",
+            "work": ""
+        },
+        {
+            "level": "4",
+            "affinity": "p",
+            "quote": "I know we can tackle the next problem because we succeeded in tackling all the problems that came before.",
+            "speaker": "Video interview with an anonymous explorer",
+            "work": ""
+        },
+        {
+            "level": "5",
+            "affinity": "p",
+            "quote": "I'm grateful for the opportunity to come here, and I'm grateful that we are living up to the expectations of the people who sent us.",
+            "speaker": "From the Pioneer's Daily Reflection",
+            "work": ""
+        },
+        {
+            "level": "6",
+            "affinity": "p",
+            "quote": "We thrive because we built a solid foundation on this world with values brought from Earth.",
+            "speaker": "Esther Polly Mather",
+            "work": "Collected Sermons"
+        },
+        {
+            "level": "7",
+            "affinity": "p",
+            "quote": "Our backs are strong and our bellies are full because on Earth, someone's belly is empty and their back is bowed. Make sure your conduct is worthy of that pain.",
+            "speaker": "Paraseneca",
+            "work": "On Respect"
+        },
+        {
+            "level": "8",
+            "affinity": "p",
+            "quote": "Remember that humanity has already escaped from a disaster of its own making. Before us, no other life on Earth had the wisdom to understand what transpired or the power to overcome.",
+            "speaker": "Ieremiah ben Thom",
+            "work": "A Treatise on the Course of Terrestrial Civilizations"
+        },
+        {
+            "level": "9",
+            "affinity": "p",
+            "quote": "The arc of civilizations stretches from the Indus and Mesopotamia to the edge of this world in a strong and unbroken line.",
+            "speaker": "Jan de Varrache",
+            "work": "Legenda Aurea"
+        },
+        {
+            "level": "10",
+            "affinity": "p",
+            "quote": "Why waste your breath articulating a morality that was disproven with eloquence and foresight centuries ago on Old Earth?",
+            "speaker": "Juvenile the Latest",
+            "work": "Satres"
+        },
+        {
+            "level": "11",
+            "affinity": "p",
+            "quote": "Wisdom and faith led our ancestors to build ships to cross space and bring us here. May providence carry us back to them one day.",
+            "speaker": "Chersterbelloch K. Brown",
+            "work": "The C.K. Brown Omnibus"
+        },
+        {
+            "level": "12",
+            "affinity": "p",
+            "quote": "The great value of this planet is that it brings into sharp relief the essential nature of our humanity.",
+            "speaker": "Athena Stowe",
+            "work": "Letters to my Students"
+        },
+        {
+            "level": "13",
+            "affinity": "p",
+            "quote": "Actual human beings everywhere now are more important than potential 'improved' humans that may or may not exist in the future.",
+            "speaker": "Blessed Ambrose's Steelyard",
+            "work": ""
+        },
+        {
+            "level": "14",
+            "affinity": "p",
+            "quote": "When we reach out to our brothers and sisters, we reach out with compassion. Who wilfully rejects the compassion of the strong?",
+            "speaker": "Attributed to Samatar Jama Barre",
+            "work": ""
+        },
+        {
+            "level": "15",
+            "affinity": "p",
+            "quote": "From my obligation to my fellow humans, I draw fellowship, purpose, meaning, strength, courage, conviction, insight, and the basis of all morality. How can such joy be burdensome?",
+            "speaker": "David Whitman",
+            "work": "Psalms and Aphorisms"
+        },
+        {
+            "level": "16",
+            "affinity": "p",
+            "quote": "Those who forget the past and its sacrifice become the forgotten dust in due time.",
+            "speaker": "Dharani of the Chobhamite Brothers",
+            "work": ""
+        },
+        {
+            "level": "17",
+            "affinity": "p",
+            "quote": "We remake this world into a new Eden. Should a serpent enter it and whisper words that will lead to ruin, let us then become the rectifying archangel with the fiery sword.",
+            "speaker": "Inscription on the Reliquary of St. Germaine's Destroyer",
+            "work": ""
+        },
+        {
+            "level": "18",
+            "affinity": "p",
+            "quote": "All humans are one family. Those who are not of our family are not human. Amen, amen, we say to you: Let them not test our forbearance.",
+            "speaker": "Epistle of Peter and Cornelius to the Centralites, 6:11",
+            "work": ""
+        }
+    ]
+}
