@@ -21,8 +21,12 @@
             "name": "Modern Era"
         },
         {
+            "id": "at",
+            "name": "Atomic Era"
+        },
+        {
             "id": "f",
-            "name": "Future Era"
+            "name": "Future/Information Era"
         }
     ],
     "quotes": [
@@ -100,6 +104,26 @@
             "era": "mo",
             "quote": "Mr. Gorbachev, tear down this wall!",
             "speaker": "Ronald Reagan"
+        },
+        {
+            "era": "at",
+            "quote": "The future has a way of arriving unannounced.",
+            "speaker": "George Will"
+        },
+        {
+            "era": "at",
+            "quote": "Most of the things worth doing in the world had been declared impossible before they were done.",
+            "speaker": "Louis Brandeis"
+        },
+        {
+            "era": "at",
+            "quote": "This is one small step for a man, one giant leap for mankind.",
+            "speaker": "Neil Armstrong"
+        },
+        {
+            "era": "at",
+            "quote": "Progress is the realization of utopias.",
+            "speaker": "Oscar Wilde"
         },
         {
             "era": "f",

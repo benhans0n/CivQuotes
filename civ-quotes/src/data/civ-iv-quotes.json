@@ -23,6 +23,10 @@
         {
             "id": "mo",
             "name": "Modern Era"
+        },
+        {
+            "id": "f",
+            "name": "Future Era"
         }
     ],
     "quotes": [
@@ -55,12 +59,6 @@
             "era": "a",
             "quote": "Give a man a fish and you feed him for a day. Teach a man how to fish and you feed him for a lifetime.",
             "speaker": "Lao Tzu"
-        },
-        {
-            "tech": "Horseback Riding",
-            "era": "a",
-            "quote": "If you speak the truth, have a foot in the stirrup.",
-            "speaker": "Turkish Proverb"
         },
         {
             "tech": "Hunting",
@@ -181,6 +179,12 @@
             "era": "c",
             "quote": "All the world's a stage, and all the men and women merely players. They have their exits and their entrances; and one man in his time plays many parts.",
             "speaker": "William Shakespeare"
+        },
+        {
+            "tech": "Horseback Riding",
+            "era": "c",
+            "quote": "If you speak the truth, have a foot in the stirrup.",
+            "speaker": "Turkish Proverb"
         },
         {
             "tech": "Iron Working",
@@ -501,24 +505,6 @@
             "speaker": "Leonardo Da Vinci"
         },
         {
-            "tech": "Fusion",
-            "era": "mo",
-            "quote": "Any sufficiently advanced technology is indistinguishable from magic.",
-            "speaker": "Arthur C. Clarke"
-        },
-        {
-            "tech": "Future Technology",
-            "era": "mo",
-            "quote": "The future will be better tomorrow.",
-            "speaker": "Dan Quayle"
-        },
-        {
-            "tech": "Genetics",
-            "era": "mo",
-            "quote": "Soon it will be a sin for parents to have a child which carries the heavy burden of genetic disease.",
-            "speaker": "Bob Edwards"
-        },
-        {
             "tech": "Laser",
             "era": "mo",
             "quote": "Nothing travels faster than the speed of light with the possible exception of bad news, which obeys its own special laws.",
@@ -567,16 +553,34 @@
             "speaker": "Sputnik I"
         },
         {
-            "tech": "Stealth",
-            "era": "mo",
-            "quote": "Behind a veil, unseen yet present, I was the forceful soul that moved this mighty body.",
-            "speaker": "Jean Racine"
-        },
-        {
             "tech": "Superconductors",
             "era": "mo",
             "quote": "What is happiness? The feeling that power is growing, that resistance is overcome.",
             "speaker": "Friedrich Nietzsche"
+        },
+        {
+            "tech": "Fusion",
+            "era": "f",
+            "quote": "Any sufficiently advanced technology is indistinguishable from magic.",
+            "speaker": "Arthur C. Clarke"
+        },
+        {
+            "tech": "Future Technology",
+            "era": "f",
+            "quote": "The future will be better tomorrow.",
+            "speaker": "Dan Quayle"
+        },
+        {
+            "tech": "Genetics",
+            "era": "f",
+            "quote": "Soon it will be a sin for parents to have a child which carries the heavy burden of genetic disease.",
+            "speaker": "Bob Edwards"
+        },
+        {
+            "tech": "Stealth",
+            "era": "f",
+            "quote": "Behind a veil, unseen yet present, I was the forceful soul that moved this mighty body.",
+            "speaker": "Jean Racine"
         }
     ]
 }

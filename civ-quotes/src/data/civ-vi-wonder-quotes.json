@@ -179,7 +179,7 @@
             "era": "c",
             "quotes": [
                 {
-                    "quote": "...Eagles fly, The turrets round, and seem to flout the sky;[NEWLINE]They eye those walls now crumbling in decay,[NEWLINE]And scare from quiet rest their destined prey.",
+                    "quote": "...Eagles fly, The turrets round, and seem to flout the sky;\nThey eye those walls now crumbling in decay,\nAnd scare from quiet rest their destined prey.",
                     "speaker": "Samuel Prout Hill"
                 }
             ]
