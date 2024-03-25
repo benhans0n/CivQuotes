@@ -1,0 +1,860 @@
+{
+    "eras": [
+        {
+            "id": "a",
+            "name": "Ancient Era"
+        },
+        {
+            "id": "c",
+            "name": "Classical Era"
+        },
+        {
+            "id": "m",
+            "name": "Medieval Era"
+        },
+        {
+            "id": "r",
+            "name": "Renaissance Era"
+        },
+        {
+            "id": "i",
+            "name": "Industrial Era"
+        },
+        {
+            "id": "mo",
+            "name": "Modern Era"
+        },
+        {
+            "id": "at",
+            "name": "Atomic Era"
+        },
+        {
+            "id": "if",
+            "name": "Information Era"
+        },
+        {
+            "id": "f",
+            "name": "Future Era"
+        }
+    ],
+    "quotes": [
+        {
+            "civic": "Code of Laws",
+            "era": "a",
+            "quotes": [
+                {
+                    "quote": "It is not wisdom but authority that makes a law.",
+                    "speaker": "Thomas Hobbes"
+                },
+                {
+                    "quote": "At his best, man is the noblest of all animals; separated from law and justice he is the worst.",
+                    "speaker": "Aristotle"
+                }
+            ]
+        },
+        {
+            "civic": "Craftsmanship",
+            "era": "a",
+            "quotes": [
+                {
+                    "quote": "Without craftsmanship, inspiration is a mere reed shaken in the wind.",
+                    "speaker": "Johannes Brahms"
+                },
+                {
+                    "quote": "Skill without imagination is craftsmanship and gives us many useful objects such as wickerwork picnic baskets.",
+                    "speaker": "Tom Stoppard"
+                }
+            ]
+        },
+        {
+            "civic": "Early Empire",
+            "era": "a",
+            "quotes": [
+                {
+                    "quote": "Look back over the past, with its changing empires that rose and fell, and you can foresee the future, too.",
+                    "speaker": "Marcus Aurelius"
+                },
+                {
+                    "quote": "It was luxuries like air conditioning that brought down the Roman Empire. With air conditioning their windows were shut; they couldn't hear the barbarians coming.",
+                    "speaker": "Garrison Keillor"
+                }
+            ]
+        },
+        {
+            "civic": "Foreign Trade",
+            "era": "a",
+            "quotes": [
+                {
+                    "quote": "Every nation lives by exchanging.",
+                    "speaker": "Adam Smith"
+                },
+                {
+                    "quote": "That's the positive aspect of trade I suppose. The world gets stirred up together.",
+                    "speaker": "Isabel Hoving"
+                }
+            ]
+        },
+        {
+            "civic": "Military Tradition",
+            "era": "a",
+            "quotes": [
+                {
+                    "quote": "Bravery is being the only one who knows you're afraid.",
+                    "speaker": "Colonel David Hackworth"
+                },
+                {
+                    "quote": "I don't underrate the value of military knowledge, but if men make war in slavish obedience to rules, they will fail.",
+                    "speaker": "Ulysses S. Grant"
+                }
+            ]
+        },
+        {
+            "civic": "Mysticism",
+            "era": "a",
+            "quotes": [
+                {
+                    "quote": "Mysticism is the mistake of an accidental and individual symbol for a universal one.",
+                    "speaker": "Ralph Waldo Emerson"
+                },
+                {
+                    "quote": "I like to say I practice militant mysticism. I'm absolutely sure of some things that I don't quite know.",
+                    "speaker": "Rob Bell"
+                }
+            ]
+        },
+        {
+            "civic": "State Workforce",
+            "era": "a",
+            "quotes": [
+                {
+                    "quote": "A strong economy begins with a strong, well-educated workforce.",
+                    "speaker": "Bill Owens"
+                },
+                {
+                    "quote": "It is equally important to have a happy and engaged workforce as it is to have a profitable bottom line.",
+                    "speaker": "Vern Dosch"
+                }
+            ]
+        },
+        {
+            "civic": "Defensive Tactics",
+            "era": "c",
+            "quotes": [
+                {
+                    "quote": "Invincibility lies in the defense; the possibility of victory in the attack.",
+                    "speaker": "Sun Tzu"
+                },
+                {
+                    "quote": "Defense is superior to opulence.",
+                    "speaker": "Adam Smith"
+                }
+            ]
+        },
+        {
+            "civic": "Drama and Poetry",
+            "era": "c",
+            "quotes": [
+                {
+                    "quote": "The poets have been mysteriously silent on the subject of cheese.",
+                    "speaker": "G. K. Chesterton"
+                },
+                {
+                    "quote": "All the world's a stage, and all the men and women merely players.",
+                    "speaker": "William Shakespeare"
+                }
+            ]
+        },
+        {
+            "civic": "Games and Recreation",
+            "era": "c",
+            "quotes": [
+                {
+                    "quote": "If bread is the first necessity of life, recreation is a close second.",
+                    "speaker": "Edward Bellamy"
+                },
+                {
+                    "quote": "People who cannot find time for recreation are sooner or later to find time for illness.",
+                    "speaker": "John Wanamaker"
+                }
+            ]
+        },
+        {
+            "civic": "Military Training",
+            "era": "c",
+            "quotes": [
+                {
+                    "quote": "If it's natural to kill, how come men have to go into training to learn how?",
+                    "speaker": "Joan Baez"
+                },
+                {
+                    "quote": "Those who in quarrels interpose, must often wipe a bloody nose.",
+                    "speaker": "John Gay"
+                }
+            ]
+        },
+        {
+            "civic": "Political Philosophy",
+            "era": "c",
+            "quotes": [
+                {
+                    "quote": "Politics is the art of the possible, the attainable - the art of the next best.",
+                    "speaker": "Otto von Bismarck"
+                },
+                {
+                    "quote": "Divide and rule, a sound motto. Unite and lead, a better one.",
+                    "speaker": "Johann Wolfgang von Goethe"
+                }
+            ]
+        },
+        {
+            "civic": "Recorded History",
+            "era": "c",
+            "quotes": [
+                {
+                    "quote": "I've lived through some terrible things in my life, some of which actually happened.",
+                    "speaker": "Mark Twain"
+                },
+                {
+                    "quote": "History is the version of past events that people have decided to agree upon.",
+                    "speaker": "Napoleon Bonaparte"
+                }
+            ]
+        },
+        {
+            "civic": "Theology",
+            "era": "c",
+            "quotes": [
+                {
+                    "quote": "We can no more have exact religious thinking without theology, than exact mensuration and astronomy without mathematics, or exact iron-making without chemistry.",
+                    "speaker": "John Hall"
+                },
+                {
+                    "quote": "Man suffers only because he takes seriously what the gods made for fun.",
+                    "speaker": "Alan W. Watts"
+                }
+            ]
+        },
+        {
+            "civic": "Civil Service",
+            "era": "m",
+            "quotes": [
+                {
+                    "quote": "It's all papers and forms, the entire civil service is like a fortress made of papers, forms and red tape.",
+                    "speaker": "Alexander Ostrovsky"
+                },
+                {
+                    "quote": "The taxpayer - that's someone who works for the federal government but doesn't have to take the civil service examination.",
+                    "speaker": "Ronald Reagan"
+                }
+            ]
+        },
+        {
+            "civic": "Divine Right",
+            "era": "m",
+            "quotes": [
+                {
+                    "quote": "I conclude then this point touching upon the power of kings with this axiom of divinity, That as to dispute what God may do is blasphemy … so it is sedition to dispute what a king may do.",
+                    "speaker": "King James I"
+                },
+                {
+                    "quote": "Listen, strange women lying in ponds distributing swords is no basis for a system of government … You can't expect to wield supreme power just ‘cause some watery tart threw a sword at you!",
+                    "speaker": "Monty Python"
+                }
+            ]
+        },
+        {
+            "civic": "Feudalism",
+            "era": "m",
+            "quotes": [
+                {
+                    "quote": "In democracy it's your vote that counts; in feudalism it's your count that votes.",
+                    "speaker": "Mogens Jallberg"
+                },
+                {
+                    "quote": "With the advance of feudalism came the growth of iron armor, until, at last, a fighting-man resembled an armadillo.",
+                    "speaker": "John Boyle O'Reilly"
+                }
+            ]
+        },
+        {
+            "civic": "Guilds",
+            "era": "m",
+            "quotes": [
+                {
+                    "quote": "Every man should make his son learn some useful trade or profession, so that in these days of changing fortunes … they may have something tangible to fall back upon.",
+                    "speaker": "Phineas T. Barnum"
+                },
+                {
+                    "quote": "You can't go around arresting the Thieves' Guild. I mean, we'd be at it all day!",
+                    "speaker": "Terry Pratchett"
+                }
+            ]
+        },
+        {
+            "civic": "Medieval Faires",
+            "era": "m",
+            "quotes": [
+                {
+                    "quote": "All that glisters is not gold; often have you heard that told.",
+                    "speaker": "William Shakespeare"
+                },
+                {
+                    "quote": "There are very honest people who do not think that they have had a bargain unless they have cheated a merchant.",
+                    "speaker": "Anatole France"
+                }
+            ]
+        },
+        {
+            "civic": "Mercenaries",
+            "era": "m",
+            "quotes": [
+                {
+                    "quote": "In peace one is despoiled by mercenaries; in war by one's enemies.",
+                    "speaker": "Niccolo Machiavelli"
+                },
+                {
+                    "quote": "Being a mercenary, though … Hey, we just go wherever there's a mixture of money and trouble.",
+                    "speaker": "Howard Tayler"
+                }
+            ]
+        },
+        {
+            "civic": "Naval Tradition",
+            "era": "m",
+            "quotes": [
+                {
+                    "quote": "A good navy is not a provocation to war. It is the surest guaranty of peace.",
+                    "speaker": "Theodore Roosevelt"
+                },
+                {
+                    "quote": "The Navy has both a tradition and a future - and we look with pride and confidence in both directions.",
+                    "speaker": "Arleigh Burke"
+                }
+            ]
+        },
+        {
+            "civic": "Diplomatic Service",
+            "era": "r",
+            "quotes": [
+                {
+                    "quote": "In diplomacy there are two kinds of problems: small ones and large ones. The small ones will go away by themselves, and the large ones you will not be able to do anything about.",
+                    "speaker": "Patrick McGuinness"
+                },
+                {
+                    "quote": "A diplomat is a man who always remembers a woman's birthday but never remembers her age.",
+                    "speaker": "Robert Frost"
+                }
+            ]
+        },
+        {
+            "civic": "Exploration",
+            "era": "r",
+            "quotes": [
+                {
+                    "quote": "The day we stop exploring is the day we commit ourselves to live in a stagnant world, devoid of curiosity, empty of dreams.",
+                    "speaker": "Neil deGrasse Tyson"
+                },
+                {
+                    "quote": "We shall not cease from exploration, and the end of all our exploring will be to arrive where we started and know the place for the first time.",
+                    "speaker": "T.S. Eliot"
+                }
+            ]
+        },
+        {
+            "civic": "Humanism",
+            "era": "r",
+            "quotes": [
+                {
+                    "quote": "The four characteristics of humanism are curiosity, a free mind, belief in good taste, and belief in the human race.",
+                    "speaker": "E.M. Forster"
+                },
+                {
+                    "quote": "You must not lose faith in humanity. Humanity is like an ocean; if a few drops of the ocean are dirty, the ocean does not become dirty",
+                    "speaker": "Mahatma Gandhi"
+                }
+            ]
+        },
+        {
+            "civic": "Mercantilism",
+            "era": "r",
+            "quotes": [
+                {
+                    "quote": "In a market economy, however, the individual has some possibility of escaping from the power of the state.",
+                    "speaker": "Peter Berger"
+                },
+                {
+                    "quote": "Having seen a non-market economy, I suddenly understood much better what I liked about a market economy.",
+                    "speaker": "Esther Dyson"
+                }
+            ]
+        },
+        {
+            "civic": "Reformed Church",
+            "era": "r",
+            "quotes": [
+                {
+                    "quote": "I don't like to commit myself about Heaven and Hell, you see, I have friends in both places.",
+                    "speaker": "Mark Twain"
+                },
+                {
+                    "quote": "The three great elements of modern civilization: gun powder, printing, and the Protestant religion.",
+                    "speaker": "Thomas Carlyle"
+                }
+            ]
+        },
+        {
+            "civic": "The Enlightenment",
+            "era": "r",
+            "quotes": [
+                {
+                    "quote": "New opinions are always suspected, and usually opposed, without any other reason but because they are not already common.",
+                    "speaker": "John Locke"
+                },
+                {
+                    "quote": "Whatever is contrary to nature is contrary to reason, and whatsoever is contrary to reason is absurd.",
+                    "speaker": "Baruch Spinoza"
+                }
+            ]
+        },
+        {
+            "civic": "Civil Engineering",
+            "era": "i",
+            "quotes": [
+                {
+                    "quote": "Improvement makes straight roads; but the crooked roads without improvement are roads of Genius.",
+                    "speaker": "William Blake"
+                },
+                {
+                    "quote": "A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools.",
+                    "speaker": "Douglas Adams"
+                }
+            ]
+        },
+        {
+            "civic": "Colonialism",
+            "era": "i",
+            "quotes": [
+                {
+                    "quote": "Remember that politics, colonialism, imperialism and war also originated in the human brain.",
+                    "speaker": "Vilayanur Ramachandran"
+                },
+                {
+                    "quote": "Colonialism. The enforced spread of the rule of reason. But who is going to spread it among the colonizers?",
+                    "speaker": "Anthony Burgess"
+                }
+            ]
+        },
+        {
+            "civic": "Nationalism",
+            "era": "i",
+            "quotes": [
+                {
+                    "quote": "It is nationalism which engenders nations, and not the other way round.",
+                    "speaker": "Ernest Gellner"
+                },
+                {
+                    "quote": "Human nature, as manifested in tribalism and nationalism, provides the momentum of the machinery of human evolution.",
+                    "speaker": "Arthur Keith"
+                }
+            ]
+        },
+        {
+            "civic": "Natural History",
+            "era": "i",
+            "quotes": [
+                {
+                    "quote": "Had I been present at the Creation, I would have given some useful hints for the better ordering of the universe.",
+                    "speaker": "Nelson Algren"
+                },
+                {
+                    "quote": "In all works on Natural History, we constantly find details of the marvelous adaptation of animals to their food, their habits, and the localities in which they are found.",
+                    "speaker": "Alfred Wallace"
+                }
+            ]
+        },
+        {
+            "civic": "Opera and Ballet",
+            "era": "i",
+            "quotes": [
+                {
+                    "quote": "Opera is when a guy gets stabbed in the back and, instead of bleeding, he sings.",
+                    "speaker": "Robert Benchley"
+                },
+                {
+                    "quote": "It [ballet] projects a fragile kind of strength and a certain inflexible precision.",
+                    "speaker": "Ayn Rand"
+                }
+            ]
+        },
+        {
+            "civic": "Scorched Earth",
+            "era": "i",
+            "quotes": [
+                {
+                    "quote": "War is hell.",
+                    "speaker": "William Tecumseh Sherman"
+                },
+                {
+                    "quote": "I only understand friendship or scorched earth.",
+                    "speaker": "Roger Ailes"
+                }
+            ]
+        },
+        {
+            "civic": "Urbanization",
+            "era": "i",
+            "quotes": [
+                {
+                    "quote": "It's the Industrial Revolution and the growth of urban concentrations that led to a sense of anonymity.",
+                    "speaker": "Vint Cerf"
+                },
+                {
+                    "quote": "What I like about cities is that everything is king size, the beauty and the ugliness.",
+                    "speaker": "Joseph Brodsky"
+                }
+            ]
+        },
+        {
+            "civic": "Capitalism",
+            "era": "mo",
+            "quotes": [
+                {
+                    "quote": "The inherent vice of capitalism is the unequal sharing of blessings; the inherent virtue of socialism is the equal sharing of miseries.",
+                    "speaker": "Winston Churchill"
+                },
+                {
+                    "quote": "Always try to rub up against money, for if you rub up against money long enough, some of it may rub off on you.",
+                    "speaker": "Damon Runyon"
+                }
+            ]
+        },
+        {
+            "civic": "Class Struggle",
+            "era": "mo",
+            "quotes": [
+                {
+                    "quote": "There's class warfare, all right, but it's my class, the rich class, that's making war … and we're winning.",
+                    "speaker": "Warren Buffett"
+                },
+                {
+                    "quote": "The class struggle necessarily leads to the dictatorship of the proletariat.",
+                    "speaker": "Karl Marx"
+                }
+            ]
+        },
+        {
+            "civic": "Conservation",
+            "era": "mo",
+            "quotes": [
+                {
+                    "quote": "Water and air, the two essentials on which life depends, have become global garbage cans.",
+                    "speaker": "Jacques Yves Cousteau"
+                },
+                {
+                    "quote": "Destroying rainforest for economic gain is like burning a Renaissance painting to cook a meal.",
+                    "speaker": "Edward Wilson"
+                }
+            ]
+        },
+        {
+            "civic": "Ideology",
+            "era": "mo",
+            "quotes": [
+                {
+                    "quote": "It has been demonstrated that no system, not even the most inhuman, can continue to exist without an ideology.",
+                    "speaker": "Joe Slovo"
+                },
+                {
+                    "quote": "Slowly, ideas lead to ideology, lead to policies that lead to actions.",
+                    "speaker": "Nandan Nilekani"
+                }
+            ]
+        },
+        {
+            "civic": "Mass Media",
+            "era": "mo",
+            "quotes": [
+                {
+                    "quote": "The effect of the mass media is not to elicit belief but to maintain the apparatus of addiction.",
+                    "speaker": "Christopher Lasch"
+                },
+                {
+                    "quote": "If you don't read the newspaper, you're uninformed. If you read the newspaper, you're mis-informed.",
+                    "speaker": "Mark Twain"
+                }
+            ]
+        },
+        {
+            "civic": "Mobilization",
+            "era": "mo",
+            "quotes": [
+                {
+                    "quote": "When they are preparing for war, those who rule by force speak most copiously about peace until they have completed the mobilization process.",
+                    "speaker": "Stefan Zweig"
+                },
+                {
+                    "quote": "In order to rally people, governments need enemies … if they do not have a real enemy, they will invent one in order to mobilize us.",
+                    "speaker": "Nhat Hanh"
+                }
+            ]
+        },
+        {
+            "civic": "Nuclear Program",
+            "era": "mo",
+            "quotes": [
+                {
+                    "quote": "The release of atom power has changed everything except our way of thinking…the solution to this problem lies in the heart of mankind. If only I had known, I should have become a watchmaker.",
+                    "speaker": "Albert Einstein"
+                },
+                {
+                    "quote": "The children of the nuclear age, I think, were weakened in their capacity to love. Hard to love, when you're bracing yourself for impact.",
+                    "speaker": "Martin Amis"
+                }
+            ]
+        },
+        {
+            "civic": "Suffrage",
+            "era": "mo",
+            "quotes": [
+                {
+                    "quote": "Why is a woman to be treated differently? Woman suffrage will succeed, despite this miserable guerrilla opposition.",
+                    "speaker": "Victoria Woodhull"
+                },
+                {
+                    "quote": "Men, their rights, and nothing more; women, their rights, and nothing less.",
+                    "speaker": "Susan B. Anthony"
+                }
+            ]
+        },
+        {
+            "civic": "Totalitarianism",
+            "era": "mo",
+            "quotes": [
+                {
+                    "quote": "Only the mob and the elite can be attracted by the momentum of totalitarianism itself. The masses have to be won by propaganda.",
+                    "speaker": "Hannah Arendt"
+                },
+                {
+                    "quote": "The ultimate end of any ideology is totalitarianism.",
+                    "speaker": "Tom Robbins"
+                }
+            ]
+        },
+        {
+            "civic": "Cold War",
+            "era": "at",
+            "quotes": [
+                {
+                    "quote": "From Stettin in the Baltic to Trieste in the Adriatic, an iron curtain has descended across the continent.",
+                    "speaker": "Winston Churchill"
+                },
+                {
+                    "quote": "The Cold War is not thawing; it is burning with a deadly heat.",
+                    "speaker": "Richard Nixon"
+                }
+            ]
+        },
+        {
+            "civic": "Cultural Heritage",
+            "era": "at",
+            "quotes": [
+                {
+                    "quote": "A people without the knowledge of their past history, origin and culture is like a tree without roots.",
+                    "speaker": "Marcus Garvey"
+                },
+                {
+                    "quote": "You don't stumble upon your heritage. It's there, just waiting to be explored and shared.",
+                    "speaker": "Robbie Robertson"
+                }
+            ]
+        },
+        {
+            "civic": "Professional Sports",
+            "era": "at",
+            "quotes": [
+                {
+                    "quote": "If winning isn't everything, why do they keep score?",
+                    "speaker": "Vince Lombardi"
+                },
+                {
+                    "quote": "Sports do not build character. They reveal it.",
+                    "speaker": "Heywood Broun"
+                }
+            ]
+        },
+        {
+            "civic": "Rapid Deployment",
+            "era": "at",
+            "quotes": [
+                {
+                    "quote": "A good plan violently executed right now is far better than a perfect plan executed next week.",
+                    "speaker": "George S. Patton"
+                },
+                {
+                    "quote": "Never mind the maneuvers, just go straight at them.",
+                    "speaker": "Horatio Nelson"
+                }
+            ]
+        },
+        {
+            "civic": "Space Race",
+            "era": "at",
+            "quotes": [
+                {
+                    "quote": "We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard.",
+                    "speaker": "John F. Kennedy"
+                },
+                {
+                    "quote": "NASA spent millions of dollars inventing the ball-point pen so they could write in space. The Russians took a pencil.",
+                    "speaker": "Will Chabot"
+                }
+            ]
+        },
+        {
+            "civic": "Distributed Sovereignty",
+            "era": "if",
+            "quotes": [
+                {
+                    "quote": "Multitudes, multitudes in the valley of decision: for the day of the Lord is near in the valley of decision.",
+                    "speaker": "Joel 3:14"
+                }
+            ]
+        },
+        {
+            "civic": "Environmentalism",
+            "era": "if",
+            "quotes": [
+                {
+                    "quote": "I shall return again to the light of the sun, to prepare a home for thy descendants.",
+                    "speaker": "Argonautica, Apollonius Rhodius"
+                }
+            ]
+        },
+        {
+            "civic": "Globalization",
+            "era": "if",
+            "quotes": [
+                {
+                    "quote": "It has been said that arguing against globalization is like arguing against the laws of gravity.",
+                    "speaker": "Kofi Annan"
+                },
+                {
+                    "quote": "One day there will be no borders, no boundaries, no flags and no countries and the only passport will be the heart.",
+                    "speaker": "Carlos Santana"
+                }
+            ]
+        },
+        {
+            "civic": "Near Future Governance",
+            "era": "if",
+            "quotes": [
+                {
+                    "quote": "Justice is the bond of men in states, for the administration of justice, which is the determination of what is just, is the principle of order in political society.",
+                    "speaker": "Aristotle"
+                }
+            ]
+        },
+        {
+            "civic": "Optimization Imperative",
+            "era": "if",
+            "quotes": [
+                {
+                    "quote": "We find every where men of mechanical genius, of great general acuteness, and discriminative understanding, who make no scruple in pronouncing the Automaton a pure machine, unconnected with human agency in its movements, and consequently, beyond all comparison, the most astonishing of the inventions of mankind.",
+                    "speaker": "Edgar Allen Poe"
+                }
+            ]
+        },
+        {
+            "civic": "Social Media",
+            "era": "if",
+            "quotes": [
+                {
+                    "quote": "Which of all my important nothings shall I tell you first?",
+                    "speaker": "Jane Austen"
+                },
+                {
+                    "quote": "Distracted from distraction by distraction!",
+                    "speaker": "T.S. Eliot"
+                }
+            ]
+        },
+        {
+            "civic": "Venture Politics",
+            "era": "if",
+            "quotes": [
+                {
+                    "quote": "Over himself, over his own body and mind, the individual is sovereign.",
+                    "speaker": "John Stuart Mill"
+                }
+            ]
+        },
+        {
+            "civic": "Cultural Hegemony",
+            "era": "f",
+            "quotes": [
+                {
+                    "quote": "Ah, my Belovéd, fill the cup that clears\nTo-day of past Regrets and future Fears—\nTo-morrow?—Why, To-morrow I may be\nMyself with Yesterday's Sev'n Thousand Years.",
+                    "speaker": "Edward FitzGerald"
+                }
+            ]
+        },
+        {
+            "civic": "Exodus Imperative",
+            "era": "f",
+            "quotes": [
+                {
+                    "quote": "This, O Best Beloved, is another story of the High and Far Off Times.",
+                    "speaker": "Rudyard Kipling"
+                }
+            ]
+        },
+        {
+            "civic": "Future Civic",
+            "era": "f",
+            "quotes": [
+                {
+                    "quote": "You can never plan the future by the past.",
+                    "speaker": "Edmund Burke"
+                },
+                {
+                    "quote": "I never think of the future. It comes soon enough.",
+                    "speaker": "Albert Einstein"
+                }
+            ]
+        },
+        {
+            "civic": "Global Warming Mitigation",
+            "era": "f",
+            "quotes": [
+                {
+                    "quote": "Fetter this malefactor to the jagged rocks\nIn adamantine bonds infrangible.",
+                    "speaker": "Aeschylus"
+                }
+            ]
+        },
+        {
+            "civic": "Information Warfare",
+            "era": "f",
+            "quotes": [
+                {
+                    "quote": "It has been said aforetime that he who knows both sides has nothing to fear in a hundred fights...",
+                    "speaker": "Sun Tzu"
+                },
+                {
+                    "quote": "If the enemy know not where he will be attacked, he must prepare in every quarter, and so be everywhere weak.",
+                    "speaker": "Sun Tzu"
+                }
+            ]
+        },
+        {
+            "civic": "Smart Power Doctrine",
+            "era": "f",
+            "quotes": [
+                {
+                    "quote": "The time will come and is inevitably coming when all institutions based on force will disappear through their uselessness, stupidity, and even inconvenience becoming obvious to all.",
+                    "speaker": "Leo Tolstoy"
+                }
+            ]
+        }
+    ]
+}

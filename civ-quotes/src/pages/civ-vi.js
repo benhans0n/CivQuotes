@@ -5,6 +5,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import CivVITechQuotes from '../data/civ-vi-tech-quotes.json'
+import CivVICivicQuotes from '../data/civ-vi-civic-quotes.json'
 import CivVIWonderQuotes from '../data/civ-vi-wonder-quotes.json'
 import CivVINaturalWonderQuotes from '../data/civ-vi-natural-wonder-quotes.json'
 import Card from '@mui/material/Card';
@@ -61,6 +62,51 @@ const CivVIPage = () => {
                                     <CardContent>
                                         <Typography>
                                             <b>{quote.tech}</b>
+                                        </Typography>
+                                        <br></br>
+                                        <Typography sx={{ fontSize: 16 }}>
+                                            <i style={{whiteSpace: "pre-line"}}>
+                                                {quote.quotes[0].quote}
+                                            </i>
+                                        </Typography>
+                                        <br></br>
+                                        <Typography sx={{ fontSize: 12 }}>
+                                            <b>— {quote.quotes[0].speaker}</b>
+                                        </Typography>
+                                        <hr hidden={quote.quotes[1] == null}></hr>
+                                        <div hidden={quote.quotes[1] == null}>
+                                            <Typography sx={{ fontSize: 16 }}>
+                                                <i style={{whiteSpace: "pre-line"}}>
+                                                    {quote.quotes[1] == null ? "" : quote.quotes[1].quote}
+                                                </i>
+                                            </Typography>
+                                            <br></br>
+                                            <Typography sx={{ fontSize: 12 }}>
+                                                <b>— {quote.quotes[1] == null ? "" : quote.quotes[1].speaker}</b>
+                                            </Typography>
+                                        </div>
+                                    </CardContent>
+                                </Card>
+                            })}
+                        </AccordionDetails>
+                    </Accordion>
+                </Box>
+            })}
+            <h2 style={styles.h2(isDesktop)}> Civics </h2>
+            {CivVICivicQuotes.eras.map((era) => {
+                return <Box style={styles.box(isDesktop)}>
+                    <Accordion style={styles.accordion}>
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                        >
+                            <Typography>{era.name}</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            {CivVICivicQuotes.quotes.filter(quote => quote.era === era.id).map((quote) => {
+                                return <Card style={styles.card}>
+                                    <CardContent>
+                                        <Typography>
+                                            <b>{quote.civic}</b>
                                         </Typography>
                                         <br></br>
                                         <Typography sx={{ fontSize: 16 }}>
