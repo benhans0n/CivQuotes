@@ -1,6 +1,6 @@
 {
   "name": "civ-quotes",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "private": true,
   "description": "civ-quotes",
   "author": "Ben Hanson",
@@ -15,11 +15,11 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.4",
-    "@emotion/styled": "^11.11.5",
-    "@mui/icons-material": "^5.15.20",
-    "@mui/material": "^5.15.20",
-    "gatsby": "^5.13.6",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^6.1.1",
+    "@mui/material": "^6.1.1",
+    "gatsby": "^5.13.7",
     "gatsby-plugin-emotion": "^8.13.1",
     "gatsby-plugin-manifest": "^5.13.1",
     "gatsby-plugin-react-helmet": "^6.13.1",
