@@ -85,6 +85,7 @@ export default function GameMenu() {
                                     onKeyDown={handleListKeyDown}
                                 >
                                     <MenuItem id="/" onClick={handleRedirect}>Home</MenuItem>
+                                    <MenuItem id="/compare" onClick={handleRedirect}>Compare Quotes</MenuItem>
                                     <MenuItem id="/alpha-centauri" onClick={handleRedirect}>Sid Meier's Alpha Centauri</MenuItem>
                                     <MenuItem id="/civ-iv" onClick={handleRedirect}>Sid Meier's Civilization IV</MenuItem>
                                     <MenuItem id="/civ-v" onClick={handleRedirect}>Sid Meier's Civilization V</MenuItem>
