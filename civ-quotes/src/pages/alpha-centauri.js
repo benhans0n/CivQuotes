@@ -17,30 +17,6 @@ import { Helmet } from 'react-helmet';
 import GlobalCollapseButton from '../components/GlobalCollapseButton';
 import { pageStyles } from '../components/PageStyles';
 
-// styles
-const accordionStyles = {
-    box: isDesktop => ({
-        width: isDesktop ? 60 + "%" : 100 + "%",
-        marginLeft: isDesktop ? 20 + "%" : 0 + "%",
-        marginTop: 1 + "%"
-    }),
-    accordion: {
-        backgroundColor: "#cccccc"
-    },
-    card: {
-        marginBottom: 1 + "%"
-    },
-    collapseButton: {
-        marginTop: '10px',
-        marginBottom: '20px'
-    },
-    collapseAllButton: isDesktop => ({
-        marginLeft: isDesktop ? 20 + "%" : 1 + "%",
-        marginTop: '20px',
-        marginBottom: '20px'
-    })
-}
-
 // markup
 const AlphaCentauriPage = () => {
     const isDesktop = useMediaQuery('(min-width: 768px)');
@@ -80,30 +56,30 @@ const AlphaCentauriPage = () => {
                 <link rel="canonical" href="http://civquotes.com/alpha-centauri" />
             </Helmet>
             <Navbar />
-            <Typography variant="h1" style={pageStyles.pageTitle(isDesktop)}>
+            <Typography variant="h1" sx={pageStyles.pageTitle(isDesktop)}>
                 Sid Meier's Alpha Centauri
             </Typography>
             {AlphaCentauriQuotes.factions.map((faction, i) => {
-                return <Box style={pageStyles.box(isDesktop)} key={faction.id}>
+                return <Box sx={pageStyles.box(isDesktop)} key={faction.id}>
                     <Accordion 
-                        style={pageStyles.accordion}
+                        sx={pageStyles.accordion}
                         expanded={expandedPanels[`faction-${faction.id}`] || false}
                         onChange={handleAccordionChange(`faction-${faction.id}`)}
                     >
                         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                            <Typography>{faction.name}</Typography>
+                            <Typography variant="h6" sx={{ fontSize: '1rem' }}>{faction.name}</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             {AlphaCentauriQuotes.quotes.filter(quote => quote.faction === faction.id).map((quote, j) => {
-                                return <Card style={pageStyles.card} key={`faction-${faction.id}-${j}`}>
+                                return <Card sx={pageStyles.card} key={`faction-${faction.id}-${j}`}>
                                     <CardContent>
-                                        <Typography sx={{ fontSize: 16 }}>
+                                        <Typography variant="body1" sx={{ fontSize: 16 }}>
                                             <i style={{whiteSpace: "pre-line"}}>
                                                 {quote.quote}
                                             </i>
                                         </Typography>
-                                        <br></br>
-                                        <Typography sx={{ fontSize: 12 }}>
+                                        <br />
+                                        <Typography variant="caption" sx={{ fontSize: 12 }}>
                                             <b>— {quote.speaker}</b>, <i>{quote.work}</i> {quote.flavor_text}
                                         </Typography>
                                     </CardContent>

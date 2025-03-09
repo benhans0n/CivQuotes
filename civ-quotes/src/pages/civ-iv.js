@@ -68,23 +68,23 @@ const CivIVPage = () => {
                         onChange={handleAccordionChange(`tech-${era.id}`)}
                     >
                         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                            <Typography>{era.name}</Typography>
+                            <Typography variant="h6" sx={{ fontSize: '1rem' }}>{era.name}</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             {CivIVQuotes.quotes.filter(quote => quote.era === era.id).map((quote, index) => {
                                 return <Card style={pageStyles.card} key={`tech-${era.id}-${index}`}>
                                     <CardContent>
-                                        <Typography>
+                                        <Typography variant="subtitle1">
                                             <b>{quote.tech}</b>
                                         </Typography>
-                                        <br></br>
-                                        <Typography sx={{ fontSize: 16 }}>
+                                        <br />
+                                        <Typography variant="body1" sx={{ fontSize: 16 }}>
                                             <i style={{whiteSpace: "pre-line"}}>
                                                 {quote.quote}
                                             </i>
                                         </Typography>
-                                        <br></br>
-                                        <Typography sx={{ fontSize: 12 }}>
+                                        <br />
+                                        <Typography variant="caption" sx={{ fontSize: 12 }}>
                                             <b>— {quote.speaker}</b>
                                         </Typography>
                                     </CardContent>

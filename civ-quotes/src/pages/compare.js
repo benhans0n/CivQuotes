@@ -232,7 +232,7 @@ const ComparePage = () => {
                             .filter(([_, quotes]) => quotes?.length > 0)
                             .map(([game, quotes]) => (
                                 <Grid item xs={12} md={4} key={game} sx={{ paddingTop: '0 !important' }}>
-                                    <Typography variant="h5" style={styles.gameTitle}>
+                                    <Typography variant="h6" sx={{ fontSize: '1rem', color: '#ffffff', marginBottom: '16px', marginTop: '16px' }}>
                                         {game}
                                     </Typography>
                                     {quotes?.map((quote, index) => (
@@ -243,19 +243,19 @@ const ComparePage = () => {
                                                     paddingBottom: '16px !important'
                                                 }
                                             }}>
-                                                <Typography>
+                                                <Typography variant="subtitle1">
                                                     <b>{quote?.title}</b> <span style={{fontSize: 12}}>({quote?.type})</span>
                                                 </Typography>
                                                 <br />
                                                 {quote?.quotes?.map((q, i) => (
                                                     <div key={i}>
-                                                        <Typography sx={{ fontSize: 16 }}>
+                                                        <Typography variant="body1" sx={{ fontSize: 16 }}>
                                                             <i style={{whiteSpace: "pre-line"}}>
                                                                 {q?.quote}
                                                             </i>
                                                         </Typography>
                                                         <br />
-                                                        <Typography sx={{ fontSize: 12 }}>
+                                                        <Typography variant="caption" sx={{ fontSize: 12 }}>
                                                             <b>— {q?.speaker}</b>
                                                         </Typography>
                                                         {i < (quote?.quotes?.length || 0) - 1 && (

@@ -83,34 +83,34 @@ const CivVIPage = () => {
                         onChange={handleAccordionChange(`tech-${era.id}`)}
                     >
                         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                            <Typography>{era.name}</Typography>
+                            <Typography variant="h6" sx={{ fontSize: '1rem' }}>{era.name}</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             {CivVITechQuotes.quotes.filter(quote => quote.era === era.id).map((quote, index) => (
                                 <Card style={pageStyles.card} key={index}>
                                     <CardContent>
-                                        <Typography>
+                                        <Typography variant="subtitle1">
                                             <b>{quote.tech}</b>
                                         </Typography>
                                         <br />
-                                        <Typography sx={{ fontSize: 16 }}>
+                                        <Typography variant="body1" sx={{ fontSize: 16 }}>
                                             <i style={{whiteSpace: "pre-line"}}>
                                                 {quote.quotes[0].quote}
                                             </i>
                                         </Typography>
                                         <br />
-                                        <Typography sx={{ fontSize: 12 }}>
+                                        <Typography variant="caption" sx={{ fontSize: 12 }}>
                                             <b>— {quote.quotes[0].speaker}</b>
                                         </Typography>
                                         <hr hidden={quote.quotes[1] == null} />
                                         <div hidden={quote.quotes[1] == null}>
-                                            <Typography sx={{ fontSize: 16 }}>
+                                            <Typography variant="body1" sx={{ fontSize: 16 }}>
                                                 <i style={{whiteSpace: "pre-line"}}>
                                                     {quote.quotes[1]?.quote}
                                                 </i>
                                             </Typography>
                                             <br />
-                                            <Typography sx={{ fontSize: 12 }}>
+                                            <Typography variant="caption" sx={{ fontSize: 12 }}>
                                                 <b>— {quote.quotes[1]?.speaker}</b>
                                             </Typography>
                                         </div>
@@ -139,34 +139,34 @@ const CivVIPage = () => {
                         onChange={handleAccordionChange(`civic-${era.id}`)}
                     >
                         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                            <Typography>{era.name}</Typography>
+                            <Typography variant="h6" sx={{ fontSize: '1rem' }}>{era.name}</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             {CivVICivicQuotes.quotes.filter(quote => quote.era === era.id).map((quote, index) => (
                                 <Card style={pageStyles.card} key={index}>
                                     <CardContent>
-                                        <Typography>
+                                        <Typography variant="subtitle1">
                                             <b>{quote.civic}</b>
                                         </Typography>
                                         <br />
-                                        <Typography sx={{ fontSize: 16 }}>
+                                        <Typography variant="body1" sx={{ fontSize: 16 }}>
                                             <i style={{whiteSpace: "pre-line"}}>
                                                 {quote.quotes[0].quote}
                                             </i>
                                         </Typography>
                                         <br />
-                                        <Typography sx={{ fontSize: 12 }}>
+                                        <Typography variant="caption" sx={{ fontSize: 12 }}>
                                             <b>— {quote.quotes[0].speaker}</b>
                                         </Typography>
                                         <hr hidden={quote.quotes[1] == null} />
                                         <div hidden={quote.quotes[1] == null}>
-                                            <Typography sx={{ fontSize: 16 }}>
+                                            <Typography variant="body1" sx={{ fontSize: 16 }}>
                                                 <i style={{whiteSpace: "pre-line"}}>
                                                     {quote.quotes[1]?.quote}
                                                 </i>
                                             </Typography>
                                             <br />
-                                            <Typography sx={{ fontSize: 12 }}>
+                                            <Typography variant="caption" sx={{ fontSize: 12 }}>
                                                 <b>— {quote.quotes[1]?.speaker}</b>
                                             </Typography>
                                         </div>
@@ -195,23 +195,23 @@ const CivVIPage = () => {
                         onChange={handleAccordionChange(`wonder-${era.id}`)}
                     >
                         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                            <Typography>{era.name}</Typography>
+                            <Typography variant="h6" sx={{ fontSize: '1rem' }}>{era.name}</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             {CivVIWonderQuotes.quotes.filter(quote => quote.era === era.id).map((quote, index) => (
                                 <Card style={pageStyles.card} key={index}>
                                     <CardContent>
-                                        <Typography>
+                                        <Typography variant="subtitle1">
                                             <b>{quote.wonder}</b> <span style={{fontSize: 12}}>- Unlocked by {quote.unlocking_tech}</span>
                                         </Typography>
                                         <br />
-                                        <Typography sx={{ fontSize: 16 }}>
+                                        <Typography variant="body1" sx={{ fontSize: 16 }}>
                                             <i style={{whiteSpace: "pre-line"}}>
                                                 {quote.quotes[0].quote}
                                             </i>
                                         </Typography>
                                         <br />
-                                        <Typography sx={{ fontSize: 12 }}>
+                                        <Typography variant="caption" sx={{ fontSize: 12 }}>
                                             <b>— {quote.quotes[0].speaker}</b>
                                         </Typography>
                                     </CardContent>
@@ -238,23 +238,23 @@ const CivVIPage = () => {
                     onChange={handleAccordionChange('natural-wonders')}
                 >
                     <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                        <Typography>Natural Wonders</Typography>
+                        <Typography variant="h6" sx={{ fontSize: '1rem' }}>Natural Wonders</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         {CivVINaturalWonderQuotes.quotes.map((quote, index) => (
                             <Card style={pageStyles.card} key={index}>
                                 <CardContent>
-                                    <Typography>
+                                    <Typography variant="subtitle1">
                                         <b>{quote.wonder}</b>
                                     </Typography>
                                     <br />
-                                    <Typography sx={{ fontSize: 16 }}>
+                                    <Typography variant="body1" sx={{ fontSize: 16 }}>
                                         <i style={{whiteSpace: "pre-line"}}>
                                             {quote.quotes[0].quote}
                                         </i>
                                     </Typography>
                                     <br />
-                                    <Typography sx={{ fontSize: 12 }}>
+                                    <Typography variant="caption" sx={{ fontSize: 12 }}>
                                         <b>— {quote.quotes[0].speaker}</b>
                                     </Typography>
                                 </CardContent>

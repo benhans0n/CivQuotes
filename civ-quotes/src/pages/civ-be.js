@@ -77,22 +77,22 @@ const CivBEPage = () => {
                         onChange={handleAccordionChange(`tech-${faction.id}`)}
                     >
                         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                            <Typography>{faction.name}</Typography>
+                            <Typography variant="h6" sx={{ fontSize: '1rem' }}>{faction.name}</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             {CivBETechQuotes.quotes.filter(quote => quote.faction === faction.id).map((quote, index) => {
                                 return <Card style={pageStyles.card} key={`tech-${faction.id}-${index}`}>
                                     <CardContent>
-                                        <Typography>
+                                        <Typography variant="subtitle1">
                                             <b>{quote.tech}</b>
                                         </Typography>
-                                        <Typography sx={{ fontSize: 16 }}>
+                                        <Typography variant="body1" sx={{ fontSize: 16 }}>
                                             <i style={{whiteSpace: "pre-line"}}>
                                                 {quote.quote}
                                             </i>
                                         </Typography>
-                                        <br></br>
-                                        <Typography sx={{ fontSize: 12 }}>
+                                        <br />
+                                        <Typography variant="caption" sx={{ fontSize: 12 }}>
                                             <b>— {quote.speaker}</b>{quote.work !== "" ? ", " : ""}<i>{quote.work !== "" ? quote.work : ""}</i>
                                         </Typography>
                                     </CardContent>
@@ -120,22 +120,22 @@ const CivBEPage = () => {
                         onChange={handleAccordionChange(`affinity-${affinity.id}`)}
                     >
                         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                            <Typography>{affinity.name}</Typography>
+                            <Typography variant="h6" sx={{ fontSize: '1rem' }}>{affinity.name}</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             {CivBEAffinityQuotes.quotes.filter(quote => quote.affinity === affinity.id).map((quote, index) => {
                                 return <Card style={pageStyles.card} key={`affinity-${affinity.id}-${index}`}>
                                     <CardContent>
-                                        <Typography>
+                                        <Typography variant="subtitle1">
                                             <b>Level {quote.level}</b>
                                         </Typography>
-                                        <Typography sx={{ fontSize: 16 }}>
+                                        <Typography variant="body1" sx={{ fontSize: 16 }}>
                                             <i style={{whiteSpace: "pre-line"}}>
                                                 {quote.quote}
                                             </i>
                                         </Typography>
-                                        <br></br>
-                                        <Typography sx={{ fontSize: 12 }}>
+                                        <br />
+                                        <Typography variant="caption" sx={{ fontSize: 12 }}>
                                             <b>— {quote.speaker}</b>{quote.work !== "" ? ", " : ""}<i>{quote.work !== "" ? quote.work : ""}</i>
                                         </Typography>
                                     </CardContent>
@@ -162,23 +162,23 @@ const CivBEPage = () => {
                     onChange={handleAccordionChange('wonders')}
                 >
                     <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                        <Typography>Wonders</Typography>
+                        <Typography variant="h6" sx={{ fontSize: '1rem' }}>Wonders</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         {CivBEWonderQuotes.quotes.map((quote, index) => {
                             return <Card style={pageStyles.card} key={`wonder-${index}`}>
                                 <CardContent>
-                                    <Typography>
+                                    <Typography variant="subtitle1">
                                         <b>{quote.wonder}</b>
                                     </Typography>
-                                    <br></br>
-                                    <Typography sx={{ fontSize: 16 }}>
+                                    <br />
+                                    <Typography variant="body1" sx={{ fontSize: 16 }}>
                                         <i style={{whiteSpace: "pre-line"}}>
                                             {quote.quote}
                                         </i>
                                     </Typography>
-                                    <br></br>
-                                    <Typography sx={{ fontSize: 12 }}>
+                                    <br />
+                                    <Typography variant="caption" sx={{ fontSize: 12 }}>
                                         <b>— {quote.speaker}</b>{quote.work !== "" ? ", " : ""}<i>{quote.work !== "" ? quote.work : ""}</i>
                                     </Typography>
                                 </CardContent>
