@@ -19,9 +19,11 @@ import { useMediaQuery } from '@mui/material';
 import { Helmet } from 'react-helmet';
 import GlobalCollapseButton from '../components/GlobalCollapseButton';
 import { pageStyles } from '../components/PageStyles';
+import { useTheme } from '../components/ThemeContext';
 
 const CivVIPage = () => {
     const isDesktop = useMediaQuery('(min-width: 768px)');
+    const { isDarkMode } = useTheme();
     const [expandedPanels, setExpandedPanels] = useState({});
 
     const handleAccordionChange = (panel) => (event, isExpanded) => {
@@ -71,14 +73,14 @@ const CivVIPage = () => {
                 <link rel="canonical" href="http://civquotes.com/civ-vi" />
             </Helmet>
             <Navbar />
-            <Typography variant="h1" style={pageStyles.pageTitle(isDesktop)}>
+            <Typography variant="h1" sx={pageStyles.pageTitle(isDesktop)}>
                 Civilization VI
             </Typography>
             <h2 style={pageStyles.h2(isDesktop)}> Technologies </h2>
             {CivVITechQuotes.eras.map((era) => (
-                <Box key={era.id} style={pageStyles.box(isDesktop)}>
+                <Box key={era.id} sx={pageStyles.box(isDesktop)}>
                     <Accordion 
-                        style={pageStyles.accordion}
+                        sx={pageStyles.accordion(isDarkMode)}
                         expanded={expandedPanels[`tech-${era.id}`] || false}
                         onChange={handleAccordionChange(`tech-${era.id}`)}
                     >
@@ -87,7 +89,7 @@ const CivVIPage = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             {CivVITechQuotes.quotes.filter(quote => quote.era === era.id).map((quote, index) => (
-                                <Card style={pageStyles.card} key={index}>
+                                <Card sx={pageStyles.card(isDarkMode)} key={index}>
                                     <CardContent>
                                         <Typography variant="subtitle1">
                                             <b>{quote.tech}</b>
@@ -132,9 +134,9 @@ const CivVIPage = () => {
 
             <h2 style={pageStyles.h2(isDesktop)}> Civics </h2>
             {CivVICivicQuotes.eras.map((era) => (
-                <Box key={era.id} style={pageStyles.box(isDesktop)}>
+                <Box key={era.id} sx={pageStyles.box(isDesktop)}>
                     <Accordion 
-                        style={pageStyles.accordion}
+                        sx={pageStyles.accordion(isDarkMode)}
                         expanded={expandedPanels[`civic-${era.id}`] || false}
                         onChange={handleAccordionChange(`civic-${era.id}`)}
                     >
@@ -143,7 +145,7 @@ const CivVIPage = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             {CivVICivicQuotes.quotes.filter(quote => quote.era === era.id).map((quote, index) => (
-                                <Card style={pageStyles.card} key={index}>
+                                <Card sx={pageStyles.card(isDarkMode)} key={index}>
                                     <CardContent>
                                         <Typography variant="subtitle1">
                                             <b>{quote.civic}</b>
@@ -188,9 +190,9 @@ const CivVIPage = () => {
 
             <h2 style={pageStyles.h2(isDesktop)}> Wonders </h2>
             {CivVIWonderQuotes.eras.map((era) => (
-                <Box key={era.id} style={pageStyles.box(isDesktop)}>
+                <Box key={era.id} sx={pageStyles.box(isDesktop)}>
                     <Accordion 
-                        style={pageStyles.accordion}
+                        sx={pageStyles.accordion(isDarkMode)}
                         expanded={expandedPanels[`wonder-${era.id}`] || false}
                         onChange={handleAccordionChange(`wonder-${era.id}`)}
                     >
@@ -199,7 +201,7 @@ const CivVIPage = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             {CivVIWonderQuotes.quotes.filter(quote => quote.era === era.id).map((quote, index) => (
-                                <Card style={pageStyles.card} key={index}>
+                                <Card sx={pageStyles.card(isDarkMode)} key={index}>
                                     <CardContent>
                                         <Typography variant="subtitle1">
                                             <b>{quote.wonder}</b> <span style={{fontSize: 12}}>- Unlocked by {quote.unlocking_tech}</span>
@@ -231,9 +233,9 @@ const CivVIPage = () => {
             ))}
 
             <h2 style={pageStyles.h2(isDesktop)}> Natural Wonders </h2>
-            <Box style={pageStyles.box(isDesktop)}>
+            <Box sx={pageStyles.box(isDesktop)}>
                 <Accordion 
-                    style={pageStyles.accordion}
+                    sx={pageStyles.accordion(isDarkMode)}
                     expanded={expandedPanels['natural-wonders'] || false}
                     onChange={handleAccordionChange('natural-wonders')}
                 >
@@ -242,7 +244,7 @@ const CivVIPage = () => {
                     </AccordionSummary>
                     <AccordionDetails>
                         {CivVINaturalWonderQuotes.quotes.map((quote, index) => (
-                            <Card style={pageStyles.card} key={index}>
+                            <Card sx={pageStyles.card(isDarkMode)} key={index}>
                                 <CardContent>
                                     <Typography variant="subtitle1">
                                         <b>{quote.wonder}</b>

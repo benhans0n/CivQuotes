@@ -1,28 +1,32 @@
 // Shared styles used across game pages
 export const pageStyles = {
     box: isDesktop => ({
-        width: isDesktop ? 60 + "%" : 100 + "%",
-        marginLeft: isDesktop ? 20 + "%" : 0 + "%",
+        width: isDesktop ? 60 + "%" : 95 + "%",
+        marginLeft: isDesktop ? 20 + "%" : 2.5 + "%",
         marginTop: 1 + "%"
     }),
-    accordion: {
-        backgroundColor: "#cccccc"
-    },
-    card: {
-        marginBottom: 1 + "%"
-    },
-    h2: isDesktop => ({
-        marginLeft: isDesktop ? 20 + "%" : 1 + "%",
-        color: '#ffffff',
-        fontFamily: "sans-serif"
+    accordion: (isDarkMode = false) => ({
+        backgroundColor: isDarkMode ? '#222222' : '#cccccc',
+        color: isDarkMode ? '#ffffff' : '#000000',
+    }),
+    card: (isDarkMode = false) => ({
+        marginBottom: 2 + "%",
+        backgroundColor: isDarkMode ? '#333333' : '#ffffff',
+        color: isDarkMode ? '#ffffff' : '#000000',
+    }),
+    h2: (isDesktop, isDarkMode = false) => ({
+        marginLeft: isDesktop ? 20 + "%" : 2.5 + "%",
+        marginTop: 2 + "%",
+        marginBottom: 1 + "%",
+        fontSize: isDesktop ? 24 : 20,
+        color: '#ffffff'
     }),
     collapseButton: {
-        marginTop: '8px',
-        width: '100%',
-        backgroundColor: '#aaaaaa',
-        color: '#000000',
+        marginTop: 2 + "%",
+        backgroundColor: '#daa520',
+        color: '#111111',
         '&:hover': {
-            backgroundColor: '#999999'
+            backgroundColor: '#c99510'
         }
     },
     globalCollapseButton: isDesktop => ({
@@ -36,12 +40,12 @@ export const pageStyles = {
             backgroundColor: '#c99510'
         }
     }),
-    pageTitle: isDesktop => ({
-        marginLeft: isDesktop ? 20 + "%" : 1 + "%",
-        color: '#ffffff',
-        fontFamily: "sans-serif",
-        fontSize: '2em',
-        marginBottom: '20px',
-        marginTop: '20px'
+    pageTitle: (isDesktop, isDarkMode = false) => ({
+        textAlign: "left",
+        marginLeft: isDesktop ? 20 + "%" : 2.5 + "%",
+        marginTop: isDesktop ? 2 + "%" : 5 + "%",
+        marginBottom: isDesktop ? 2 + "%" : 5 + "%",
+        fontSize: isDesktop ? 32 : 24,
+        color: '#ffffff'
     })
 };

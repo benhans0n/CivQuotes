@@ -16,10 +16,12 @@ import { useMediaQuery } from '@mui/material';
 import { Helmet } from 'react-helmet';
 import GlobalCollapseButton from '../components/GlobalCollapseButton';
 import { pageStyles } from '../components/PageStyles';
+import { useTheme } from '../components/ThemeContext';
 
 // markup
 const CivIVPage = () => {
     const isDesktop = useMediaQuery('(min-width: 768px)');
+    const { isDarkMode } = useTheme();
     const [expandedPanels, setExpandedPanels] = useState({});
 
     const handleAccordionChange = (panel) => (event, isExpanded) => {
@@ -56,14 +58,14 @@ const CivIVPage = () => {
                 <link rel="canonical" href="http://civquotes.com/civ-iv" />
             </Helmet>
             <Navbar />
-            <Typography variant="h1" style={pageStyles.pageTitle(isDesktop)}>
+            <Typography variant="h1" sx={pageStyles.pageTitle(isDesktop)}>
                 Civilization IV
             </Typography>
             <h2 style={pageStyles.h2(isDesktop)}> Technologies </h2>
             {CivIVQuotes.eras.map((era) => {
-                return <Box style={pageStyles.box(isDesktop)} key={era.id}>
+                return <Box sx={pageStyles.box(isDesktop)} key={era.id}>
                     <Accordion 
-                        style={pageStyles.accordion}
+                        sx={pageStyles.accordion(isDarkMode)}
                         expanded={expandedPanels[`tech-${era.id}`] || false}
                         onChange={handleAccordionChange(`tech-${era.id}`)}
                     >
@@ -72,7 +74,7 @@ const CivIVPage = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             {CivIVQuotes.quotes.filter(quote => quote.era === era.id).map((quote, index) => {
-                                return <Card style={pageStyles.card} key={`tech-${era.id}-${index}`}>
+                                return <Card sx={pageStyles.card(isDarkMode)} key={`tech-${era.id}-${index}`}>
                                     <CardContent>
                                         <Typography variant="subtitle1">
                                             <b>{quote.tech}</b>

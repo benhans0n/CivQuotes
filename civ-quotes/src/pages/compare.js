@@ -211,7 +211,7 @@ const ComparePage = () => {
                     }}>
                         <TextField
                             style={styles.searchBox}
-                            label="Search for technologies, wonders, or civics"
+                            label="Search quotes"
                             variant="outlined"
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
@@ -232,11 +232,11 @@ const ComparePage = () => {
                             .filter(([_, quotes]) => quotes?.length > 0)
                             .map(([game, quotes]) => (
                                 <Grid item xs={12} md={4} key={game} sx={{ paddingTop: '0 !important' }}>
-                                    <Typography variant="h6" sx={{ fontSize: '1rem', color: '#ffffff', marginBottom: '16px', marginTop: '16px' }}>
+                                    <Typography variant="h6" sx={styles.gameTitle}>
                                         {game}
                                     </Typography>
                                     {quotes?.map((quote, index) => (
-                                        <Card style={styles.card} key={index}>
+                                        <Card style={styles.card} key={`${game}-${index}`}>
                                             <CardContent sx={{ 
                                                 padding: '16px !important',
                                                 '&:last-child': {

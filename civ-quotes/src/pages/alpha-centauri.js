@@ -16,10 +16,12 @@ import { useMediaQuery } from '@mui/material';
 import { Helmet } from 'react-helmet';
 import GlobalCollapseButton from '../components/GlobalCollapseButton';
 import { pageStyles } from '../components/PageStyles';
+import { useTheme } from '../components/ThemeContext';
 
 // markup
 const AlphaCentauriPage = () => {
     const isDesktop = useMediaQuery('(min-width: 768px)');
+    const { isDarkMode } = useTheme();
     const [expandedPanels, setExpandedPanels] = useState({});
 
     const handleAccordionChange = (panel) => (event, isExpanded) => {
@@ -56,13 +58,16 @@ const AlphaCentauriPage = () => {
                 <link rel="canonical" href="http://civquotes.com/alpha-centauri" />
             </Helmet>
             <Navbar />
-            <Typography variant="h1" sx={pageStyles.pageTitle(isDesktop)}>
+            <Typography 
+                variant="h1" 
+                sx={pageStyles.pageTitle(isDesktop)}
+            >
                 Sid Meier's Alpha Centauri
             </Typography>
             {AlphaCentauriQuotes.factions.map((faction, i) => {
                 return <Box sx={pageStyles.box(isDesktop)} key={faction.id}>
                     <Accordion 
-                        sx={pageStyles.accordion}
+                        sx={pageStyles.accordion(isDarkMode)}
                         expanded={expandedPanels[`faction-${faction.id}`] || false}
                         onChange={handleAccordionChange(`faction-${faction.id}`)}
                     >
@@ -71,7 +76,7 @@ const AlphaCentauriPage = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             {AlphaCentauriQuotes.quotes.filter(quote => quote.faction === faction.id).map((quote, j) => {
-                                return <Card sx={pageStyles.card} key={`faction-${faction.id}-${j}`}>
+                                return <Card sx={pageStyles.card(isDarkMode)} key={`faction-${faction.id}-${j}`}>
                                     <CardContent>
                                         <Typography variant="body1" sx={{ fontSize: 16 }}>
                                             <i style={{whiteSpace: "pre-line"}}>

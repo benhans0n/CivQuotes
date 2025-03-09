@@ -18,9 +18,11 @@ import { useMediaQuery } from '@mui/material';
 import { Helmet } from 'react-helmet';
 import GlobalCollapseButton from '../components/GlobalCollapseButton';
 import { pageStyles } from '../components/PageStyles';
+import { useTheme } from '../components/ThemeContext';
 
 const CivBEPage = () => {
     const isDesktop = useMediaQuery('(min-width: 768px)');
+    const { isDarkMode } = useTheme();
     const [expandedPanels, setExpandedPanels] = useState({});
 
     const handleAccordionChange = (panel) => (event, isExpanded) => {
@@ -65,14 +67,14 @@ const CivBEPage = () => {
                 <link rel="canonical" href="http://civquotes.com/civ-be" />
             </Helmet>
             <Navbar />
-            <Typography variant="h1" style={pageStyles.pageTitle(isDesktop)}>
+            <Typography variant="h1" sx={pageStyles.pageTitle(isDesktop)}>
                 Civilization: Beyond Earth
             </Typography>
             <h2 style={pageStyles.h2(isDesktop)}> Technologies </h2>
             {CivBETechQuotes.factions.map((faction) => {
-                return <Box style={pageStyles.box(isDesktop)} key={faction.id}>
+                return <Box sx={pageStyles.box(isDesktop)} key={faction.id}>
                     <Accordion 
-                        style={pageStyles.accordion}
+                        sx={pageStyles.accordion(isDarkMode)}
                         expanded={expandedPanels[`tech-${faction.id}`] || false}
                         onChange={handleAccordionChange(`tech-${faction.id}`)}
                     >
@@ -81,7 +83,7 @@ const CivBEPage = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             {CivBETechQuotes.quotes.filter(quote => quote.faction === faction.id).map((quote, index) => {
-                                return <Card style={pageStyles.card} key={`tech-${faction.id}-${index}`}>
+                                return <Card sx={pageStyles.card(isDarkMode)} key={`tech-${faction.id}-${index}`}>
                                     <CardContent>
                                         <Typography variant="subtitle1">
                                             <b>{quote.tech}</b>
@@ -113,9 +115,9 @@ const CivBEPage = () => {
 
             <h2 style={pageStyles.h2(isDesktop)}> Affinities </h2>
             {CivBEAffinityQuotes.affinities.map((affinity) => {
-                return <Box style={pageStyles.box(isDesktop)} key={affinity.id}>
+                return <Box sx={pageStyles.box(isDesktop)} key={affinity.id}>
                     <Accordion 
-                        style={pageStyles.accordion}
+                        sx={pageStyles.accordion(isDarkMode)}
                         expanded={expandedPanels[`affinity-${affinity.id}`] || false}
                         onChange={handleAccordionChange(`affinity-${affinity.id}`)}
                     >
@@ -124,7 +126,7 @@ const CivBEPage = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             {CivBEAffinityQuotes.quotes.filter(quote => quote.affinity === affinity.id).map((quote, index) => {
-                                return <Card style={pageStyles.card} key={`affinity-${affinity.id}-${index}`}>
+                                return <Card sx={pageStyles.card(isDarkMode)} key={`affinity-${affinity.id}-${index}`}>
                                     <CardContent>
                                         <Typography variant="subtitle1">
                                             <b>Level {quote.level}</b>
@@ -155,9 +157,9 @@ const CivBEPage = () => {
             })}
 
             <h2 style={pageStyles.h2(isDesktop)}> Wonders </h2>
-            <Box style={pageStyles.box(isDesktop)}>
+            <Box sx={pageStyles.box(isDesktop)}>
                 <Accordion 
-                    style={pageStyles.accordion}
+                    sx={pageStyles.accordion(isDarkMode)}
                     expanded={expandedPanels['wonders'] || false}
                     onChange={handleAccordionChange('wonders')}
                 >
@@ -166,7 +168,7 @@ const CivBEPage = () => {
                     </AccordionSummary>
                     <AccordionDetails>
                         {CivBEWonderQuotes.quotes.map((quote, index) => {
-                            return <Card style={pageStyles.card} key={`wonder-${index}`}>
+                            return <Card sx={pageStyles.card(isDarkMode)} key={`wonder-${index}`}>
                                 <CardContent>
                                     <Typography variant="subtitle1">
                                         <b>{quote.wonder}</b>
