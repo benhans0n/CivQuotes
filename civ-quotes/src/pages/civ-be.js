@@ -30,16 +30,12 @@ const CivBEPage = () => {
         }));
     };
 
-    const handleCollapseSection = (section) => {
+    const handleCollapseSection = (section, id) => {
         const sectionPanels = {};
         if (section === 'Technologies') {
-            CivBETechQuotes.factions.forEach(faction => {
-                sectionPanels[`tech-${faction.id}`] = false;
-            });
+            sectionPanels[`tech-${id}`] = false;
         } else if (section === 'Affinities') {
-            CivBEAffinityQuotes.affinities.forEach(affinity => {
-                sectionPanels[`affinity-${affinity.id}`] = false;
-            });
+            sectionPanels[`affinity-${id}`] = false;
         } else if (section === 'Wonders') {
             sectionPanels['wonders'] = false;
         }
@@ -74,7 +70,7 @@ const CivBEPage = () => {
             </Typography>
             <h2 style={pageStyles.h2(isDesktop)}> Technologies </h2>
             {CivBETechQuotes.factions.map((faction) => {
-                return <Box style={pageStyles.box(isDesktop)}>
+                return <Box style={pageStyles.box(isDesktop)} key={faction.id}>
                     <Accordion 
                         style={pageStyles.accordion}
                         expanded={expandedPanels[`tech-${faction.id}`] || false}
@@ -84,8 +80,8 @@ const CivBEPage = () => {
                             <Typography>{faction.name}</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            {CivBETechQuotes.quotes.filter(quote => quote.faction === faction.id).map((quote) => {
-                                return <Card style={pageStyles.card}>
+                            {CivBETechQuotes.quotes.filter(quote => quote.faction === faction.id).map((quote, index) => {
+                                return <Card style={pageStyles.card} key={`tech-${faction.id}-${index}`}>
                                     <CardContent>
                                         <Typography>
                                             <b>{quote.tech}</b>
@@ -105,7 +101,7 @@ const CivBEPage = () => {
                             <Button 
                                 variant="contained" 
                                 sx={pageStyles.collapseButton}
-                                onClick={() => handleCollapseSection('Technologies')}
+                                onClick={() => handleCollapseSection('Technologies', faction.id)}
                                 startIcon={<KeyboardArrowUpIcon />}
                             >
                                 Collapse
@@ -117,18 +113,18 @@ const CivBEPage = () => {
 
             <h2 style={pageStyles.h2(isDesktop)}> Affinities </h2>
             {CivBEAffinityQuotes.affinities.map((affinity) => {
-                return <Box style={pageStyles.box(isDesktop)}>
+                return <Box style={pageStyles.box(isDesktop)} key={affinity.id}>
                     <Accordion 
                         style={pageStyles.accordion}
                         expanded={expandedPanels[`affinity-${affinity.id}`] || false}
                         onChange={handleAccordionChange(`affinity-${affinity.id}`)}
                     >
-                        <AccordionSummary expandIcon={<ExpandMoreIcon/>}>
+                        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                             <Typography>{affinity.name}</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            {CivBEAffinityQuotes.quotes.filter(quote => quote.affinity === affinity.id).map((quote) => {
-                                return <Card style={pageStyles.card}>
+                            {CivBEAffinityQuotes.quotes.filter(quote => quote.affinity === affinity.id).map((quote, index) => {
+                                return <Card style={pageStyles.card} key={`affinity-${affinity.id}-${index}`}>
                                     <CardContent>
                                         <Typography>
                                             <b>Level {quote.level}</b>
@@ -148,7 +144,7 @@ const CivBEPage = () => {
                             <Button 
                                 variant="contained" 
                                 sx={pageStyles.collapseButton}
-                                onClick={() => handleCollapseSection('Affinities')}
+                                onClick={() => handleCollapseSection('Affinities', affinity.id)}
                                 startIcon={<KeyboardArrowUpIcon />}
                             >
                                 Collapse
@@ -169,8 +165,8 @@ const CivBEPage = () => {
                         <Typography>Wonders</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                        {CivBEWonderQuotes.quotes.map((quote) => {
-                            return <Card style={pageStyles.card}>
+                        {CivBEWonderQuotes.quotes.map((quote, index) => {
+                            return <Card style={pageStyles.card} key={`wonder-${index}`}>
                                 <CardContent>
                                     <Typography>
                                         <b>{quote.wonder}</b>
@@ -191,7 +187,7 @@ const CivBEPage = () => {
                         <Button 
                             variant="contained" 
                             sx={pageStyles.collapseButton}
-                            onClick={() => handleCollapseSection('Wonders')}
+                            onClick={() => handleCollapseSection('Wonders', null)}
                             startIcon={<KeyboardArrowUpIcon />}
                         >
                             Collapse

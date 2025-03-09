@@ -44,18 +44,32 @@ const accordionStyles = {
 // markup
 const AlphaCentauriPage = () => {
     const isDesktop = useMediaQuery('(min-width: 768px)');
-    const [expandedFactions, setExpandedFactions] = useState({});
+    const [expandedPanels, setExpandedPanels] = useState({});
 
-    const handleFactionChange = (factionId) => (event, isExpanded) => {
-        setExpandedFactions(prev => ({ ...prev, [factionId]: isExpanded }));
+    const handleAccordionChange = (panel) => (event, isExpanded) => {
+        setExpandedPanels(prev => ({
+            ...prev,
+            [panel]: isExpanded
+        }));
+    };
+
+    const handleCollapseSection = (section, factionId) => {
+        const sectionPanels = {};
+        if (section === 'Factions') {
+            sectionPanels[`faction-${factionId}`] = false;
+        }
+        setExpandedPanels(prev => ({
+            ...prev,
+            ...sectionPanels
+        }));
     };
 
     const handleCollapseAll = () => {
-        const newState = {};
+        const allPanels = {};
         AlphaCentauriQuotes.factions.forEach(faction => {
-            newState[faction.id] = false;
+            allPanels[`faction-${faction.id}`] = false;
         });
-        setExpandedFactions(newState);
+        setExpandedPanels(allPanels);
     };
 
     return (
@@ -70,22 +84,18 @@ const AlphaCentauriPage = () => {
                 Sid Meier's Alpha Centauri
             </Typography>
             {AlphaCentauriQuotes.factions.map((faction, i) => {
-                return <Box style={pageStyles.box(isDesktop)} key={i}>
+                return <Box style={pageStyles.box(isDesktop)} key={faction.id}>
                     <Accordion 
                         style={pageStyles.accordion}
-                        expanded={expandedFactions[faction.id]}
-                        onChange={handleFactionChange(faction.id)}
+                        expanded={expandedPanels[`faction-${faction.id}`] || false}
+                        onChange={handleAccordionChange(`faction-${faction.id}`)}
                     >
-                        <AccordionSummary
-                            expandIcon={<ExpandMoreIcon />}
-                            aria-controls="uop-content"
-                            id="uop-header"
-                        >
+                        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                             <Typography>{faction.name}</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             {AlphaCentauriQuotes.quotes.filter(quote => quote.faction === faction.id).map((quote, j) => {
-                                return <Card style={pageStyles.card} key={i + '.' + j}>
+                                return <Card style={pageStyles.card} key={`faction-${faction.id}-${j}`}>
                                     <CardContent>
                                         <Typography sx={{ fontSize: 16 }}>
                                             <i style={{whiteSpace: "pre-line"}}>
@@ -102,7 +112,7 @@ const AlphaCentauriPage = () => {
                             <Button 
                                 variant="contained" 
                                 sx={pageStyles.collapseButton}
-                                onClick={() => handleFactionChange(faction.id)(null, false)}
+                                onClick={() => handleCollapseSection('Factions', faction.id)}
                                 startIcon={<KeyboardArrowUpIcon />}
                             >
                                 Collapse

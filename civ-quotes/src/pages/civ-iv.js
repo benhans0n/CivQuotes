@@ -20,18 +20,32 @@ import { pageStyles } from '../components/PageStyles';
 // markup
 const CivIVPage = () => {
     const isDesktop = useMediaQuery('(min-width: 768px)');
-    const [expandedTechs, setExpandedTechs] = useState({});
+    const [expandedPanels, setExpandedPanels] = useState({});
 
-    const handleTechChange = (eraId) => (event, isExpanded) => {
-        setExpandedTechs(prev => ({ ...prev, [eraId]: isExpanded }));
+    const handleAccordionChange = (panel) => (event, isExpanded) => {
+        setExpandedPanels(prev => ({
+            ...prev,
+            [panel]: isExpanded
+        }));
     };
 
-    const collapseTechs = () => {
-        const newState = {};
+    const handleCollapseSection = (section, eraId) => {
+        const sectionPanels = {};
+        if (section === 'Technologies') {
+            sectionPanels[`tech-${eraId}`] = false;
+        }
+        setExpandedPanels(prev => ({
+            ...prev,
+            ...sectionPanels
+        }));
+    };
+
+    const handleCollapseAll = () => {
+        const allPanels = {};
         CivIVQuotes.eras.forEach(era => {
-            newState[era.id] = false;
+            allPanels[`tech-${era.id}`] = false;
         });
-        setExpandedTechs(newState);
+        setExpandedPanels(allPanels);
     };
 
     return (
@@ -47,20 +61,18 @@ const CivIVPage = () => {
             </Typography>
             <h2 style={pageStyles.h2(isDesktop)}> Technologies </h2>
             {CivIVQuotes.eras.map((era) => {
-                return <Box style={pageStyles.box(isDesktop)}>
+                return <Box style={pageStyles.box(isDesktop)} key={era.id}>
                     <Accordion 
                         style={pageStyles.accordion}
-                        expanded={expandedTechs[era.id]}
-                        onChange={handleTechChange(era.id)}
+                        expanded={expandedPanels[`tech-${era.id}`] || false}
+                        onChange={handleAccordionChange(`tech-${era.id}`)}
                     >
-                        <AccordionSummary
-                            expandIcon={<ExpandMoreIcon />}
-                        >
+                        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                             <Typography>{era.name}</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            {CivIVQuotes.quotes.filter(quote => quote.era === era.id).map((quote) => {
-                                return <Card style={pageStyles.card}>
+                            {CivIVQuotes.quotes.filter(quote => quote.era === era.id).map((quote, index) => {
+                                return <Card style={pageStyles.card} key={`tech-${era.id}-${index}`}>
                                     <CardContent>
                                         <Typography>
                                             <b>{quote.tech}</b>
@@ -81,7 +93,7 @@ const CivIVPage = () => {
                             <Button
                                 variant="contained"
                                 startIcon={<KeyboardArrowUpIcon />}
-                                onClick={collapseTechs}
+                                onClick={() => handleCollapseSection('Technologies', era.id)}
                                 sx={pageStyles.collapseButton}
                             >
                                 Collapse
@@ -91,7 +103,7 @@ const CivIVPage = () => {
                 </Box>
             })}
 
-            <GlobalCollapseButton onCollapseAll={collapseTechs} />
+            <GlobalCollapseButton onCollapseAll={handleCollapseAll} />
         </main>
     )
 }

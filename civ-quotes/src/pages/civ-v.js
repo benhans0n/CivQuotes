@@ -22,50 +22,42 @@ import { pageStyles } from '../components/PageStyles';
 // markup
 const CivVPage = () => {
     const isDesktop = useMediaQuery('(min-width: 768px)');
-    const [expandedTechs, setExpandedTechs] = useState({});
-    const [expandedWonders, setExpandedWonders] = useState({});
-    const [expandedEras, setExpandedEras] = useState({});
+    const [expandedPanels, setExpandedPanels] = useState({});
 
-    const handleTechChange = (eraId) => (event, isExpanded) => {
-        setExpandedTechs(prev => ({ ...prev, [eraId]: isExpanded }));
+    const handleAccordionChange = (panel) => (event, isExpanded) => {
+        setExpandedPanels(prev => ({
+            ...prev,
+            [panel]: isExpanded
+        }));
     };
 
-    const handleWonderChange = (eraId) => (event, isExpanded) => {
-        setExpandedWonders(prev => ({ ...prev, [eraId]: isExpanded }));
+    const handleCollapseSection = (section, eraId) => {
+        const sectionPanels = {};
+        if (section === 'Technologies') {
+            sectionPanels[`tech-${eraId}`] = false;
+        } else if (section === 'Wonders') {
+            sectionPanels[`wonder-${eraId}`] = false;
+        } else if (section === 'Eras') {
+            sectionPanels[`era-${eraId}`] = false;
+        }
+        setExpandedPanels(prev => ({
+            ...prev,
+            ...sectionPanels
+        }));
     };
 
-    const handleEraChange = (eraId) => (event, isExpanded) => {
-        setExpandedEras(prev => ({ ...prev, [eraId]: isExpanded }));
-    };
-
-    const collapseTechs = () => {
-        const newState = {};
+    const handleCollapseAll = () => {
+        const allPanels = {};
         CivVTechQuotes.eras.forEach(era => {
-            newState[era.id] = false;
+            allPanels[`tech-${era.id}`] = false;
         });
-        setExpandedTechs(newState);
-    };
-
-    const collapseWonders = () => {
-        const newState = {};
         CivVWonderQuotes.eras.forEach(era => {
-            newState[era.id] = false;
+            allPanels[`wonder-${era.id}`] = false;
         });
-        setExpandedWonders(newState);
-    };
-
-    const collapseEras = () => {
-        const newState = {};
         CivVEraQuotes.eras.forEach(era => {
-            newState[era.id] = false;
+            allPanels[`era-${era.id}`] = false;
         });
-        setExpandedEras(newState);
-    };
-
-    const collapseAll = () => {
-        collapseTechs();
-        collapseWonders();
-        collapseEras();
+        setExpandedPanels(allPanels);
     };
 
     return (
@@ -81,20 +73,18 @@ const CivVPage = () => {
             </Typography>
             <h2 style={pageStyles.h2(isDesktop)}> Technologies </h2>
             {CivVTechQuotes.eras.map((era) => {
-                return <Box style={pageStyles.box(isDesktop)}>
+                return <Box style={pageStyles.box(isDesktop)} key={era.id}>
                     <Accordion 
                         style={pageStyles.accordion}
-                        expanded={expandedTechs[era.id]}
-                        onChange={handleTechChange(era.id)}
+                        expanded={expandedPanels[`tech-${era.id}`] || false}
+                        onChange={handleAccordionChange(`tech-${era.id}`)}
                     >
-                        <AccordionSummary
-                            expandIcon={<ExpandMoreIcon />}
-                        >
+                        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                             <Typography>{era.name}</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            {CivVTechQuotes.quotes.filter(quote => quote.era === era.id).map((quote) => {
-                                return <Card style={pageStyles.card}>
+                            {CivVTechQuotes.quotes.filter(quote => quote.era === era.id).map((quote, index) => {
+                                return <Card style={pageStyles.card} key={`tech-${era.id}-${index}`}>
                                     <CardContent>
                                         <Typography>
                                             <b>{quote.tech}</b>
@@ -115,7 +105,7 @@ const CivVPage = () => {
                             <Button
                                 variant="contained"
                                 startIcon={<KeyboardArrowUpIcon />}
-                                onClick={collapseTechs}
+                                onClick={() => handleCollapseSection('Technologies', era.id)}
                                 sx={pageStyles.collapseButton}
                             >
                                 Collapse
@@ -127,20 +117,18 @@ const CivVPage = () => {
 
             <h2 style={pageStyles.h2(isDesktop)}> Wonders </h2>
             {CivVWonderQuotes.eras.map((era) => {
-                return <Box style={pageStyles.box(isDesktop)}>
+                return <Box style={pageStyles.box(isDesktop)} key={era.id}>
                     <Accordion 
                         style={pageStyles.accordion}
-                        expanded={expandedWonders[era.id]}
-                        onChange={handleWonderChange(era.id)}
+                        expanded={expandedPanels[`wonder-${era.id}`] || false}
+                        onChange={handleAccordionChange(`wonder-${era.id}`)}
                     >
-                        <AccordionSummary
-                            expandIcon={<ExpandMoreIcon />}
-                        >
+                        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                             <Typography>{era.name}</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            {CivVWonderQuotes.quotes.filter(quote => quote.era === era.id).map((quote) => {
-                                return <Card style={pageStyles.card}>
+                            {CivVWonderQuotes.quotes.filter(quote => quote.era === era.id).map((quote, index) => {
+                                return <Card style={pageStyles.card} key={`wonder-${era.id}-${index}`}>
                                     <CardContent>
                                         <Typography>
                                             <b>{quote.wonder}</b>
@@ -161,7 +149,7 @@ const CivVPage = () => {
                             <Button
                                 variant="contained"
                                 startIcon={<KeyboardArrowUpIcon />}
-                                onClick={collapseWonders}
+                                onClick={() => handleCollapseSection('Wonders', era.id)}
                                 sx={pageStyles.collapseButton}
                             >
                                 Collapse
@@ -173,20 +161,18 @@ const CivVPage = () => {
 
             <h2 style={pageStyles.h2(isDesktop)}> Eras </h2>
             {CivVEraQuotes.eras.map((era) => {
-                return <Box style={pageStyles.box(isDesktop)}>
+                return <Box style={pageStyles.box(isDesktop)} key={era.id}>
                     <Accordion 
                         style={pageStyles.accordion}
-                        expanded={expandedEras[era.id]}
-                        onChange={handleEraChange(era.id)}
+                        expanded={expandedPanels[`era-${era.id}`] || false}
+                        onChange={handleAccordionChange(`era-${era.id}`)}
                     >
-                        <AccordionSummary
-                            expandIcon={<ExpandMoreIcon />}
-                        >
+                        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                             <Typography>{era.name}</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            {CivVEraQuotes.quotes.filter(quote => quote.era === era.id).map((quote) => {
-                                return <Card style={pageStyles.card}>
+                            {CivVEraQuotes.quotes.filter(quote => quote.era === era.id).map((quote, index) => {
+                                return <Card style={pageStyles.card} key={`era-${era.id}-${index}`}>
                                     <CardContent>
                                         <Typography sx={{ fontSize: 16 }}>
                                             <i style={{whiteSpace: "pre-line"}}>
@@ -203,7 +189,7 @@ const CivVPage = () => {
                             <Button
                                 variant="contained"
                                 startIcon={<KeyboardArrowUpIcon />}
-                                onClick={collapseEras}
+                                onClick={() => handleCollapseSection('Eras', era.id)}
                                 sx={pageStyles.collapseButton}
                             >
                                 Collapse
@@ -213,7 +199,7 @@ const CivVPage = () => {
                 </Box>
             })}
 
-            <GlobalCollapseButton onCollapseAll={collapseAll} />
+            <GlobalCollapseButton onCollapseAll={handleCollapseAll} />
         </main>
     )
 }
