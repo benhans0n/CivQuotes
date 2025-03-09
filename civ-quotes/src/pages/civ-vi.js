@@ -1,280 +1,140 @@
 import * as React from 'react';
-import { useState } from 'react';
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Button from '@mui/material/Button';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import CivVITechQuotes from '../data/civ-vi-tech-quotes.json'
 import CivVICivicQuotes from '../data/civ-vi-civic-quotes.json'
 import CivVIWonderQuotes from '../data/civ-vi-wonder-quotes.json'
 import CivVINaturalWonderQuotes from '../data/civ-vi-natural-wonder-quotes.json'
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Navbar from '../components/navbar';
-import { Box } from '@mui/system';
-import { useMediaQuery } from '@mui/material';
-import { Helmet } from 'react-helmet';
 import GlobalCollapseButton from '../components/GlobalCollapseButton';
-import { pageStyles } from '../components/PageStyles';
 import { useTheme } from '../components/ThemeContext';
+import PageHeader from '../components/PageHeader';
+import QuoteCard from '../components/QuoteCard';
+import QuoteAccordion from '../components/QuoteAccordion';
+import SectionHeader from '../components/SectionHeader';
+import { useCollapsiblePanels } from '../hooks/useCollapsiblePanels';
+import { SECTION_TYPES, PANEL_ID_PREFIXES } from '../constants/sections';
+import { filterQuotesByEra, generatePanelId } from '../utils/quoteUtils';
 
 const CivVIPage = () => {
-    const isDesktop = useMediaQuery('(min-width: 768px)');
     const { isDarkMode } = useTheme();
-    const [expandedPanels, setExpandedPanels] = useState({});
 
-    const handleAccordionChange = (panel) => (event, isExpanded) => {
-        setExpandedPanels(prev => ({
-            ...prev,
-            [panel]: isExpanded
-        }));
+    const sections = {
+        [SECTION_TYPES.TECHNOLOGIES]: (id) => generatePanelId(PANEL_ID_PREFIXES.TECH, id),
+        [SECTION_TYPES.CIVICS]: (id) => generatePanelId(PANEL_ID_PREFIXES.CIVIC, id),
+        [SECTION_TYPES.WONDERS]: (id) => generatePanelId(PANEL_ID_PREFIXES.WONDER, id),
+        [SECTION_TYPES.NATURAL_WONDERS]: () => generatePanelId(PANEL_ID_PREFIXES.WONDER, 'natural')
     };
 
-    const handleCollapseSection = (section, eraId) => {
-        const sectionPanels = {};
-        if (section === 'Technologies') {
-            sectionPanels[`tech-${eraId}`] = false;
-        } else if (section === 'Civics') {
-            sectionPanels[`civic-${eraId}`] = false;
-        } else if (section === 'Wonders') {
-            sectionPanels[`wonder-${eraId}`] = false;
-        } else if (section === 'Natural Wonders') {
-            sectionPanels['natural-wonders'] = false;
-        }
-        setExpandedPanels(prev => ({
-            ...prev,
-            ...sectionPanels
-        }));
+    const getAllPanelIds = () => {
+        const ids = [];
+        CivVITechQuotes.eras.forEach(era => ids.push(generatePanelId(PANEL_ID_PREFIXES.TECH, era.id)));
+        CivVICivicQuotes.eras.forEach(era => ids.push(generatePanelId(PANEL_ID_PREFIXES.CIVIC, era.id)));
+        CivVIWonderQuotes.eras.forEach(era => ids.push(generatePanelId(PANEL_ID_PREFIXES.WONDER, era.id)));
+        ids.push(generatePanelId(PANEL_ID_PREFIXES.WONDER, 'natural'));
+        return ids;
     };
 
-    const handleCollapseAll = () => {
-        const allPanels = {};
-        CivVITechQuotes.eras.forEach(era => {
-            allPanels[`tech-${era.id}`] = false;
-        });
-        CivVICivicQuotes.eras.forEach(era => {
-            allPanels[`civic-${era.id}`] = false;
-        });
-        CivVIWonderQuotes.eras.forEach(era => {
-            allPanels[`wonder-${era.id}`] = false;
-        });
-        allPanels['natural-wonders'] = false;
-        setExpandedPanels(allPanels);
-    };
+    const {
+        handleAccordionChange,
+        handleCollapseSection,
+        handleCollapseAll,
+        isPanelExpanded
+    } = useCollapsiblePanels({ sections });
 
     return (
         <main>
-            <Helmet>
-                <meta charSet="utf-8" />
-                <title>Civilization VI Quotes</title>
-                <link rel="canonical" href="http://civquotes.com/civ-vi" />
-            </Helmet>
-            <Navbar />
-            <Typography variant="h1" sx={pageStyles.pageTitle(isDesktop)}>
-                Civilization VI
-            </Typography>
-            <h2 style={pageStyles.h2(isDesktop)}> Technologies </h2>
+            <PageHeader 
+                title="Civilization VI"
+                canonicalPath="/civ-vi"
+            />
+            <SectionHeader>{SECTION_TYPES.TECHNOLOGIES}</SectionHeader>
             {CivVITechQuotes.eras.map((era) => (
-                <Box key={era.id} sx={pageStyles.box(isDesktop)}>
-                    <Accordion 
-                        sx={pageStyles.accordion(isDarkMode)}
-                        expanded={expandedPanels[`tech-${era.id}`] || false}
-                        onChange={handleAccordionChange(`tech-${era.id}`)}
-                    >
-                        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                            <Typography variant="h6" sx={{ fontSize: '1rem' }}>{era.name}</Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                            {CivVITechQuotes.quotes.filter(quote => quote.era === era.id).map((quote, index) => (
-                                <Card sx={pageStyles.card(isDarkMode)} key={index}>
-                                    <CardContent>
-                                        <Typography variant="subtitle1">
-                                            <b>{quote.tech}</b>
-                                        </Typography>
-                                        <br />
-                                        <Typography variant="body1" sx={{ fontSize: 16 }}>
-                                            <i style={{whiteSpace: "pre-line"}}>
-                                                {quote.quotes[0].quote}
-                                            </i>
-                                        </Typography>
-                                        <br />
-                                        <Typography variant="caption" sx={{ fontSize: 12 }}>
-                                            <b>— {quote.quotes[0].speaker}</b>
-                                        </Typography>
-                                        <hr hidden={quote.quotes[1] == null} />
-                                        <div hidden={quote.quotes[1] == null}>
-                                            <Typography variant="body1" sx={{ fontSize: 16 }}>
-                                                <i style={{whiteSpace: "pre-line"}}>
-                                                    {quote.quotes[1]?.quote}
-                                                </i>
-                                            </Typography>
-                                            <br />
-                                            <Typography variant="caption" sx={{ fontSize: 12 }}>
-                                                <b>— {quote.quotes[1]?.speaker}</b>
-                                            </Typography>
-                                        </div>
-                                    </CardContent>
-                                </Card>
-                            ))}
-                            <Button 
-                                variant="contained" 
-                                sx={pageStyles.collapseButton}
-                                onClick={() => handleCollapseSection('Technologies', era.id)}
-                                startIcon={<KeyboardArrowUpIcon />}
-                            >
-                                Collapse
-                            </Button>
-                        </AccordionDetails>
-                    </Accordion>
-                </Box>
-            ))}
-
-            <h2 style={pageStyles.h2(isDesktop)}> Civics </h2>
-            {CivVICivicQuotes.eras.map((era) => (
-                <Box key={era.id} sx={pageStyles.box(isDesktop)}>
-                    <Accordion 
-                        sx={pageStyles.accordion(isDarkMode)}
-                        expanded={expandedPanels[`civic-${era.id}`] || false}
-                        onChange={handleAccordionChange(`civic-${era.id}`)}
-                    >
-                        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                            <Typography variant="h6" sx={{ fontSize: '1rem' }}>{era.name}</Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                            {CivVICivicQuotes.quotes.filter(quote => quote.era === era.id).map((quote, index) => (
-                                <Card sx={pageStyles.card(isDarkMode)} key={index}>
-                                    <CardContent>
-                                        <Typography variant="subtitle1">
-                                            <b>{quote.civic}</b>
-                                        </Typography>
-                                        <br />
-                                        <Typography variant="body1" sx={{ fontSize: 16 }}>
-                                            <i style={{whiteSpace: "pre-line"}}>
-                                                {quote.quotes[0].quote}
-                                            </i>
-                                        </Typography>
-                                        <br />
-                                        <Typography variant="caption" sx={{ fontSize: 12 }}>
-                                            <b>— {quote.quotes[0].speaker}</b>
-                                        </Typography>
-                                        <hr hidden={quote.quotes[1] == null} />
-                                        <div hidden={quote.quotes[1] == null}>
-                                            <Typography variant="body1" sx={{ fontSize: 16 }}>
-                                                <i style={{whiteSpace: "pre-line"}}>
-                                                    {quote.quotes[1]?.quote}
-                                                </i>
-                                            </Typography>
-                                            <br />
-                                            <Typography variant="caption" sx={{ fontSize: 12 }}>
-                                                <b>— {quote.quotes[1]?.speaker}</b>
-                                            </Typography>
-                                        </div>
-                                    </CardContent>
-                                </Card>
-                            ))}
-                            <Button 
-                                variant="contained" 
-                                sx={pageStyles.collapseButton}
-                                onClick={() => handleCollapseSection('Civics', era.id)}
-                                startIcon={<KeyboardArrowUpIcon />}
-                            >
-                                Collapse
-                            </Button>
-                        </AccordionDetails>
-                    </Accordion>
-                </Box>
-            ))}
-
-            <h2 style={pageStyles.h2(isDesktop)}> Wonders </h2>
-            {CivVIWonderQuotes.eras.map((era) => (
-                <Box key={era.id} sx={pageStyles.box(isDesktop)}>
-                    <Accordion 
-                        sx={pageStyles.accordion(isDarkMode)}
-                        expanded={expandedPanels[`wonder-${era.id}`] || false}
-                        onChange={handleAccordionChange(`wonder-${era.id}`)}
-                    >
-                        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                            <Typography variant="h6" sx={{ fontSize: '1rem' }}>{era.name}</Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                            {CivVIWonderQuotes.quotes.filter(quote => quote.era === era.id).map((quote, index) => (
-                                <Card sx={pageStyles.card(isDarkMode)} key={index}>
-                                    <CardContent>
-                                        <Typography variant="subtitle1">
-                                            <b>{quote.wonder}</b> <span style={{fontSize: 12}}>- Unlocked by {quote.unlocking_tech}</span>
-                                        </Typography>
-                                        <br />
-                                        <Typography variant="body1" sx={{ fontSize: 16 }}>
-                                            <i style={{whiteSpace: "pre-line"}}>
-                                                {quote.quotes[0].quote}
-                                            </i>
-                                        </Typography>
-                                        <br />
-                                        <Typography variant="caption" sx={{ fontSize: 12 }}>
-                                            <b>— {quote.quotes[0].speaker}</b>
-                                        </Typography>
-                                    </CardContent>
-                                </Card>
-                            ))}
-                            <Button 
-                                variant="contained" 
-                                sx={pageStyles.collapseButton}
-                                onClick={() => handleCollapseSection('Wonders', era.id)}
-                                startIcon={<KeyboardArrowUpIcon />}
-                            >
-                                Collapse
-                            </Button>
-                        </AccordionDetails>
-                    </Accordion>
-                </Box>
-            ))}
-
-            <h2 style={pageStyles.h2(isDesktop)}> Natural Wonders </h2>
-            <Box sx={pageStyles.box(isDesktop)}>
-                <Accordion 
-                    sx={pageStyles.accordion(isDarkMode)}
-                    expanded={expandedPanels['natural-wonders'] || false}
-                    onChange={handleAccordionChange('natural-wonders')}
+                <QuoteAccordion
+                    key={era.id}
+                    id={generatePanelId(PANEL_ID_PREFIXES.TECH, era.id)}
+                    title={era.name}
+                    isExpanded={isPanelExpanded(generatePanelId(PANEL_ID_PREFIXES.TECH, era.id))}
+                    onAccordionChange={handleAccordionChange(generatePanelId(PANEL_ID_PREFIXES.TECH, era.id))}
+                    onCollapse={() => handleCollapseSection(SECTION_TYPES.TECHNOLOGIES, era.id)}
+                    isDarkMode={isDarkMode}
                 >
-                    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                        <Typography variant="h6" sx={{ fontSize: '1rem' }}>Natural Wonders</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        {CivVINaturalWonderQuotes.quotes.map((quote, index) => (
-                            <Card sx={pageStyles.card(isDarkMode)} key={index}>
-                                <CardContent>
-                                    <Typography variant="subtitle1">
-                                        <b>{quote.wonder}</b>
-                                    </Typography>
-                                    <br />
-                                    <Typography variant="body1" sx={{ fontSize: 16 }}>
-                                        <i style={{whiteSpace: "pre-line"}}>
-                                            {quote.quotes[0].quote}
-                                        </i>
-                                    </Typography>
-                                    <br />
-                                    <Typography variant="caption" sx={{ fontSize: 12 }}>
-                                        <b>— {quote.quotes[0].speaker}</b>
-                                    </Typography>
-                                </CardContent>
-                            </Card>
+                    {filterQuotesByEra(CivVITechQuotes.quotes, era.id)
+                        .map((quote, index) => (
+                            <QuoteCard
+                                key={`tech-${era.id}-${index}`}
+                                tech={quote.tech}
+                                quotes={quote.quotes}
+                                isDarkMode={isDarkMode}
+                            />
                         ))}
-                        <Button 
-                            variant="contained" 
-                            sx={pageStyles.collapseButton}
-                            onClick={() => handleCollapseSection('Natural Wonders', null)}
-                            startIcon={<KeyboardArrowUpIcon />}
-                        >
-                            Collapse
-                        </Button>
-                    </AccordionDetails>
-                </Accordion>
-            </Box>
+                </QuoteAccordion>
+            ))}
 
-            <GlobalCollapseButton onCollapseAll={handleCollapseAll} />
+            <SectionHeader>{SECTION_TYPES.CIVICS}</SectionHeader>
+            {CivVICivicQuotes.eras.map((era) => (
+                <QuoteAccordion
+                    key={era.id}
+                    id={generatePanelId(PANEL_ID_PREFIXES.CIVIC, era.id)}
+                    title={era.name}
+                    isExpanded={isPanelExpanded(generatePanelId(PANEL_ID_PREFIXES.CIVIC, era.id))}
+                    onAccordionChange={handleAccordionChange(generatePanelId(PANEL_ID_PREFIXES.CIVIC, era.id))}
+                    onCollapse={() => handleCollapseSection(SECTION_TYPES.CIVICS, era.id)}
+                    isDarkMode={isDarkMode}
+                >
+                    {filterQuotesByEra(CivVICivicQuotes.quotes, era.id)
+                        .map((quote, index) => (
+                            <QuoteCard
+                                key={`civic-${era.id}-${index}`}
+                                civic={quote.civic}
+                                quotes={quote.quotes}
+                                isDarkMode={isDarkMode}
+                            />
+                        ))}
+                </QuoteAccordion>
+            ))}
+
+            <SectionHeader>{SECTION_TYPES.WONDERS}</SectionHeader>
+            {CivVIWonderQuotes.eras.map((era) => (
+                <QuoteAccordion
+                    key={era.id}
+                    id={generatePanelId(PANEL_ID_PREFIXES.WONDER, era.id)}
+                    title={era.name}
+                    isExpanded={isPanelExpanded(generatePanelId(PANEL_ID_PREFIXES.WONDER, era.id))}
+                    onAccordionChange={handleAccordionChange(generatePanelId(PANEL_ID_PREFIXES.WONDER, era.id))}
+                    onCollapse={() => handleCollapseSection(SECTION_TYPES.WONDERS, era.id)}
+                    isDarkMode={isDarkMode}
+                >
+                    {filterQuotesByEra(CivVIWonderQuotes.quotes, era.id)
+                        .map((quote, index) => (
+                            <QuoteCard
+                                key={`wonder-${era.id}-${index}`}
+                                wonder={quote.wonder}
+                                quotes={quote.quotes}
+                                unlockingTech={quote.unlocking_tech}
+                                isDarkMode={isDarkMode}
+                            />
+                        ))}
+                </QuoteAccordion>
+            ))}
+
+            <SectionHeader>{SECTION_TYPES.NATURAL_WONDERS}</SectionHeader>
+            <QuoteAccordion
+                id={generatePanelId(PANEL_ID_PREFIXES.WONDER, 'natural')}
+                title={SECTION_TYPES.NATURAL_WONDERS}
+                isExpanded={isPanelExpanded(generatePanelId(PANEL_ID_PREFIXES.WONDER, 'natural'))}
+                onAccordionChange={handleAccordionChange(generatePanelId(PANEL_ID_PREFIXES.WONDER, 'natural'))}
+                onCollapse={() => handleCollapseSection(SECTION_TYPES.NATURAL_WONDERS)}
+                isDarkMode={isDarkMode}
+            >
+                {CivVINaturalWonderQuotes.quotes.map((quote, index) => (
+                    <QuoteCard
+                        key={`natural-wonder-${index}`}
+                        wonder={quote.wonder}
+                        quotes={quote.quotes}
+                        isDarkMode={isDarkMode}
+                    />
+                ))}
+            </QuoteAccordion>
+
+            <GlobalCollapseButton onCollapseAll={() => handleCollapseAll(getAllPanelIds())} />
         </main>
     );
 };

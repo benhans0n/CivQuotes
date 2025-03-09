@@ -4,11 +4,12 @@ import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import Navbar from '../components/navbar';
 import { Box } from '@mui/system';
 import { useMediaQuery, Grid, InputAdornment } from '@mui/material';
-import { Helmet } from 'react-helmet';
 import SearchIcon from '@mui/icons-material/Search';
+import { useTheme } from '../components/ThemeContext';
+import PageHeader from '../components/PageHeader';
+import QuoteCard from '../components/QuoteCard';
 
 // Import all quote data
 import CivIVQuotes from '../data/civ-iv-quotes.json';
@@ -31,18 +32,20 @@ const styles = {
     searchBox: {
         width: 100 + "%"
     },
-    card: {
-        marginBottom: 2 + "%"
-    },
     gameTitle: {
         color: '#ffffff',
         marginBottom: '16px',
         marginTop: '16px'
-    }
+    },
+    compareCard: (isDarkMode) => ({
+        marginBottom: 2 + "%",
+        color: isDarkMode ? '#ffffff' : '#000000'
+    })
 };
 
 const ComparePage = () => {
     const isDesktop = useMediaQuery('(min-width: 768px)');
+    const { isDarkMode } = useTheme();
     const [searchTerm, setSearchTerm] = useState('');
 
     // Function to search through quotes
@@ -195,12 +198,10 @@ const ComparePage = () => {
 
     return (
         <main>
-            <Helmet>
-                <meta charSet="utf-8" />
-                <title>Compare Civilization Quotes</title>
-                <link rel="canonical" href="http://civquotes.com/compare" />
-            </Helmet>
-            <Navbar />
+            <PageHeader 
+                title="Compare Civilization Quotes"
+                canonicalPath="/compare"
+            />
             <Box style={styles.box(isDesktop)}>
                 <Card style={{ marginBottom: '24px' }}>
                     <CardContent sx={{ 
@@ -236,35 +237,13 @@ const ComparePage = () => {
                                         {game}
                                     </Typography>
                                     {quotes?.map((quote, index) => (
-                                        <Card style={styles.card} key={`${game}-${index}`}>
-                                            <CardContent sx={{ 
-                                                padding: '16px !important',
-                                                '&:last-child': {
-                                                    paddingBottom: '16px !important'
-                                                }
-                                            }}>
-                                                <Typography variant="subtitle1">
-                                                    <b>{quote?.title}</b> <span style={{fontSize: 12}}>({quote?.type})</span>
-                                                </Typography>
-                                                <br />
-                                                {quote?.quotes?.map((q, i) => (
-                                                    <div key={i}>
-                                                        <Typography variant="body1" sx={{ fontSize: 16 }}>
-                                                            <i style={{whiteSpace: "pre-line"}}>
-                                                                {q?.quote}
-                                                            </i>
-                                                        </Typography>
-                                                        <br />
-                                                        <Typography variant="caption" sx={{ fontSize: 12 }}>
-                                                            <b>— {q?.speaker}</b>
-                                                        </Typography>
-                                                        {i < (quote?.quotes?.length || 0) - 1 && (
-                                                            <hr />
-                                                        )}
-                                                    </div>
-                                                ))}
-                                            </CardContent>
-                                        </Card>
+                                        <QuoteCard
+                                            key={`${game}-${index}`}
+                                            title={`${quote?.title} (${quote?.type})`}
+                                            isDarkMode={isDarkMode}
+                                            quotes={quote?.quotes}
+                                            sx={styles.compareCard(isDarkMode)}
+                                        />
                                     ))}
                                 </Grid>
                             ))}

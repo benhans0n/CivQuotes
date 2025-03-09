@@ -1,113 +1,69 @@
 import * as React from 'react';
-import { useState } from 'react';
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Button from '@mui/material/Button';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import CivIVQuotes from '../data/civ-iv-quotes.json'
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Navbar from '../components/navbar';
-import { Box } from '@mui/system';
-import { useMediaQuery } from '@mui/material';
-import { Helmet } from 'react-helmet';
 import GlobalCollapseButton from '../components/GlobalCollapseButton';
-import { pageStyles } from '../components/PageStyles';
 import { useTheme } from '../components/ThemeContext';
+import PageHeader from '../components/PageHeader';
+import QuoteCard from '../components/QuoteCard';
+import QuoteAccordion from '../components/QuoteAccordion';
+import SectionHeader from '../components/SectionHeader';
+import { useCollapsiblePanels } from '../hooks/useCollapsiblePanels';
+import { SECTION_TYPES, PANEL_ID_PREFIXES } from '../constants/sections';
+import { filterQuotesByEra, generatePanelId } from '../utils/quoteUtils';
 
 // markup
 const CivIVPage = () => {
-    const isDesktop = useMediaQuery('(min-width: 768px)');
     const { isDarkMode } = useTheme();
-    const [expandedPanels, setExpandedPanels] = useState({});
 
-    const handleAccordionChange = (panel) => (event, isExpanded) => {
-        setExpandedPanels(prev => ({
-            ...prev,
-            [panel]: isExpanded
-        }));
+    const sections = {
+        [SECTION_TYPES.TECHNOLOGIES]: (id) => generatePanelId(PANEL_ID_PREFIXES.TECH, id)
     };
 
-    const handleCollapseSection = (section, eraId) => {
-        const sectionPanels = {};
-        if (section === 'Technologies') {
-            sectionPanels[`tech-${eraId}`] = false;
-        }
-        setExpandedPanels(prev => ({
-            ...prev,
-            ...sectionPanels
-        }));
+    const getAllPanelIds = () => {
+        const ids = [];
+        CivIVQuotes.eras.forEach(era => ids.push(generatePanelId(PANEL_ID_PREFIXES.TECH, era.id)));
+        return ids;
     };
 
-    const handleCollapseAll = () => {
-        const allPanels = {};
-        CivIVQuotes.eras.forEach(era => {
-            allPanels[`tech-${era.id}`] = false;
-        });
-        setExpandedPanels(allPanels);
-    };
+    const {
+        handleAccordionChange,
+        handleCollapseSection,
+        handleCollapseAll,
+        isPanelExpanded
+    } = useCollapsiblePanels({ sections });
 
     return (
         <main>
-            <Helmet>
-                <meta charSet="utf-8" />
-                <title>Civilization IV Quotes</title>
-                <link rel="canonical" href="http://civquotes.com/civ-iv" />
-            </Helmet>
-            <Navbar />
-            <Typography variant="h1" sx={pageStyles.pageTitle(isDesktop)}>
-                Civilization IV
-            </Typography>
-            <h2 style={pageStyles.h2(isDesktop)}> Technologies </h2>
-            {CivIVQuotes.eras.map((era) => {
-                return <Box sx={pageStyles.box(isDesktop)} key={era.id}>
-                    <Accordion 
-                        sx={pageStyles.accordion(isDarkMode)}
-                        expanded={expandedPanels[`tech-${era.id}`] || false}
-                        onChange={handleAccordionChange(`tech-${era.id}`)}
-                    >
-                        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                            <Typography variant="h6" sx={{ fontSize: '1rem' }}>{era.name}</Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                            {CivIVQuotes.quotes.filter(quote => quote.era === era.id).map((quote, index) => {
-                                return <Card sx={pageStyles.card(isDarkMode)} key={`tech-${era.id}-${index}`}>
-                                    <CardContent>
-                                        <Typography variant="subtitle1">
-                                            <b>{quote.tech}</b>
-                                        </Typography>
-                                        <br />
-                                        <Typography variant="body1" sx={{ fontSize: 16 }}>
-                                            <i style={{whiteSpace: "pre-line"}}>
-                                                {quote.quote}
-                                            </i>
-                                        </Typography>
-                                        <br />
-                                        <Typography variant="caption" sx={{ fontSize: 12 }}>
-                                            <b>— {quote.speaker}</b>
-                                        </Typography>
-                                    </CardContent>
-                                </Card>
-                            })}
-                            <Button
-                                variant="contained"
-                                startIcon={<KeyboardArrowUpIcon />}
-                                onClick={() => handleCollapseSection('Technologies', era.id)}
-                                sx={pageStyles.collapseButton}
-                            >
-                                Collapse
-                            </Button>
-                        </AccordionDetails>
-                    </Accordion>
-                </Box>
-            })}
+            <PageHeader 
+                title="Civilization IV"
+                canonicalPath="/civ-iv"
+            />
+            <SectionHeader>{SECTION_TYPES.TECHNOLOGIES}</SectionHeader>
+            {CivIVQuotes.eras.map((era) => (
+                <QuoteAccordion
+                    key={era.id}
+                    id={generatePanelId(PANEL_ID_PREFIXES.TECH, era.id)}
+                    title={era.name}
+                    isExpanded={isPanelExpanded(generatePanelId(PANEL_ID_PREFIXES.TECH, era.id))}
+                    onAccordionChange={handleAccordionChange(generatePanelId(PANEL_ID_PREFIXES.TECH, era.id))}
+                    onCollapse={() => handleCollapseSection(SECTION_TYPES.TECHNOLOGIES, era.id)}
+                    isDarkMode={isDarkMode}
+                >
+                    {filterQuotesByEra(CivIVQuotes.quotes, era.id)
+                        .map((quote, index) => (
+                            <QuoteCard
+                                key={`tech-${era.id}-${index}`}
+                                tech={quote.tech}
+                                quote={quote.quote}
+                                speaker={quote.speaker}
+                                isDarkMode={isDarkMode}
+                            />
+                        ))}
+                </QuoteAccordion>
+            ))}
 
-            <GlobalCollapseButton onCollapseAll={handleCollapseAll} />
+            <GlobalCollapseButton onCollapseAll={() => handleCollapseAll(getAllPanelIds())} />
         </main>
-    )
-}
+    );
+};
 
-export default CivIVPage
+export default CivIVPage;
