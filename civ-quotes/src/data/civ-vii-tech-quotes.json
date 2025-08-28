@@ -1,0 +1,193 @@
+{
+    "eras": [
+        {
+            "id": "a",
+            "name": "Ancient Era"
+        },
+        {
+            "id": "c",
+            "name": "Classical Era"
+        },
+        {
+            "id": "m",
+            "name": "Medieval Era"
+        }
+    ],
+    "quotes": [
+        {
+            "tech": "Agriculture",
+            "era": "a",
+            "quote": "The radiance of the new world came into being bathed in nectar, bathed in love.",
+            "speaker": "Preah Khan Inscription"
+            
+        },
+        {
+            "tech": "Animal Husbandry",
+            "era": "a",
+            "quote": "The caged bird watches butterflies with envy.",
+            "speaker": "Kobayashi Issa"
+        },
+        {
+            "tech": "Bronze Working",
+            "era": "a",
+            "quote": "He heard these horrors and his spirit stirred, and spurred to action, he sheathed his skin in burnished bronze.",
+            "speaker": "The Iliad"
+        },
+        {
+            "tech": "Currency",
+            "era": "a",
+            "quote": "When I was young I thought that money was the most important thing in life; now that I am old I know that it is.",
+            "speaker": "Oscar Wilde"
+        },
+        {
+            "tech": "Engineering",
+            "era": "a",
+            "quote": "Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away.",
+            "speaker": "Antoine de Saint-Exupéry"
+        },
+        {
+            "tech": "Iron Working",
+            "era": "a",
+            "quote": "Iron made this promise: 'By the tongs and the hammer, many trees I can injure, but I shall not kill the best of heroes.",
+            "speaker": "The Kalevala"
+        },
+        {
+            "tech": "Irrigation",
+            "era": "a",
+            "quote": "The essence of all beings is the earth; the earth, water; the water, plants; plants, man; and man, speech.",
+            "speaker": "The Upanishads"
+        },
+        {
+            "tech": "Masonry",
+            "era": "a",
+            "quote": "He was the first to construct a wall, eighty miles in length, which was to separate the barbarians from the Romans.",
+            "speaker": "Cassius Dio"
+        },
+        {
+            "tech": "Mathematics",
+            "era": "a",
+            "quote": "There is geometry in the humming of the strings. There is music in the spacing of the spheres.",
+            "speaker": "Pythagoras"
+        },
+        {
+            "tech": "Military Training",
+            "era": "a",
+            "quote": "The truly brave never boast.",
+            "speaker": "The Mahābhārata"
+        },
+        {
+            "tech": "Navigation",
+            "era": "a",
+            "quote": "Ships at a distance have every man's wish on board.",
+            "speaker": "Zora Neale Hurston"
+        },
+        {
+            "tech": "Pottery",
+            "era": "a",
+            "quote": "All are made of clay.",
+            "speaker": "Henry Wadsworth Longfellow"
+        },
+        {
+            "tech": "Sailing",
+            "era": "a",
+            "quote": "The fair breeze blew, the white foam flew, the furrow followed free; we were the first that ever burst into that silent sea.",
+            "speaker": "Samuel Taylor Coleridge"
+        },
+        {
+            "tech": "The Wheel",
+            "era": "a",
+            "quote": "Even a great carpenter does not abandon his string.",
+            "speaker": "Mencius"
+        },
+        {
+            "tech": "Writing",
+            "era": "a",
+            "quote": "The spoken word conquers all thought, but the written word commands it.",
+            "speaker": "Walter Benjamin"
+        },
+        {
+            "tech": "",
+            "era": "e",
+            "quote": "",
+            "speaker": ""
+        },
+        {
+            "tech": "",
+            "era": "e",
+            "quote": "",
+            "speaker": ""
+        },
+        {
+            "tech": "",
+            "era": "e",
+            "quote": "",
+            "speaker": ""
+        },
+        {
+            "tech": "",
+            "era": "e",
+            "quote": "",
+            "speaker": ""
+        },
+        {
+            "tech": "",
+            "era": "e",
+            "quote": "",
+            "speaker": ""
+        },
+        {
+            "tech": "",
+            "era": "e",
+            "quote": "",
+            "speaker": ""
+        },
+        {
+            "tech": "",
+            "era": "e",
+            "quote": "",
+            "speaker": ""
+        },
+        {
+            "tech": "",
+            "era": "e",
+            "quote": "",
+            "speaker": ""
+        },
+        {
+            "tech": "",
+            "era": "e",
+            "quote": "",
+            "speaker": ""
+        },
+        {
+            "tech": "",
+            "era": "e",
+            "quote": "",
+            "speaker": ""
+        },
+        {
+            "tech": "",
+            "era": "e",
+            "quote": "",
+            "speaker": ""
+        },
+        {
+            "tech": "",
+            "era": "e",
+            "quote": "",
+            "speaker": ""
+        },
+        {
+            "tech": "",
+            "era": "e",
+            "quote": "",
+            "speaker": ""
+        },
+        {
+            "tech": "",
+            "era": "e",
+            "quote": "",
+            "speaker": ""
+        }
+    ]
+}
