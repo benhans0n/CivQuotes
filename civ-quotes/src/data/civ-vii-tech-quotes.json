@@ -19,7 +19,6 @@
             "era": "a",
             "quote": "The radiance of the new world came into being bathed in nectar, bathed in love.",
             "speaker": "Preah Khan Inscription"
-            
         },
         {
             "tech": "Animal Husbandry",
@@ -106,88 +105,178 @@
             "speaker": "Walter Benjamin"
         },
         {
-            "tech": "",
+            "tech": "Architecture",
             "era": "e",
-            "quote": "",
-            "speaker": ""
+            "quote": "The purpose of construction is to make things hold together; of architecture to move us.",
+            "speaker": "Le Corbusier"
         },
         {
-            "tech": "",
+            "tech": "Astronomy",
             "era": "e",
-            "quote": "",
-            "speaker": ""
+            "quote": "There exists beyond the world a void without a terminal limit - a thousand thousand worlds beyond this world.",
+            "speaker": "Fakhr al-Din al-Razi"
         },
         {
-            "tech": "",
+            "tech": "Cartography",
             "era": "e",
-            "quote": "",
-            "speaker": ""
+            "quote": "The map was a model for, rather than a model of, what it purported to represent.",
+            "speaker": "Thongchai Winichakul"
         },
         {
-            "tech": "",
+            "tech": "Castles",
             "era": "e",
-            "quote": "",
-            "speaker": ""
+            "quote": "Matsuyama castle; the keep is higher than the autumn sky.",
+            "speaker": "Masaoka Shiki"
         },
         {
-            "tech": "",
+            "tech": "Education",
             "era": "e",
-            "quote": "",
-            "speaker": ""
+            "quote": "The best investment for one year is to grow grains; the best investment for ten years is to grow trees; the best investment for a lifetime is to educate people.",
+            "speaker": "Guan Zhong"
         },
         {
-            "tech": "",
+            "tech": "Feudalism",
             "era": "e",
-            "quote": "",
-            "speaker": ""
+            "quote": "The king established all his knights, gave them lands, and charged them to give mercy.",
+            "speaker": "Thomas Malory"
         },
         {
-            "tech": "",
+            "tech": "Guilds",
             "era": "e",
-            "quote": "",
-            "speaker": ""
+            "quote": "The master and apprentice love the master in different ways.",
+            "speaker": "Friedrich Nietzsche"
         },
         {
-            "tech": "",
+            "tech": "Gunpowder",
             "era": "e",
-            "quote": "",
-            "speaker": ""
+            "quote": "The real use of gunpowder is to make all men tall.",
+            "speaker": "Thomas Carlyle"
         },
         {
-            "tech": "",
+            "tech": "Heraldry",
             "era": "e",
-            "quote": "",
-            "speaker": ""
+            "quote": "Yes, but...do you have a flag?",
+            "speaker": "Suzy Eddie Izzard"
         },
         {
-            "tech": "",
+            "tech": "Machinery",
             "era": "e",
-            "quote": "",
-            "speaker": ""
+            "quote": "I worked my wits and thoughts about shapes and figures, and I arranged these shapes one by one.",
+            "speaker": "Ibn Khalaf al-Murādī"
         },
         {
-            "tech": "",
+            "tech": "Metallurgy",
             "era": "e",
-            "quote": "",
-            "speaker": ""
+            "quote": "From the new land of gold, a sun of gold, a whole fathom wide, and a moon of silver.",
+            "speaker": "Albrecht Dürer"
         },
         {
-            "tech": "",
+            "tech": "Metal Casting",
             "era": "e",
-            "quote": "",
-            "speaker": ""
+            "quote": "The bellows worked incessantly for three days and three nights, and the bronze melted down and became as water.",
+            "speaker": "Michael Kritoboulos"
         },
         {
-            "tech": "",
+            "tech": "Shipbuilding",
             "era": "e",
-            "quote": "",
-            "speaker": ""
+            "quote": "If ship-building art were in the wood, ships would exist by nature.",
+            "speaker": "Aristotle"
         },
         {
-            "tech": "",
+            "tech": "Urban Planning",
             "era": "e",
-            "quote": "",
-            "speaker": ""
+            "quote": "The city is like a great house, and the house is like a small city.",
+            "speaker": "Leon Battista Alberti"
+        },
+        {
+            "tech": "Academics",
+            "era": "m",
+            "quote": "Now is the time to understand more, so that we may fear less.",
+            "speaker": "Marie Curie"
+        },
+        {
+            "tech": "Aerodynamics",
+            "era": "m",
+            "quote": "All birds need to fly are the right-shaped wings, the right pressure, and the right angle.",
+            "speaker": "Daniel Bernoulli"
+        },
+        {
+            "tech": "Armor",
+            "era": "m",
+            "quote": "Bombardment, barrage, curtain-fire, mines, gas, tanks, machine-guns, hand-grenades - words, words, but they hold the horror of the world.",
+            "speaker": "Erich Maria Remarque"
+        },
+        {
+            "tech": "Combustion",
+            "era": "m",
+            "quote": "So readily do people adapt themselves to the marvelous contrivances which modern inventive ingenuity has devised.",
+            "speaker": "The Marvelous Vogue of the Automobile"
+        },
+        {
+            "tech": "Electricity",
+            "era": "m",
+            "quote": "The beauty of electricity is not that the power is mysterious, but that it is under law, and that the taught intellect can even now govern it.",
+            "speaker": "Michael Faraday"
+        },
+        {
+            "tech": "Flight",
+            "era": "m",
+            "quote": "The sound of wings.",
+            "speaker": "Amelia Earhart"
+        },
+        {
+            "tech": "Industrialization",
+            "era": "m",
+            "quote": "And was Jerusalem builded here among these dark Satanic Mills?",
+            "speaker": "William Blake"
+        },
+        {
+            "tech": "Mass Production",
+            "era": "m",
+            "quote": "Just as modern mass production requires the standardization of commodities, so the social process requires standardization of man.",
+            "speaker": "Erich Fromm"
+        },
+        {
+            "tech": "Military Science",
+            "era": "m",
+            "quote": "Confuse your enemy. Keep him in the dark about your intentions.",
+            "speaker": "Võ Nguyên Giáp"
+        },
+        {
+            "tech": "Mobilization",
+            "era": "m",
+            "quote": "The young men shall fight; the women shall make tents; the old shall arouse the courage of the warriors.",
+            "speaker": "Levée en Masse"
+        },
+        {
+            "tech": "Nuclear Fission",
+            "era": "m",
+            "quote": "Scientists are not dependent on the ideas of a single man, but on the combined wisdom of thousands.",
+            "speaker": "Ernest Rutherford"
+        },
+        {
+            "tech": "Radio",
+            "era": "m",
+            "quote": "We annihilated the world before your very ears… You will be relieved, I hope, to learn that we didn't mean it.",
+            "speaker": "Orson Welles"
+        },
+        {
+            "tech": "Rocketry",
+            "era": "m",
+            "quote": "A screaming comes across the sky.",
+            "speaker": "Thomas Pynchon"
+        },
+        {
+            "tech": "Steam Engine",
+            "era": "m",
+            "quote": "Soon shall thy arm, unconquered steam, afar drag the slow barge or drive the rapid car.",
+            "speaker": "Erasmus Darwin"
+        },
+        {
+            "tech": "Urbanization",
+            "era": "m",
+            "quote": "The face of a city changes faster than a human heart.",
+            "speaker": "Charles Baudelaire"
         }
     ]
 }
